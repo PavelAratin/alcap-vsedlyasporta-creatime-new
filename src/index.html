@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./swiper/swiper.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>alcap-vsedlyasporta+creatime</title>
+</head>
+
+<body>
+  <div class="site-container">
+    @include('HTMLPartials/header.html')
+    <main>
+      @include('HTMLPartials/hero.html')
+      @include('HTMLPartials/assortment.html')
+      @include('HTMLPartials/tabGoods.html')
+      @include('HTMLPartials/infoCompany.html')
+      @include('HTMLPartials/contactSection.html')
+      @include('HTMLPartials/brands.html')
+      <!--корзина начало-->
+      @include('HTMLPartials/cart.html')
+      <!--корзина конец-->
+      <!--форма обратной связи начало-->
+      @include('HTMLPartials/formFeedBack.html')
+      <!--форма обратной связи конец-->
+    </main>
+    @include('HTMLPartials/footer.html')
+  </div>
+  <script src="./swiper/swiper-bundle.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

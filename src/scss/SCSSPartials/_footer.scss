@@ -1,0 +1,61 @@
+.footer {
+  padding: 40px 0;
+  background: #153e84;
+  color: #fff;
+  &__coll {
+    display: flex;
+    flex-direction: column;
+  }
+  &__button-call {
+    text-transform: uppercase;
+    color: #db2138;
+    font-size: 14px;
+    width: fit-content;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  &__phone {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  &__email {
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title-min {
+    text-transform: uppercase;
+    font-size: 18px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding: 10px 0 10px 30px;
+  }
+  &__title-min--adress {
+    background-image: url("../images/map-mark.png");
+  }
+  &__title-min--clock {
+    background-image: url("../images/clock.png");
+  }
+  &__btn {
+    height: 41px;
+    width: 203px;
+    background-color: #fe9e02;
+    color: #3c3c3c;
+    font-size: 15px;
+    padding: 10px 10px 10px;
+    text-transform: uppercase;
+  }
+  &__description {
+    max-width: 200px;
+  }
+  &__adress {
+    margin-bottom: 10px;
+  }
+}

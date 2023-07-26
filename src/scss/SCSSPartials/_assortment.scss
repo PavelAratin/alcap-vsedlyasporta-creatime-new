@@ -1,0 +1,38 @@
+.assortment {
+  margin-bottom: 100px;
+}
+.assortment-list {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 20px;
+  &__item {
+    grid-column: 3 span;
+    border-radius: 8px;
+    overflow: hidden;
+    img {
+      height: 100%;
+    }
+  }
+  &__link {
+    position: relative;
+    display: block;
+    height: 100%;
+  }
+  &__wrapper {
+    background-color: #4174cbac;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+  }
+  &__title {
+    text-align: center;
+  }
+}

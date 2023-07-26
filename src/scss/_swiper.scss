@@ -1,0 +1,107 @@
+.swiper {
+  &__hero {
+    width: 100%;
+    height: 400px;
+    .swiper-slide {
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      &--one {
+        background-image: url("../../images/swiper-img2.png");
+      }
+      &--two {
+        background-image: url("../../images/swiper-img2.png");
+      }
+      &--three {
+        background-image: url("../../images/swiper-img2.png");
+      }
+    }
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+      display: none;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+      background-color: #ffffff;
+      width: 48px;
+      height: 48px;
+      border-radius: 100%;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+    .swiper-button-prev {
+      background-image: url("../../images/arrow-left-blue.svg");
+      left: auto;
+      top: auto;
+      right: 105px;
+      bottom: 25px;
+    }
+    .swiper-button-next {
+      background-image: url("../../images/arrow-right-blue.svg");
+      left: auto;
+      top: auto;
+      right: 40px;
+      bottom: 25px;
+    }
+    .swiper-pagination {
+      width: auto;
+      margin-left: 50px;
+      margin-bottom: 30px;
+    }
+    .swiper-pagination-bullet {
+      opacity: 1;
+      background-color: #ffffff;
+      margin: 0 8px !important;
+      width: 6px !important;
+      height: 6px !important;
+    }
+    .swiper-pagination-bullet-active {
+      transform: scale(2);
+    }
+  }
+  &__popular-goods {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    .swiper-wrapper {
+      padding-bottom: 40px;
+    }
+    .swiper-slide {
+      height: auto;
+      transition: all 0.2s linear;
+      border-radius: 4px;
+      padding: 10px;
+      &:hover {
+        box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.15);
+      }
+    }
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+      display: none;
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+      background-color: #4174cb;
+      width: 48px;
+      height: 48px;
+      border-radius: 100%;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+    .swiper-button-prev {
+      background-image: url("../../images/arrow-left-white.svg");
+    }
+    .swiper-button-next {
+      background-image: url("../../images/arrow-right-white.svg");
+    }
+    .swiper-pagination-bullet {
+      background-color: #4174cb;
+      opacity: 1;
+      width: 6px;
+      height: 6px;
+    }
+    .swiper-pagination-bullet-active {
+      transform: scale(2);
+    }
+  }
+}
