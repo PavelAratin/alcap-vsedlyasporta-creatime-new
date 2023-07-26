@@ -154,13 +154,13 @@ ul {
   background-size: cover;
 }
 .swiper__hero .swiper-slide--one {
-  background-image: url("../../images/swiper-img2.png");
+  background-image: url("../images/swiper-img2.png");
 }
 .swiper__hero .swiper-slide--two {
-  background-image: url("../../images/swiper-img2.png");
+  background-image: url("../images/swiper-img2.png");
 }
 .swiper__hero .swiper-slide--three {
-  background-image: url("../../images/swiper-img2.png");
+  background-image: url("../images/swiper-img2.png");
 }
 .swiper__hero .swiper-button-prev::after,
 .swiper__hero .swiper-button-next::after {
@@ -176,14 +176,14 @@ ul {
   background-position: center center;
 }
 .swiper__hero .swiper-button-prev {
-  background-image: url("../../images/arrow-left-blue.svg");
+  background-image: url("../images/arrow-left-blue.svg");
   left: auto;
   top: auto;
   right: 105px;
   bottom: 25px;
 }
 .swiper__hero .swiper-button-next {
-  background-image: url("../../images/arrow-right-blue.svg");
+  background-image: url("../images/arrow-right-blue.svg");
   left: auto;
   top: auto;
   right: 40px;
@@ -235,10 +235,10 @@ ul {
   background-position: center center;
 }
 .swiper__popular-goods .swiper-button-prev {
-  background-image: url("../../images/arrow-left-white.svg");
+  background-image: url("../images/arrow-left-white.svg");
 }
 .swiper__popular-goods .swiper-button-next {
-  background-image: url("../../images/arrow-right-white.svg");
+  background-image: url("../images/arrow-right-white.svg");
 }
 .swiper__popular-goods .swiper-pagination-bullet {
   background-color: #4174cb;

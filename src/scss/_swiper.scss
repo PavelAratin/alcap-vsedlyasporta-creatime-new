@@ -7,13 +7,13 @@
       background-position: center center;
       background-size: cover;
       &--one {
-        background-image: url("../../images/swiper-img2.png");
+        background-image: url("../images/swiper-img2.png");
       }
       &--two {
-        background-image: url("../../images/swiper-img2.png");
+        background-image: url("../images/swiper-img2.png");
       }
       &--three {
-        background-image: url("../../images/swiper-img2.png");
+        background-image: url("../images/swiper-img2.png");
       }
     }
     .swiper-button-prev::after,
@@ -30,14 +30,14 @@
       background-position: center center;
     }
     .swiper-button-prev {
-      background-image: url("../../images/arrow-left-blue.svg");
+      background-image: url("../images/arrow-left-blue.svg");
       left: auto;
       top: auto;
       right: 105px;
       bottom: 25px;
     }
     .swiper-button-next {
-      background-image: url("../../images/arrow-right-blue.svg");
+      background-image: url("../images/arrow-right-blue.svg");
       left: auto;
       top: auto;
       right: 40px;
@@ -89,10 +89,10 @@
       background-position: center center;
     }
     .swiper-button-prev {
-      background-image: url("../../images/arrow-left-white.svg");
+      background-image: url("../images/arrow-left-white.svg");
     }
     .swiper-button-next {
-      background-image: url("../../images/arrow-right-white.svg");
+      background-image: url("../images/arrow-right-white.svg");
     }
     .swiper-pagination-bullet {
       background-color: #4174cb;
