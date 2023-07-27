@@ -157,10 +157,10 @@ ul {
   background-image: url("../images/hero-alcap-img.jpg");
 }
 .swiper__hero .swiper-slide--two {
-  background-image: url("../images/hero-alcap-img.jpg");
+  background-image: url("../images/hero-alcap-img3.jpg");
 }
 .swiper__hero .swiper-slide--three {
-  background-image: url("../images/hero-alcap-img.jpg");
+  background-image: url("../images/hero-alcap-img2.jpg");
 }
 .swiper__hero .swiper-button-prev::after,
 .swiper__hero .swiper-button-next::after {
@@ -622,6 +622,52 @@ ul {
 
 .hero {
   margin-bottom: 100px;
+  position: relative;
+}
+.hero__content {
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+  position: absolute;
+  left: 46px;
+  top: 100px;
+  max-width: 750px;
+  z-index: 1;
+}
+.hero__title-text {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.hero__subtitle-text {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.hero__link {
+  padding: 16px 43px;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 12px;
+  background: #e00c32;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-transform: none;
+}
+.hero .swiper-slide {
+  position: relative;
+}
+.hero .swiper-slide::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(32, 32, 32, 0.158);
 }
 
 .assortment {
