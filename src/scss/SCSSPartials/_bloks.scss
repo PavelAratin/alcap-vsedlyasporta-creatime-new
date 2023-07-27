@@ -152,8 +152,12 @@
   &__item {
     display: flex;
     align-items: center;
+    position: relative;
     &:hover img {
       transform: translateY(-5px);
+    }
+    &:hover .category-menu-level-3 {
+      display: block;
     }
     img {
       width: 40px;
@@ -174,6 +178,22 @@
   }
 }
 /* category-menu-level-2 end */
+
+/* category-menu-level-3 start */
+.category-menu-level-3 {
+  position: absolute;
+  top: 100%;
+  left: 50px;
+  padding: 20px;
+  border: 1px solid rgba(12, 18, 28, 0.12);
+  background-color: #ffffff;
+  z-index: 1;
+  display: none;
+  &__item {
+    padding: 5px;
+  }
+}
+/* category-menu-level-3 end */
 
 .stars-list {
   display: flex;

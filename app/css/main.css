@@ -460,9 +460,13 @@ ul {
 .category-menu-level-2__item {
   display: flex;
   align-items: center;
+  position: relative;
 }
 .category-menu-level-2__item:hover img {
   transform: translateY(-5px);
+}
+.category-menu-level-2__item:hover .category-menu-level-3 {
+  display: block;
 }
 .category-menu-level-2__item img {
   width: 40px;
@@ -482,6 +486,22 @@ ul {
 }
 
 /* category-menu-level-2 end */
+/* category-menu-level-3 start */
+.category-menu-level-3 {
+  position: absolute;
+  top: 100%;
+  left: 50px;
+  padding: 20px;
+  border: 1px solid rgba(12, 18, 28, 0.12);
+  background-color: #ffffff;
+  z-index: 1;
+  display: none;
+}
+.category-menu-level-3__item {
+  padding: 5px;
+}
+
+/* category-menu-level-3 end */
 .stars-list {
   display: flex;
   margin-bottom: 10px;
