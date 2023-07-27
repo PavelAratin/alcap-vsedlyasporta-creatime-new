@@ -154,13 +154,13 @@ ul {
   background-size: cover;
 }
 .swiper__hero .swiper-slide--one {
-  background-image: url("../images/swiper-img2.png");
+  background-image: url("../images/hero-alcap-img.jpg");
 }
 .swiper__hero .swiper-slide--two {
-  background-image: url("../images/swiper-img2.png");
+  background-image: url("../images/hero-alcap-img.jpg");
 }
 .swiper__hero .swiper-slide--three {
-  background-image: url("../images/swiper-img2.png");
+  background-image: url("../images/hero-alcap-img.jpg");
 }
 .swiper__hero .swiper-button-prev::after,
 .swiper__hero .swiper-button-next::after {
@@ -732,6 +732,7 @@ ul {
   font-weight: 400;
   color: #333333;
   margin-bottom: 10px;
+  font-weight: 600;
 }
 .card__wrapper {
   display: flex;
