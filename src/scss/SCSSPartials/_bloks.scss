@@ -12,6 +12,12 @@
   }
 }
 
+.logo-link {
+  &--mobile {
+    display: none;
+  }
+}
+
 .actions {
   display: flex;
   align-items: center;

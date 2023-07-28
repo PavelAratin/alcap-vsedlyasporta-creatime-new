@@ -1,7 +1,8 @@
 <header class="header">
   <div class="container">
     <div class="header__top">
-      <nav class="nav">
+      @include('burgerButton.html')
+      <nav class="nav header__nav">
         <ul class="nav__list">
           <li class="nav__item">
             <a class="nav__link" href="#">О магазине</a>
@@ -20,6 +21,9 @@
           </li>
         </ul>
       </nav>
+      <a class="logo-link logo-link--mobile header__logo-link" href="#">
+        <img class="logo-link__img" src="./images/logo.png" alt="Логотип оптовой компании ALPHA CAPRICE">
+      </a>
       <div class="actions">
         <svg viewBox="0 0 32 32" width="40" height="40" xmlns="http://www.w3.org/2000/svg" fill="#FEB703">
           <title />
@@ -54,7 +58,7 @@
       </ul>
     </div>
     <div class="header__bottom">
-      <a class="logo-link header__logo-link" href="#">
+      <a class="logo-link logo-link--desctop header__logo-link" href="#">
         <img class="logo-link__img" src="./images/logo.png" alt="Логотип оптовой компании ALPHA CAPRICE">
       </a>
       <form class="form form__header" action="">

@@ -1,0 +1,44 @@
+.burger-button {
+  width: 35px;
+  height: 25px;
+  position: relative;
+  display: none;
+  &__line {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #000000;
+    transition: all 0.2s linear;
+    &--one {
+      top: 0;
+      left: 0;
+    }
+    &--two {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &--three {
+      bottom: 0;
+      left: 0;
+    }
+  }
+  &:hover {
+    .burger-button__line--one {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(45deg);
+      background-color: #e00c32;
+    }
+    .burger-button__line--two {
+      display: none;
+    }
+    .burger-button__line--three {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-45deg);
+      background-color: #e00c32;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+@media screen and (max-width: 1010px) {
+  .header {
+    &__nav {
+      display: none;
+    }
+    .social-list {
+      display: none;
+    }
+  }
+  .burger-button {
+    display: block;
+  }
+  .logo-link {
+    max-width: 150px;
+    &--desctop {
+      display: none;
+    }
+    &--mobile {
+      display: block;
+    }
+  }
+  .actions {
+    svg {
+      width: 30px;
+      height: 30px;
+    }
+    &__item {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  .header__bottom {
+    flex-wrap: wrap;
+  }
+  .form__header {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 20px;
+    order: 1;
+  }
+  .contact__header {
+    margin-bottom: 10px;
+  }
+  .form__button {
+    padding: 10px 20px;
+  }
+  .form__input {
+    padding: 10px 0px 10px 10px;
+  }
+}
