@@ -34,3 +34,19 @@
     }
   }
 }
+
+.sizes-list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.sizes-list__item {
+  padding: 5px;
+  border: 1px solid #e3e3e3;
+  margin: 2px 2px 0 0;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+.sizes-list__item:hover {
+  border-color: #db2138;
+}
