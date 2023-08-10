@@ -51,7 +51,7 @@ const styles = () => {
 
 //функция для работы с html
 const htmlInclude = () => {
-  return src(['./src/index.html'])
+  return src(['./src/**.html'])
     .pipe(fileInclude({
       prefix: '@',
       basepath: '@file'

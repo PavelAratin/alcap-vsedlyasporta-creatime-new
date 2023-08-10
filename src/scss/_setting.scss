@@ -9,6 +9,7 @@ body {
   margin: 0;
   padding: 0;
   min-width: 320px;
+  height: 100%;
   // position: relative;
 }
 button {
@@ -40,6 +41,17 @@ ul {
   padding: 0;
   list-style-type: none;
 }
+html {
+  height: 100%;
+}
+main {
+  flex: 1 0 auto;
+}
+.site-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 .container {
   max-width: 1240px;
   margin: 0 auto;
@@ -49,7 +61,6 @@ ul {
   padding: 0;
   border: 0;
   background-color: transparent;
-  outline: none;
   cursor: pointer;
   color: inherit;
   font: inherit;
@@ -59,6 +70,9 @@ ul {
   border: none;
   background-color: transparent;
   padding: 0;
+}
+.title-h1 {
+  font-size: 54px;
 }
 .title-h2 {
   font-size: 32px;

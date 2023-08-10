@@ -2,9 +2,11 @@
   padding: 40px 0;
   background: #153e84;
   color: #fff;
+  flex: 0 0 auto;
   &__coll {
     display: flex;
     flex-direction: column;
+    padding: 10px;
   }
   &__button-call {
     text-transform: uppercase;
@@ -29,6 +31,7 @@
   &__container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
   &__title-min {
     text-transform: uppercase;
@@ -56,6 +59,12 @@
     max-width: 200px;
   }
   &__adress {
-    margin-bottom: 10px;
+    padding: 10px;
+  }
+  &__time {
+    padding: 10px;
+  }
+  &__info {
+    padding: 10px;
   }
 }

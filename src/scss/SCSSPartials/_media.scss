@@ -7,6 +7,9 @@
       display: none;
     }
   }
+  .category-menu-level-1 {
+    display: none;
+  }
   .burger-button {
     display: block;
   }
@@ -47,5 +50,12 @@
   }
   .form__input {
     padding: 10px 0px 10px 10px;
+  }
+  .wrapper__container {
+    flex-direction: column;
+  }
+  .sidebar {
+    flex: 0 0 100%;
+    margin-bottom: 30px;
   }
 }

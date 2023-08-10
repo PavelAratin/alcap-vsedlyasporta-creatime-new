@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>О нас</title>
+</head>
+
+<body>
+  <div class="site-container">
+    <header class="header">
+  <div class="container">
+    <div class="header__top">
+      <button class="btn-reset burger-button">
+  <span class="burger-button__line burger-button__line--one"></span>
+  <span class="burger-button__line burger-button__line--two"></span>
+  <span class="burger-button__line burger-button__line--three"></span>
+</button>
+      <nav class="nav header__nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="./about.html">О магазине</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Оплата и доставка</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Возврат и обмен</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Блог</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="logo-link logo-link--mobile header__logo-link" href="/">
+        <img class="logo-link__img" src="./images/logo.png" alt="Логотип оптовой компании ALPHA CAPRICE">
+      </a>
+      <div class="actions">
+        <svg viewBox="0 0 32 32" width="40" height="40" xmlns="http://www.w3.org/2000/svg" fill="#FEB703">
+          <title />
+          <g id="about">
+            <path d="M16,16A7,7,0,1,0,9,9,7,7,0,0,0,16,16ZM16,4a5,5,0,1,1-5,5A5,5,0,0,1,16,4Z" />
+            <path
+              d="M17,18H15A11,11,0,0,0,4,29a1,1,0,0,0,1,1H27a1,1,0,0,0,1-1A11,11,0,0,0,17,18ZM6.06,28A9,9,0,0,1,15,20h2a9,9,0,0,1,8.94,8Z" />
+          </g>
+        </svg>
+        <div class="actions__item">
+          <a class="actions__link" href="#">Вход</a>
+          <span>/</span>
+          <a class="actions__link" href="#">Регистрация</a>
+        </div>
+      </div>
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a href="#" class="">
+            <img src="./images/vk.svg" alt="Переход в соцсеть whatsapp">
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a href="#" class="">
+            <img src="./images/telegram.svg" alt="Переход в соцсеть telegram">
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a href="#" class="">
+            <img src="./images/ok.png" alt="Переход в соцсеть Одноклассники">
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="header__bottom">
+      <a class="logo-link logo-link--desctop header__logo-link" href="/">
+        <img class="logo-link__img" src="./images/logo.png" alt="Логотип оптовой компании ALPHA CAPRICE">
+      </a>
+      <form class="form form__header" action="">
+        <input class="input-reset form__input" type="text" placeholder="Поиск товара">
+        <button class="btn-reset form__button form__button--red">Искать</button>
+      </form>
+      <div class="contact contact__header">
+        <a href="tel:+78007074465" class="contact__action">8-(800)-707-44-65</a>
+        <button class="btn-reset contact__btn js-call-form-feedback">Заказть обратный звонок</button>
+        <a href="mailto:info@alcap.ru" class="contact__action">info@alcap.ru</a>
+      </div>
+      <div class="informer">
+        <a class="informer__favorite header__favorite informer__item" href="#">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M5 7.8C5 6.11984 5 5.27976 5.32698 4.63803C5.6146 4.07354 6.07354 3.6146 6.63803 3.32698C7.27976 3 8.11984 3 9.8 3H14.2C15.8802 3 16.7202 3 17.362 3.32698C17.9265 3.6146 18.3854 4.07354 18.673 4.63803C19 5.27976 19 6.11984 19 7.8V21L12 17L5 21V7.8Z"
+              stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <div class="counter">
+            <span>0</span>
+          </div>
+        </a>
+        <a class="informer__cart informer__item js-cart-call" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+            <path
+              d="M5.50835165,12.5914912 C5.5072855,12.5857255 5.50631828,12.5799252 5.5054518,12.5740921 L4.28533671,5.25340152 C4.16478972,4.53011956 3.53900455,4 2.80574582,4 L2.5,4 C2.22385763,4 2,3.77614237 2,3.5 C2,3.22385763 2.22385763,3 2.5,3 L2.80574582,3 C3.99756372,3 5.0190253,3.84029234 5.25525588,5 L21.5,5 C21.8321894,5 22.0720214,5.31795246 21.980762,5.63736056 L19.980762,12.6373606 C19.9194332,12.8520113 19.7232402,13 19.5,13 L6.59023021,13 L6.71466329,13.7465985 C6.83521028,14.4698804 7.46099545,15 8.19425418,15 L19.5,15 C19.7761424,15 20,15.2238576 20,15.5 C20,15.7761424 19.7761424,16 19.5,16 L8.19425418,16 C6.97215629,16 5.92918102,15.1164674 5.72826937,13.9109975 L5.5083519,12.5914927 L5.50835165,12.5914912 Z M5.42356354,6 L6.42356354,12 L19.1228493,12 L20.837135,6 L5.42356354,6 Z M8,21 C6.8954305,21 6,20.1045695 6,19 C6,17.8954305 6.8954305,17 8,17 C9.1045695,17 10,17.8954305 10,19 C10,20.1045695 9.1045695,21 8,21 Z M8,20 C8.55228475,20 9,19.5522847 9,19 C9,18.4477153 8.55228475,18 8,18 C7.44771525,18 7,18.4477153 7,19 C7,19.5522847 7.44771525,20 8,20 Z M17,21 C15.8954305,21 15,20.1045695 15,19 C15,17.8954305 15.8954305,17 17,17 C18.1045695,17 19,17.8954305 19,19 C19,20.1045695 18.1045695,21 17,21 Z M17,20 C17.5522847,20 18,19.5522847 18,19 C18,18.4477153 17.5522847,18 17,18 C16.4477153,18 16,18.4477153 16,19 C16,19.5522847 16.4477153,20 17,20 Z" />
+          </svg>
+          <div class="counter">
+            <div>
+              <span>Кол-во:</span>
+              <span>0</span>
+            </div>
+            <div>
+              <span>На сумму:</span>
+              <span>0 руб.</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+  </div>
+  <div class="category-menu-level-1">
+    <div class="container">
+      <nav class="nav">
+        <ul class="category-menu-level-1__list">
+          <li class="category-menu-level-1__item">
+            <a class="category-menu-level-1__link" href="#">
+              Каталог
+            </a>
+            <div class="category-menu-level-2">
+              <nav class="nav">
+                <ul class="category-menu-level-2__list">
+                  <li class="category-menu-level-2__item">
+                    <img src="./images/new-good-icon.png" alt="Новинки">
+                    <a class="category-menu-level-2__link" href="#">Новинки</a>
+                    <ul class="category-menu-level-3">
+                      <li class="category-menu-level-3__item">
+                        <a class="category-menu-level-3__link" href="#">Пункт 1</a>
+                      </li>
+                      <li class="category-menu-level-3__item">
+                        <a class="category-menu-level-3__link" href="#">Пункт 1</a>
+                      </li>
+                      <li class="category-menu-level-3__item">
+                        <a class="category-menu-level-3__link" href="#">Пункт 1</a>
+                      </li>
+                      <li class="category-menu-level-3__item">
+                        <a class="category-menu-level-3__link" href="#">Пункт 1</a>
+                      </li>
+                      <li class="category-menu-level-3__item">
+                        <a class="category-menu-level-3__link" href="#">Пункт 1</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="category-menu-level-2__item">
+                    <img src="./images/supboard-icon.svg" alt="Категория сапборды">
+                    <a class="category-menu-level-2__link" href="#">Доски для сапбординга</a>
+                    <ul class="category-menu-level-3">
+                      <li class="category-menu-level-3__item">
+                        <a class="category-menu-level-3__link" href="#">Пункт 1</a>
+                      </li>
+                      <li class="category-menu-level-3__item">
+                        <a class="category-menu-level-3__link" href="#">Пункт 1</a>
+                      </li>
+                      <li class="category-menu-level-3__item">
+                        <a class="category-menu-level-3__link" href="#">Пункт 1</a>
+                      </li>
+                      <li class="category-menu-level-3__item">
+                        <a class="category-menu-level-3__link" href="#">Пункт 1</a>
+                      </li>
+                      <li class="category-menu-level-3__item">
+                        <a class="category-menu-level-3__link" href="#">Пункт 1</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="category-menu-level-2__item">
+                    <img src="./images/batut-icon.svg" alt="Батуты">
+                    <a class="category-menu-level-2__link" href="#">Батуты</a>
+                  </li>
+                  <li class="category-menu-level-2__item">
+                    <img src="./images/sport-bottle-icons.svg" alt="Спортивные бутылки и шейкеры">
+                    <a class="category-menu-level-2__link" href="#">Спортивные бутылки и шейкеры</a>
+                  </li>
+                  <li class="category-menu-level-2__item">
+                    <img src="./images/fitness-icon.svg" alt="Фитнес">
+                    <a class="category-menu-level-2__link" href="#">Фитнес</a>
+                  </li>
+                  <li class="category-menu-level-2__item">
+                    <img src="./images/table-tennis-icon.svg" alt="Настольный теннис">
+                    <a class="category-menu-level-2__link" href="#">Настольный теннис</a>
+                  </li>
+                  <li class="category-menu-level-2__item">
+                    <img src="./images/football-icon.svg" alt="Футбол">
+                    <a class="category-menu-level-2__link" href="#">Футбол</a>
+                  </li>
+                  <li class="category-menu-level-2__item">
+                    <img src="./images/skating-roller-skate-icon.svg" alt="Роликовые коньки, наборы, защита, шлемы">
+                    <a class="category-menu-level-2__link" href="#">Роликовые коньки, наборы, защита, шлемы</a>
+                  </li>
+                  <li class="category-menu-level-2__item">
+                    <img src="./images/skateboard-icon.svg" alt="Роликовые доски">
+                    <a class="category-menu-level-2__link" href="#">Роликовые доски</a>
+                  </li>
+                  <li class="category-menu-level-2__item">
+                    <img src="./images/scooter-right-icon.svg" alt="Самокаты">
+                    <a class="category-menu-level-2__link" href="#">Самокаты</a>
+                  </li>
+                  <li class="category-menu-level-2__item">
+                    <img src="./images/skiing-sticks-icon.svg" alt="Треккинговые и скандинавские палки">
+                    <a class="category-menu-level-2__link" href="#">Треккинговые и скандинавские палки</a>
+                  </li>
+                  <li class="category-menu-level-2__item">
+                    <img src="./images/pool-icon.svg" alt="Бассейн">
+                    <a class="category-menu-level-2__link" href="#">Бассейн</a>
+                  </li>
+                  <li class="category-menu-level-2__item">
+                    <img src="./images/diving.svg" alt="Дайвинг">
+                    <a class="category-menu-level-2__link" href="#">Дайвинг</a>
+                  </li>
+                  <li class="category-menu-level-2__item">
+                    <img src="./images/beach-bag-icon.svg" alt="Товары для пляжа">
+                    <a class="category-menu-level-2__link" href="#">Товары для пляжа</a>
+                  </li>
+                  <li class="category-menu-level-2__item">
+                    <img src="./images/boxing-icon.svg" alt="Бокс">
+                    <a class="category-menu-level-2__link" href="#">Бокс</a>
+                  </li>
+                  <li class="category-menu-level-2__item">
+                    <img src="./images/karate-icon.svg" alt="Карате">
+                    <a class="category-menu-level-2__link" href="#">Карате</a>
+                  </li>
+                  <li class="category-menu-level-2__item">
+                    <img src="./images/judo-icon.svg" alt="Дзюдо">
+                    <a class="category-menu-level-2__link" href="#">Дзюдо</a>
+                  </li>
+                  <li class="category-menu-level-2__item">
+                    <img src="./images/judo-icon.svg" alt="Самбо">
+                    <a class="category-menu-level-2__link" href="#">Самбо</a>
+                  </li>
+                  <li class="category-menu-level-2__item">
+                    <img src="./images/mma-icon.svg" alt="Рукопашный бой (ММА">
+                    <a class="category-menu-level-2__link" href="#">Рукопашный бой (ММА)</a>
+                  </li>
+                  <li class="category-menu-level-2__item">
+                    <img src="./images/wrestling-icon.svg" alt="Греко-римская и вольная борьба">
+                    <a class="category-menu-level-2__link" href="#">Греко-римская и вольная борьба</a>
+                  </li>
+                  <li class="category-menu-level-2__item">
+                    <img src="./images/weight-lifting-icon.svg" alt="Тяжелая и легкая атлетика">
+                    <a class="category-menu-level-2__link" href="#">Тяжелая и легкая атлетика</a>
+                  </li>
+                  <li class="category-menu-level-2__item">
+                    <img src="./images/running-track-icon.svg" alt="Тренажеры">
+                    <a class="category-menu-level-2__link" href="#">Тренажеры</a>
+                  </li>
+                  <li class="category-menu-level-2__item">
+                    <img src="./images/horizontal-bar.png" alt="Турники, брусья и дск.">
+                    <a class="category-menu-level-2__link" href="#">Турники, брусья и дск.</a>
+                  </li>
+                  <li class="category-menu-level-2__item">
+                    <img src="./images/chess-svgrepo-icon.svg" alt="Игры для дома">
+                    <a class="category-menu-level-2__link" href="#">Игры для дома</a>
+                  </li>
+                  <li class="category-menu-level-2__item">
+                    <img src="./images/tennis-icon.svg" alt="Игры для улицы">
+                    <a class="category-menu-level-2__link" href="#">Игры для улицы</a>
+                  </li>
+                  <li class="category-menu-level-2__item">
+                    <img src="./images/bike-icon.svg" alt="Аксессуары для велоспорта">
+                    <a class="category-menu-level-2__link" href="#">Аксессуары для велоспорта</a>
+                  </li>
+                  <li class="category-menu-level-2__item">
+                    <img src="./images/basketball-icon.svg" alt="Баскетбол">
+                    <a class="category-menu-level-2__link" href="#">Баскетбол</a>
+                  </li>
+                  <li class="category-menu-level-2__item">
+                    <img src="./images/volleyball-icon.svg" alt="Волейбол">
+                    <a class="category-menu-level-2__link" href="#">Волейбол</a>
+                  </li>
+                  <li class="category-menu-level-2__item">
+                    <img src="./images/gymnastics-icon.svg" alt="Гимнастика">
+                    <a class="category-menu-level-2__link" href="#">Гимнастика</a>
+                  </li>
+                  <li class="category-menu-level-2__item">
+                    <img src="./images/boots-icon.png" alt="Обувь спортивная">
+                    <a class="category-menu-level-2__link" href="#">Обувь спортивная</a>
+                  </li>
+                  <li class="category-menu-level-2__item">
+                    <img src="./images/children-icon.png" alt="Товары для детей">
+                    <a class="category-menu-level-2__link" href="#">Товары для детей</a>
+                  </li>
+                  <li class="category-menu-level-2__item">
+                    <img src="./images/sport-bag-icon.svg" alt="Сумки и рюкзаки">
+                    <a class="category-menu-level-2__link" href="#">Сумки и рюкзаки</a>
+                  </li>
+                  <li class="category-menu-level-2__item">
+                    <img src="./images/camping-icon.svg" alt="Кемпинг и туризм">
+                    <a class="category-menu-level-2__link" href="#">Кемпинг и туризм</a>
+                  </li>
+                  <li class="category-menu-level-2__item">
+                    <img src="./images/pump-icon.png" alt="Насосы">
+                    <a class="category-menu-level-2__link" href="#">Насосы</a>
+                  </li>
+                  <li class="category-menu-level-2__item">
+                    <img src="./images/thermos-icon.svg" alt="Насосы">
+                    <a class="category-menu-level-2__link" href="#">Термосы</a>
+                  </li>
+                  <li class="category-menu-level-2__item">
+                    <img src="./images/skate-icon.svg" alt="Коньки и аксессуары">
+                    <a class="category-menu-level-2__link" href="#">Коньки и аксессуары</a>
+                  </li>
+                  <li class="category-menu-level-2__item">
+                    <img src="./images/skis-icon.svg" alt="Лыжный спорт">
+                    <a class="category-menu-level-2__link" href="#">Лыжный спорт</a>
+                  </li>
+                  <li class="category-menu-level-2__item">
+                    <img src="./images/ice-hockey-icon.svg" alt="Хоккей">
+                    <a class="category-menu-level-2__link" href="#">Хоккей</a>
+                  </li>
+                  <li class="category-menu-level-2__item">
+                    <img src="./images/tubing-icon.svg" alt="Снегокаты санки тюбинги">
+                    <a class="category-menu-level-2__link" href="#">Снегокаты санки тюбинги</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </li>
+          <li class="category-menu-level-1__item">
+            <a class="category-menu-level-1__link" href="#">
+              Наш ассортимент
+            </a>
+          </li>
+          <li class="category-menu-level-1__item">
+            <a class="category-menu-level-1__link" href="#">
+              Популярные товары
+            </a>
+          </li>
+          <li class="category-menu-level-1__item">
+            <a class="category-menu-level-1__link" href="./about.html">
+              О нас
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="fixed-menu js-fixed-menu js-header-fixed-menu js-fix-block">
+  <div class="container">
+    <div class="fixed-menu__line-top">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#">О магазине</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Оплата и доставка</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Возврат и обмен</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Блог</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="actions">
+        <svg viewBox="0 0 32 32" width="40" height="40" xmlns="http://www.w3.org/2000/svg" fill="#FEB703">
+          <title />
+          <g id="about">
+            <path d="M16,16A7,7,0,1,0,9,9,7,7,0,0,0,16,16ZM16,4a5,5,0,1,1-5,5A5,5,0,0,1,16,4Z" />
+            <path
+              d="M17,18H15A11,11,0,0,0,4,29a1,1,0,0,0,1,1H27a1,1,0,0,0,1-1A11,11,0,0,0,17,18ZM6.06,28A9,9,0,0,1,15,20h2a9,9,0,0,1,8.94,8Z" />
+          </g>
+        </svg>
+        <div class="actions__item">
+          <a class="actions__link" href="#">Вход</a>
+          <span>/</span>
+          <a class="actions__link" href="#">Регистрация</a>
+        </div>
+      </div>
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a href="#" class="">
+            <img src="./images/vk.svg" alt="Переход в соцсеть whatsapp">
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a href="#" class="">
+            <img src="./images/telegram.svg" alt="Переход в соцсеть telegram">
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a href="#" class="">
+            <img src="./images/ok.png" alt="Переход в соцсеть Одноклассники">
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="fixed-menu__line-bottom">
+      <form class="form" action="">
+        <input class="input-reset form__input" type="text" placeholder="Поиск товара">
+        <button class="btn-reset form__button form__button--red">Искать</button>
+      </form>
+      <div class="informer">
+        <a class="informer__favorite header__favorite informer__item" href="#">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M5 7.8C5 6.11984 5 5.27976 5.32698 4.63803C5.6146 4.07354 6.07354 3.6146 6.63803 3.32698C7.27976 3 8.11984 3 9.8 3H14.2C15.8802 3 16.7202 3 17.362 3.32698C17.9265 3.6146 18.3854 4.07354 18.673 4.63803C19 5.27976 19 6.11984 19 7.8V21L12 17L5 21V7.8Z"
+              stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <div class="counter">
+            <span>0</span>
+          </div>
+        </a>
+        <a class="informer__cart informer__item js-cart-call-fixed-menu" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+            <path
+              d="M5.50835165,12.5914912 C5.5072855,12.5857255 5.50631828,12.5799252 5.5054518,12.5740921 L4.28533671,5.25340152 C4.16478972,4.53011956 3.53900455,4 2.80574582,4 L2.5,4 C2.22385763,4 2,3.77614237 2,3.5 C2,3.22385763 2.22385763,3 2.5,3 L2.80574582,3 C3.99756372,3 5.0190253,3.84029234 5.25525588,5 L21.5,5 C21.8321894,5 22.0720214,5.31795246 21.980762,5.63736056 L19.980762,12.6373606 C19.9194332,12.8520113 19.7232402,13 19.5,13 L6.59023021,13 L6.71466329,13.7465985 C6.83521028,14.4698804 7.46099545,15 8.19425418,15 L19.5,15 C19.7761424,15 20,15.2238576 20,15.5 C20,15.7761424 19.7761424,16 19.5,16 L8.19425418,16 C6.97215629,16 5.92918102,15.1164674 5.72826937,13.9109975 L5.5083519,12.5914927 L5.50835165,12.5914912 Z M5.42356354,6 L6.42356354,12 L19.1228493,12 L20.837135,6 L5.42356354,6 Z M8,21 C6.8954305,21 6,20.1045695 6,19 C6,17.8954305 6.8954305,17 8,17 C9.1045695,17 10,17.8954305 10,19 C10,20.1045695 9.1045695,21 8,21 Z M8,20 C8.55228475,20 9,19.5522847 9,19 C9,18.4477153 8.55228475,18 8,18 C7.44771525,18 7,18.4477153 7,19 C7,19.5522847 7.44771525,20 8,20 Z M17,21 C15.8954305,21 15,20.1045695 15,19 C15,17.8954305 15.8954305,17 17,17 C18.1045695,17 19,17.8954305 19,19 C19,20.1045695 18.1045695,21 17,21 Z M17,20 C17.5522847,20 18,19.5522847 18,19 C18,18.4477153 17.5522847,18 17,18 C16.4477153,18 16,18.4477153 16,19 C16,19.5522847 16.4477153,20 17,20 Z" />
+          </svg>
+          <div class="counter">
+            <div>
+              <span>Кол-во:</span>
+              <span>0</span>
+            </div>
+            <div>
+              <span>На сумму:</span>
+              <span>0 руб.</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+    <main>
+      <div class="container">
+        <ul class="breadcrumbs-list">
+  <li class="breadcrumbs-list__item">
+    <a href="/" class="breadcrumbs-list__link">Главная страница</a>
+  </li>
+  <li class="breadcrumbs-list__item">
+    <a href="#" class="breadcrumbs-list__link">О нас</a>
+  </li>
+</ul>
+      </div>
+      <div class="wrapper">
+  <div class="container wrapper__container">
+    <aside class="sidebar">
+      <nav class="sidebar-nav">
+        <ul class="sidebar-nav__list">
+          <li class="sidebar-nav__item">
+            <a class="sidebar-nav__link" href="#">Интернет-магазин</a>
+          </li>
+          <li class="sidebar-nav__item active">
+            <a class="sidebar-nav__link" href="#">О компании</a>
+          </li>
+          <li class="sidebar-nav__item">
+            <a class="sidebar-nav__link" href="#">Вакансии</a>
+          </li>
+          <li class="sidebar-nav__item">
+            <a class="sidebar-nav__link" href="#">Контакты</a>
+          </li>
+          <li class="sidebar-nav__item">
+            <a class="sidebar-nav__link" href="#">Сотрудничество</a>
+          </li>
+          <li class="sidebar-nav__item">
+            <a class="sidebar-nav__link" href="#">Спортивным магазинам</a>
+          </li>
+          <li class="sidebar-nav__item">
+            <a class="sidebar-nav__link" href="#">Производителям</a>
+          </li>
+          <li class="sidebar-nav__item">
+            <a class="sidebar-nav__link" href="#">Торговым компаниям</a>
+          </li>
+          <li class="sidebar-nav__item">
+            <a class="sidebar-nav__link" href="#">Аренда и хранение</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <div class="content">
+      <h1 class="title-h1">О нас</h1>
+      <p class="content__text">Компания Альфа Каприз имеет более чем 20-летний опыт оптовой торговли спортивными
+        товарами. Нашими покупателями являются более 1000 спортивных магазинов и организаций в России и СНГ, и их число
+        ежегодно увеличивается.</p>
+      <p class="content__text">Главной задачей нашей компании является обеспечение любителей спорта недорогой, но
+        качественной спортивной экипировкой. Все наши товары изготавливаются проверенными фабриками-изготовителями,
+        способными обеспечить высокое качество по обоснованным, разумным ценам.</p>
+      <p class="content__text">В нашем ассортименте более 2000 наименований спортивных товаров пользующихся устойчивым
+        спросом у наших покупателей.</p>
+      <p class="content__text">Вся продукция сертифицирована и имеет оптимальное соотношение цены и качества, в чём
+        достаточно легко убедиться, сравнив наши товары с другими поставщиками.</p>
+      <h2 class="title-h2 content__title">Преимущества работы с нами:</h2>
+      <ul class="content-list">
+        <li class="content-list__item">
+          <p class="content-list__text">Широкий ассортимент предлагаемой продукции (более 2000 наименований) позволяет
+            экономить Ваше время на поиск и выбор нужного Вам товара;</p>
+        </li>
+        <li class="content-list__item">
+          <p class="content-list__text">Низкие оптовые цены и системы скидок. Всю нашу продукцию мы напрямую получаем от
+            производителей из Китая, Пакистана, России.</p>
+        </li>
+        <li class="content-list__item">
+          <p class="content-list__text">Быстрое оформление, формирование и непосредственно получение заказа. Обработка
+            вашего заказа и выставление счета за один день. Доставка до транспортной компании или в адрес магазина в
+            Москве и Московской области за 2-3 дня.</p>
+        </li>
+        <li class="content-list__item">
+          <p class="content-list__text">Наши покупатели бесплатно получают каталоги, плакаты, буклеты , баннеры ,
+            упаковочные пакеты и другую рекламную продукцию.</p>
+        </li>
+      </ul>
+      <p class="content__text content__text--contact">Звоните нашим менеджерам по тел.: <a href="tel:+7(495)7076266">+7
+          495 707 62 66</a>, <a href="tel:+7(499)4802296">+7 499 480 22 96</a>, <a href="tel:+7(499)4802296">+7 499 480
+          22 96</a> и
+        мы с удовольствием ответим на все Ваши вопросы и поможем Вам наладить с нами самое активное сотрудничество</p>
+    </div>
+  </div>
+</div>
+      <!--корзина начало-->
+      <section class="overlay cart js-cart js-fix-block">
+  <div class="overlay__wrapper js-overlay-wrapper">
+    <div class="overlay__inner">
+      <h2 class="title-h2 cart__title">Корзина</h2>
+      <ul class="cart__list">
+        <li class="cart__item">
+          <div class="cart__imgbox">
+            <a href="#">
+              <img src="./images/popular-goods-img-1.jpg" alt="Сапборд aquatic">
+            </a>
+          </div>
+          <div class="cart__content">
+            <a href="#" class="cart__name-link">
+              Сапборд Aquatic
+            </a>
+          </div>
+          <div class="amount amount__cart">
+            <span class="amount__title">Количество</span>
+            <div class="amount__counter">
+              <button class="btn-reset amount__button" title="Убавить количество товара">-</button>
+              <input class="input-reset amount__input" type="text" value="1 шт."
+                title="Ввести необходимое количество товара">
+              <button class="btn-reset amount__button" title="Добавить количество товара">+</button>
+            </div>
+          </div>
+          <div class="cart__price">
+            <div class="cart__price-content">16000 ₽ / шт.</div>
+          </div>
+          <button class="btn-reset close-button close-button--goods-item" title="Удалить товар из корзины">
+            <svg viewBox="0 -0.5 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink">
+              <g id="Page-1" stroke="none" stroke-width="1">
+                <g id="Dribbble-Light-Preview" transform="translate(-419.000000, -240.000000)">
+                  <g id="icons" transform="translate(56.000000, 160.000000)">
+                    <polygon id="close-[#1511]"
+                      points="375.0183 90 384 98.554 382.48065 100 373.5 91.446 364.5183 100 363 98.554 371.98065 90 363 81.446 364.5183 80 373.5 88.554 382.48065 80 384 81.446">
+                    </polygon>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </button>
+        </li>
+        <li class="cart__item">
+          <div class="cart__imgbox">
+            <a href="#">
+              <img src="./images/popular-goods-img-2.jpg"
+                alt="Батут для занятия фитнесом HC-MT026A 48 (122см) с ручкой 4-хскладной">
+            </a>
+          </div>
+          <div class="cart__content">
+            <a href="#" class="cart__name-link">
+              Батут для занятия фитнесом HC-MT026A 48" (122см) с ручкой 4-х складной
+            </a>
+          </div>
+          <div class="amount amount__cart">
+            <span class="amount__title">Количество</span>
+            <div class="amount__counter">
+              <button class="btn-reset amount__button" title="Убавить количество товара">-</button>
+              <input class="input-reset amount__input" type="text" value="1 шт."
+                title="Ввести необходимое количество товара">
+              <button class="btn-reset amount__button" title="Добавить количество товара">+</button>
+            </div>
+          </div>
+          <div class="cart__price">
+            <div class="cart__price-content">50006000 ₽ / шт.</div>
+          </div>
+          <button class="btn-reset close-button close-button--goods-item" title="Удалить товар из корзины">
+            <svg viewBox="0 -0.5 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink">
+              <g id="Page-1" stroke="none" stroke-width="1">
+                <g id="Dribbble-Light-Preview" transform="translate(-419.000000, -240.000000)">
+                  <g id="icons" transform="translate(56.000000, 160.000000)">
+                    <polygon id="close-[#1511]"
+                      points="375.0183 90 384 98.554 382.48065 100 373.5 91.446 364.5183 100 363 98.554 371.98065 90 363 81.446 364.5183 80 373.5 88.554 382.48065 80 384 81.446">
+                    </polygon>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </button>
+        </li>
+      </ul>
+      <div class="cart__bottom">
+        <div class="cart__detail-info">В корзине 6 товаров на сумму 65 940 ₽</div>
+        <div class="cart__links">
+          <a href="#" class="cart__link cart__link--continue">Продолжить покупки</a>
+          <a href="#" class="cart__link cart__link--check">Оформить заказ</a>
+        </div>
+      </div>
+      <button class="btn-reset close-button js-close-button close-button--position-absolute" title="Закрыть корзину">
+        <svg viewBox="0 -0.5 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g id="Page-1" stroke="none" stroke-width="1">
+            <g id="Dribbble-Light-Preview" transform="translate(-419.000000, -240.000000)">
+              <g id="icons" transform="translate(56.000000, 160.000000)">
+                <polygon id="close-[#1511]"
+                  points="375.0183 90 384 98.554 382.48065 100 373.5 91.446 364.5183 100 363 98.554 371.98065 90 363 81.446 364.5183 80 373.5 88.554 382.48065 80 384 81.446">
+                </polygon>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+      <!--корзина конец-->
+      <!--форма обратной связи начало-->
+      <section class="overlay js-fix-block js-form-feedback">
+  <div class="overlay__wrapper js-overlay-wrapper">
+    <div class="overlay__inner">
+      <form class="form form--column" action="">
+        <h2 class="title-h2 form__title">Заказать обратный звонок</h2>
+        <label class="form__label">
+          <span>Ваше имя*</span>
+          <input class="input-reset form__input" type="text">
+        </label>
+        <label class="form__label">
+          <span>Телефон*</span>
+          <input class="input-reset form__input" type="tel">
+        </label>
+        <button class="reset-btn form__button form__button--red">Отправить</button>
+      </form>
+      <button class="btn-reset close-button js-close-button-form-feedback close-button--position-absolute"
+        title="Закрыть корзину">
+        <svg viewBox="0 -0.5 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g id="Page-1" stroke="none" stroke-width="1">
+            <g id="Dribbble-Light-Preview" transform="translate(-419.000000, -240.000000)">
+              <g id="icons" transform="translate(56.000000, 160.000000)">
+                <polygon id="close-[#1511]"
+                  points="375.0183 90 384 98.554 382.48065 100 373.5 91.446 364.5183 100 363 98.554 371.98065 90 363 81.446 364.5183 80 373.5 88.554 382.48065 80 384 81.446">
+                </polygon>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+      <!--форма обратной связи конец-->
+    </main>
+    <footer class="footer">
+  <div class="container footer__container">
+    <div class="footer__coll">
+      <a class="footer__phone" href="tel:+74957076266">+7 (495) 707 62 66</a>
+      <a class="footer__phone" href="tel:+74994810601">+7 (499) 481 06 01</a>
+      <a class="footer__phone" href="tel:+74994802296">+7 (499) 480 22 96</a>
+      <button class="btn-reset footer__button-call">Заказать звонок</button>
+      <a href="mailto:info@alcap.ru" class="footer__email">info@alcap.ru</a>
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a href="#" class="">
+            <img src="./images/vk.svg" alt="Переход в соцсеть whatsapp">
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a href="#" class="">
+            <img src="./images/telegram.svg" alt="Переход в соцсеть telegram">
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a href="#" class="">
+            <img src="./images/ok.png" alt="Переход в соцсеть Одноклассники">
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__adress">
+      <h4 class="footer__title-min footer__title-min--adress">Наш адресс</h4>
+      <p class="footer__adress">127540, г. Москва,
+        ул. Дубнинская,
+        д. 10, корп. 1</p>
+    </div>
+    <div class="footer__time">
+      <h4 class="footer__title-min footer__title-min--clock">Часы работы</h4>
+      <p class="footer__adress">Пн - Пт с 9.00 -18.00</p>
+      <button class="btn-reset footer__btn">Сотрудничество</button>
+    </div>
+    <div class="footer__info">
+      <p class="footer__description">
+        Вы можете оформить заказ по телефону или получить ответы на любые интересующие вас вопросы.
+      </p>
+    </div>
+  </div>
+  <div class="privacy-policy">
+    <div class="container">
+      <div class="privacy-policy__wrapper">
+        <div class="privacy-policy__col">© Все права защищены</div>
+        <div class="privacy-policy__col">Плитика конфиденциальности</div>
+      </div>
+    </div>
+  </div>
+</footer>
+  </div>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

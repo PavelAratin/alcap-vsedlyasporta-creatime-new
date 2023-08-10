@@ -74,6 +74,9 @@
     font-size: 14px;
     border-radius: 5px;
     width: 100%;
+    &:focus {
+      box-shadow: 0px 0px 1px 2px #000000;
+    }
   }
   &__button {
     padding: 16px 43px;
@@ -88,6 +91,11 @@
     }
     &--blue {
       background: #4174cb;
+    }
+    &:focus {
+      background-color: #ffffff;
+      color: #e00c32;
+      box-shadow: 0px 0px 1px 2px #e00c32;
     }
   }
   &__label {
@@ -257,7 +265,8 @@
   }
   &__btn {
     transition: color 0.2s linear;
-    &:hover {
+    &:hover,
+    &:focus {
       color: #e00c32;
     }
   }
