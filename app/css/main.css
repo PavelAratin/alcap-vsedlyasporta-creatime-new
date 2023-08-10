@@ -734,11 +734,13 @@ main {
 
 .assortment-list {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-gap: 20px;
 }
+.assortment-list--incatalog {
+  grid-gap: 40px;
+}
 .assortment-list__item {
-  grid-column: 3 span;
   border-radius: 8px;
   overflow: hidden;
 }
@@ -839,6 +841,7 @@ main {
 }
 .card {
   height: 100%;
+  position: relative;
 }
 .card__link {
   height: 100%;
