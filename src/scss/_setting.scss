@@ -97,6 +97,16 @@ main {
 .js-stop-scroll {
   overflow: hidden;
 }
+.js-fixed-sidebar {
+  position: fixed;
+  width: 260px;
+}
+.js-absolute {
+  position: absolute;
+  top: auto !important;
+  bottom: 0;
+  width: 260px;
+}
 
 .overlay {
   position: fixed;

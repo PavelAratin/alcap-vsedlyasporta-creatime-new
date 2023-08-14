@@ -1,5 +1,4 @@
 /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./src/js/fixedMenu.js":
@@ -8,21 +7,66 @@
   \*****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "fixedMenu": () => (/* binding */ fixedMenu)
 /* harmony export */ });
 function fixedMenu() {
-  var headerEl = document.querySelector('.js-header-fixed-menu');
+  var headerFixedMenuEl = document.querySelector('.js-header-fixed-menu');
+  var headerEl = document.querySelector('.js-header');
+  var sidebarEl = document.querySelector('.js-sidebar');
   var fixedMenuEl = document.querySelector('.js-fixed-menu');
+  var assortmentEl = document.querySelector('.js-assortment');
   window.addEventListener('scroll', function () {
-    if (this.scrollY >= headerEl.offsetHeight) {
+    var scrollDistance = window.scrollY;
+
+    if (scrollDistance >= headerEl.offsetHeight) {
       fixedMenuEl.classList.add('js-fixed-menu-show');
     } else {
       fixedMenuEl.classList.remove('js-fixed-menu-show');
     }
+
+    if (fixedMenuEl.classList.contains('js-fixed-menu-show')) {
+      sidebarEl.classList.add('js-fixed-sidebar');
+      sidebarEl.style.top = "".concat(headerFixedMenuEl.offsetHeight + 20, "px");
+
+      if (scrollDistance + sidebarEl.offsetHeight + 66 >= assortmentEl.offsetHeight + headerEl.offsetHeight) {
+        sidebarEl.classList.add('js-absolute');
+        sidebarEl.classList.remove('js-fixed-sidebar');
+        sidebarEl.style.top = '';
+      } else {
+        sidebarEl.classList.add('js-fixed-sidebar');
+        sidebarEl.classList.remove('js-absolute');
+      }
+    } else {
+      sidebarEl.classList.remove('js-fixed-sidebar');
+      sidebarEl.style.top = '';
+    }
   });
 }
+
+/***/ }),
+
+/***/ "./src/js/fixedSidebar.js":
+/*!********************************!*\
+  !*** ./src/js/fixedSidebar.js ***!
+  \********************************/
+/***/ (() => {
+
+// export function fixedSidebar() {
+//   const fixedSidebarEl = document.querySelector('.js-fixed-sidebar');
+//   if (fixedSidebarEl !== null) {
+//     console.log('fixedSidebarEl есть на странице')
+//     const fixedScrollBlock = () => {
+//       let scrollDistance = window.scrollY;
+//       console.log(scrollDistance);
+//     }
+//     window.addEventListener('scroll', fixedScrollBlock)
+//   } else {
+//     return
+//   }
+// }
 
 /***/ }),
 
@@ -32,6 +76,7 @@ function fixedMenu() {
   \**************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -92,6 +137,7 @@ var modals = function modals() {
   \********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "swiperCustom": () => (/* binding */ swiperCustom)
@@ -99,38 +145,39 @@ __webpack_require__.r(__webpack_exports__);
 function swiperCustom() {
   var heroSwiperEL = document.querySelector('.js-hero-swiper');
   var swiperTabELems = document.querySelectorAll('.js-swiper-tab');
-  var swiperHero = new Swiper(heroSwiperEL, {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination'
-    },
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev'
-    }
-  });
-  swiperTabELems.forEach(function (swiperTabEL) {
-    new Swiper(swiperTabEL, {
+
+  if (heroSwiperEL) {
+    var swiperHero = new Swiper(heroSwiperEL, {
       // Optional parameters
       direction: 'horizontal',
-      loop: false,
-      slidesPerView: 4,
-      spaceBetween: 20,
+      loop: true,
       // If we need pagination
-      // pagination: {
-      //   el: '.swiper-pagination',
-      // },
+      pagination: {
+        el: '.swiper-pagination'
+      },
       // Navigation arrows
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev'
       }
     });
-  });
+  }
+
+  if (swiperTabELems) {
+    swiperTabELems.forEach(function (swiperTabEL) {
+      new Swiper(swiperTabEL, {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: false,
+        slidesPerView: 4,
+        spaceBetween: 20,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        }
+      });
+    });
+  }
 }
 
 /***/ }),
@@ -141,6 +188,7 @@ function swiperCustom() {
   \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -199,6 +247,18 @@ var tabs = function tabs() {
 /******/ 	}
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
@@ -229,16 +289,20 @@ var tabs = function tabs() {
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
+// This entry need to be wrapped in an IIFE because it need to be in strict mode.
 (() => {
+"use strict";
 /*!************************!*\
   !*** ./src/js/main.js ***!
   \************************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _swiperCustom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./swiperCustom */ "./src/js/swiperCustom.js");
 /* harmony import */ var _fixedMenu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./fixedMenu */ "./src/js/fixedMenu.js");
-/* harmony import */ var _modals__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modals */ "./src/js/modals.js");
-/* harmony import */ var _tabs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./tabs */ "./src/js/tabs.js");
+/* harmony import */ var _fixedSidebar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./fixedSidebar */ "./src/js/fixedSidebar.js");
+/* harmony import */ var _fixedSidebar__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_fixedSidebar__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _modals__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modals */ "./src/js/modals.js");
+/* harmony import */ var _tabs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./tabs */ "./src/js/tabs.js");
+
 
 
 
@@ -246,8 +310,8 @@ __webpack_require__.r(__webpack_exports__);
 window.addEventListener('DOMContentLoaded', function () {
   (0,_swiperCustom__WEBPACK_IMPORTED_MODULE_0__.swiperCustom)();
   (0,_fixedMenu__WEBPACK_IMPORTED_MODULE_1__.fixedMenu)();
-  (0,_modals__WEBPACK_IMPORTED_MODULE_2__["default"])();
-  (0,_tabs__WEBPACK_IMPORTED_MODULE_3__["default"])();
+  (0,_modals__WEBPACK_IMPORTED_MODULE_3__["default"])();
+  (0,_tabs__WEBPACK_IMPORTED_MODULE_4__["default"])(); // fixedSidebar()
 });
 })();
 

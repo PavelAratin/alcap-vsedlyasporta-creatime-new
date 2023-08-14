@@ -135,6 +135,18 @@ main {
   overflow: hidden;
 }
 
+.js-fixed-sidebar {
+  position: fixed;
+  width: 260px;
+}
+
+.js-absolute {
+  position: absolute;
+  top: auto !important;
+  bottom: 0;
+  width: 260px;
+}
+
 .overlay {
   position: fixed;
   top: 0;
@@ -731,6 +743,11 @@ main {
 .assortment {
   margin-bottom: 100px;
 }
+.assortment--fix-left-menu {
+  flex: 0 0 calc(100% - 260px - 20px);
+  margin-left: auto;
+  margin-bottom: 0;
+}
 
 .assortment-list {
   display: grid;
@@ -1039,11 +1056,15 @@ main {
 }
 .wrapper__container {
   display: flex;
+  position: relative;
 }
 
 .sidebar {
   flex: 0 0 260px;
   margin-right: 20px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .sidebar-nav__item {

@@ -12,10 +12,24 @@
   <div class="site-container">
     @include('HTMLPartials/header.html')
     <main>
-      <div class="container">
-        @include('HTMLPartials/breadcrumbs.html')
+      <div class="breadcrumbs">
+        <div class="container">
+          <ul class="breadcrumbs-list">
+            <li class="breadcrumbs-list__item">
+              <a href="/" class="breadcrumbs-list__link">Главная страница</a>
+            </li>
+            <li class="breadcrumbs-list__item">
+              <a href="#" class="breadcrumbs-list__link">О нас</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      @include('HTMLPartials/wrapper.html')
+      <div class="wrapper">
+        <div class="container wrapper__container">
+          @include('HTMLPartials/sidebar.html')
+          @include('HTMLPartials/contentInnerTextPage.html')
+        </div>
+      </div>
       <!--корзина начало-->
       @include('HTMLPartials/cart.html')
       <!--корзина конец-->

@@ -1,5 +1,10 @@
 .assortment {
   margin-bottom: 100px;
+  &--fix-left-menu {
+    flex: 0 0 calc(100% - 260px - 20px);
+    margin-left: auto;
+    margin-bottom: 0;
+  }
 }
 .assortment-list {
   display: grid;
