@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="./css/main.css">
   <title>Новинки</title>
 </head>
@@ -18,7 +19,7 @@
   <span class="burger-button__line burger-button__line--two"></span>
   <span class="burger-button__line burger-button__line--three"></span>
 </button>
-      <nav class="nav header__nav">
+      <nav class="b-nav header__nav">
         <ul class="nav__list">
           <li class="nav__item">
             <a class="nav__link" href="./about.html">О магазине</a>
@@ -119,7 +120,7 @@
   </div>
   <div class="category-menu-level-1">
     <div class="container">
-      <nav class="nav">
+      <nav class="b-nav">
         <ul class="category-menu-level-1__list">
           <li class="category-menu-level-1__item">
             <a class="category-menu-level-1__link" href="#">
@@ -487,11 +488,21 @@
           <section class="assortment assortment--fix-left-menu js-assortment">
             <div class="container">
               <h2 class="title-h2 title-h2--center">Новинки</h2>
+              <div class="dropdown dropdown--assortment">
+                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Сортировка: по рейтингу
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">по возрастанию цены</a></li>
+                  <li><a class="dropdown-item" href="#">по уменьшению цены</a></li>
+                  <li><a class="dropdown-item" href="#">по имени</a></li>
+                </ul>
+              </div>
               <ul class="assortment-list assortment-list--incatalog">
                 <li class="assortment-list__item">
-                  <div class="card">
-                    <a class="card__link" href="#">
-                      <div class="card__imgbox">
+                  <div class="b-card">
+                    <a class="b-card__link" href="#">
+                      <div class="b-card__imgbox">
                         <img src="./images/popular-goods-img-1.jpg" alt="xcxc">
                       </div>
                       <ul class="stars-list">
@@ -583,11 +594,11 @@
                           </svg>
                         </li>
                       </ul>
-                      <h3 class="title-h3 card__title">Сапорд AQUATIC</h3>
+                      <h3 class="title-h3 b-card__title">Сапорд AQUATIC</h3>
                       <p>Сапборд: 14 "x 29"x 6" (426 см x 74 см x 15 см)
                         Двухслойный дропстич</p>
-                      <div class="card__wrapper">
-                        <div class="card-price">16000 &#x20bd;</div>
+                      <div class="b-card__wrapper">
+                        <div class="b-card-price">16000 &#x20bd;</div>
                         <ul class="actions-list">
                           <li class="actions-list__item">
                             <div class="actions-list__svg-wrapper">
@@ -602,7 +613,7 @@
                         </ul>
                       </div>
                     </a>
-                    <ul class="actions-list card__actions-list">
+                    <ul class="actions-list b-card__actions-list">
                       <li class="actions-list__item">
                         <div class="actions-list__svg-wrapper">
                           <svg width="40" height="40" viewBox="0 0 33 32" fill="none"
@@ -617,9 +628,9 @@
                   </div>
                 </li>
                 <li class="assortment-list__item">
-                  <div class="card">
-                    <a class="card__link" href="#">
-                      <div class="card__imgbox">
+                  <div class="b-card">
+                    <a class="b-card__link" href="#">
+                      <div class="b-card__imgbox">
                         <img src="./images/popular-goods-img-2.jpg" alt="xcxc">
                       </div>
                       <ul class="stars-list">
@@ -711,14 +722,14 @@
                           </svg>
                         </li>
                       </ul>
-                      <h3 class="title-h3 card__title">Батут для занятия фитнесом HC-MT026A 48" (122см) с ручкой 4-х
+                      <h3 class="title-h3 b-card__title">Батут для занятия фитнесом HC-MT026A 48" (122см) с ручкой 4-х
                         складной</h3>
                       <p>Диаметр: 140см
                         Диаметр мата: 116 см.
                         Высота без сетки: 35см
                         Общая высота: 161см</p>
-                      <div class="card__wrapper">
-                        <div class="card-price">16000 &#x20bd;</div>
+                      <div class="b-card__wrapper">
+                        <div class="b-card-price">16000 &#x20bd;</div>
                         <ul class="actions-list">
                           <li class="actions-list__item">
                             <div class="actions-list__svg-wrapper">
@@ -733,7 +744,7 @@
                         </ul>
                       </div>
                     </a>
-                    <ul class="actions-list card__actions-list">
+                    <ul class="actions-list b-card__actions-list">
                       <li class="actions-list__item">
                         <div class="actions-list__svg-wrapper">
                           <svg width="40" height="40" viewBox="0 0 33 32" fill="none"
@@ -748,9 +759,9 @@
                   </div>
                 </li>
                 <li class="assortment-list__item">
-                  <div class="card">
-                    <a class="card__link" href="#">
-                      <div class="card__imgbox">
+                  <div class="b-card">
+                    <a class="b-card__link" href="#">
+                      <div class="b-card__imgbox">
                         <img src="./images/popular-goods-img-3.jpg" alt="xcxc">
                       </div>
                       <ul class="stars-list">
@@ -842,11 +853,11 @@
                           </svg>
                         </li>
                       </ul>
-                      <h3 class="title-h3 card__title">Термокружка вакуумная BF-TC-60-500</h3>
+                      <h3 class="title-h3 b-card__title">Термокружка вакуумная BF-TC-60-500</h3>
                       <p>Термокружки этой серии имеют двойные стенки из нержавеющей стали и отличаются герметичностью, в
                         связи с чем долго сохраняется температура напитка.</p>
-                      <div class="card__wrapper">
-                        <div class="card-price">16000 &#x20bd;</div>
+                      <div class="b-card__wrapper">
+                        <div class="b-card-price">16000 &#x20bd;</div>
                         <ul class="actions-list">
                           <li class="actions-list__item">
                             <div class="actions-list__svg-wrapper">
@@ -861,7 +872,7 @@
                         </ul>
                       </div>
                     </a>
-                    <ul class="actions-list card__actions-list">
+                    <ul class="actions-list b-card__actions-list">
                       <li class="actions-list__item">
                         <div class="actions-list__svg-wrapper">
                           <svg width="40" height="40" viewBox="0 0 33 32" fill="none"
@@ -876,9 +887,9 @@
                   </div>
                 </li>
                 <li class="assortment-list__item">
-                  <div class="card">
-                    <a class="card__link" href="#">
-                      <div class="card__imgbox">
+                  <div class="b-card">
+                    <a class="b-card__link" href="#">
+                      <div class="b-card__imgbox">
                         <img src="./images/popular-goods-img-4.jpg" alt="xcxc">
                       </div>
                       <ul class="stars-list">
@@ -970,13 +981,13 @@
                           </svg>
                         </li>
                       </ul>
-                      <h3 class="title-h3 card__title">Самокат трюковый JUMP 100мм blue</h3>
+                      <h3 class="title-h3 b-card__title">Самокат трюковый JUMP 100мм blue</h3>
                       <p>Рулевая система: резьбовая
                         Колесо: пластик/PU (88A) 100*24 мм
                         Подшипник: ABEC - 7 RS
                         Платформа усиленная 48,3*10,2 см</p>
-                      <div class="card__wrapper">
-                        <div class="card-price">16000 &#x20bd;</div>
+                      <div class="b-card__wrapper">
+                        <div class="b-card-price">16000 &#x20bd;</div>
                         <ul class="actions-list">
                           <li class="actions-list__item">
                             <div class="actions-list__svg-wrapper">
@@ -991,7 +1002,7 @@
                         </ul>
                       </div>
                     </a>
-                    <ul class="actions-list card__actions-list">
+                    <ul class="actions-list b-card__actions-list">
                       <li class="actions-list__item">
                         <div class="actions-list__svg-wrapper">
                           <svg width="40" height="40" viewBox="0 0 33 32" fill="none"
@@ -1006,9 +1017,9 @@
                   </div>
                 </li>
                 <li class="assortment-list__item">
-                  <div class="card">
-                    <a class="card__link" href="#">
-                      <div class="card__imgbox">
+                  <div class="b-card">
+                    <a class="b-card__link" href="#">
+                      <div class="b-card__imgbox">
                         <img src="./images/popular-goods-img-4.jpg" alt="xcxc">
                       </div>
 
@@ -1101,9 +1112,9 @@
                           </svg>
                         </li>
                       </ul>
-                      <h3 class="title-h3 card__title">Самокат трюковый JUMP 100мм blue</h3>
-                      <div class="card__wrapper">
-                        <div class="card-price">16000 &#x20bd;</div>
+                      <h3 class="title-h3 b-card__title">Самокат трюковый JUMP 100мм blue</h3>
+                      <div class="b-card__wrapper">
+                        <div class="b-card-price">16000 &#x20bd;</div>
                         <ul class="actions-list">
                           <li class="actions-list__item">
                             <div class="actions-list__svg-wrapper">
@@ -1118,7 +1129,7 @@
                         </ul>
                       </div>
                     </a>
-                    <ul class="actions-list card__actions-list">
+                    <ul class="actions-list b-card__actions-list">
                       <li class="actions-list__item">
                         <div class="actions-list__svg-wrapper">
                           <svg width="40" height="40" viewBox="0 0 33 32" fill="none"
@@ -1133,9 +1144,9 @@
                   </div>
                 </li>
                 <li class="assortment-list__item">
-                  <div class="card">
-                    <a class="card__link" href="#">
-                      <div class="card__imgbox">
+                  <div class="b-card">
+                    <a class="b-card__link" href="#">
+                      <div class="b-card__imgbox">
                         <img src="./images/novelty-img4.jpg" alt="самбовки">
                       </div>
 
@@ -1228,7 +1239,7 @@
                           </svg>
                         </li>
                       </ul>
-                      <h3 class="title-h3 card__title">Самбовки БНЗ-05КС красный/синий</h3>
+                      <h3 class="title-h3 b-card__title">Самбовки БНЗ-05КС красный/синий</h3>
                       <p>Размеры</p>
                       <ul class="sizes-list">
                         <li class="sizes-list__item">33</li>
@@ -1238,8 +1249,8 @@
                         <li class="sizes-list__item">37</li>
                         <li class="sizes-list__item">38</li>
                       </ul>
-                      <div class="card__wrapper">
-                        <div class="card-price">16000 &#x20bd;</div>
+                      <div class="b-card__wrapper">
+                        <div class="b-card-price">16000 &#x20bd;</div>
                         <ul class="actions-list">
                           <li class="actions-list__item">
                             <div class="actions-list__svg-wrapper">
@@ -1254,7 +1265,7 @@
                         </ul>
                       </div>
                     </a>
-                    <ul class="actions-list card__actions-list">
+                    <ul class="actions-list b-card__actions-list">
                       <li class="actions-list__item">
                         <div class="actions-list__svg-wrapper">
                           <svg width="40" height="40" viewBox="0 0 33 32" fill="none"
@@ -1269,9 +1280,9 @@
                   </div>
                 </li>
                 <li class="assortment-list__item">
-                  <div class="card">
-                    <a class="card__link" href="#">
-                      <div class="card__imgbox">
+                  <div class="b-card">
+                    <a class="b-card__link" href="#">
+                      <div class="b-card__imgbox">
                         <img src="./images/novelty-img4.jpg" alt="самбовки">
                       </div>
 
@@ -1364,7 +1375,7 @@
                           </svg>
                         </li>
                       </ul>
-                      <h3 class="title-h3 card__title">Самбовки БНЗ-05КС красный/синий</h3>
+                      <h3 class="title-h3 b-card__title">Самбовки БНЗ-05КС красный/синий</h3>
                       <p>Размеры</p>
                       <ul class="sizes-list">
                         <li class="sizes-list__item">33</li>
@@ -1374,8 +1385,8 @@
                         <li class="sizes-list__item">37</li>
                         <li class="sizes-list__item">38</li>
                       </ul>
-                      <div class="card__wrapper">
-                        <div class="card-price">16000 &#x20bd;</div>
+                      <div class="b-card__wrapper">
+                        <div class="b-card-price">16000 &#x20bd;</div>
                         <ul class="actions-list">
                           <li class="actions-list__item">
                             <div class="actions-list__svg-wrapper">
@@ -1390,7 +1401,7 @@
                         </ul>
                       </div>
                     </a>
-                    <ul class="actions-list card__actions-list">
+                    <ul class="actions-list b-card__actions-list">
                       <li class="actions-list__item">
                         <div class="actions-list__svg-wrapper">
                           <svg width="40" height="40" viewBox="0 0 33 32" fill="none"
@@ -1405,9 +1416,9 @@
                   </div>
                 </li>
                 <li class="assortment-list__item">
-                  <div class="card">
-                    <a class="card__link" href="#">
-                      <div class="card__imgbox">
+                  <div class="b-card">
+                    <a class="b-card__link" href="#">
+                      <div class="b-card__imgbox">
                         <img src="./images/novelty-img4.jpg" alt="самбовки">
                       </div>
 
@@ -1500,7 +1511,7 @@
                           </svg>
                         </li>
                       </ul>
-                      <h3 class="title-h3 card__title">Самбовки БНЗ-05КС красный/синий</h3>
+                      <h3 class="title-h3 b-card__title">Самбовки БНЗ-05КС красный/синий</h3>
                       <p>Размеры</p>
                       <ul class="sizes-list">
                         <li class="sizes-list__item">33</li>
@@ -1510,8 +1521,8 @@
                         <li class="sizes-list__item">37</li>
                         <li class="sizes-list__item">38</li>
                       </ul>
-                      <div class="card__wrapper">
-                        <div class="card-price">16000 &#x20bd;</div>
+                      <div class="b-card__wrapper">
+                        <div class="b-card-price">16000 &#x20bd;</div>
                         <ul class="actions-list">
                           <li class="actions-list__item">
                             <div class="actions-list__svg-wrapper">
@@ -1526,7 +1537,7 @@
                         </ul>
                       </div>
                     </a>
-                    <ul class="actions-list card__actions-list">
+                    <ul class="actions-list b-card__actions-list">
                       <li class="actions-list__item">
                         <div class="actions-list__svg-wrapper">
                           <svg width="40" height="40" viewBox="0 0 33 32" fill="none"
@@ -1541,9 +1552,9 @@
                   </div>
                 </li>
                 <li class="assortment-list__item">
-                  <div class="card">
-                    <a class="card__link" href="#">
-                      <div class="card__imgbox">
+                  <div class="b-card">
+                    <a class="b-card__link" href="#">
+                      <div class="b-card__imgbox">
                         <img src="./images/novelty-img4.jpg" alt="самбовки">
                       </div>
 
@@ -1636,7 +1647,7 @@
                           </svg>
                         </li>
                       </ul>
-                      <h3 class="title-h3 card__title">Самбовки БНЗ-05КС красный/синий</h3>
+                      <h3 class="title-h3 b-card__title">Самбовки БНЗ-05КС красный/синий</h3>
                       <p>Размеры</p>
                       <ul class="sizes-list">
                         <li class="sizes-list__item">33</li>
@@ -1646,8 +1657,8 @@
                         <li class="sizes-list__item">37</li>
                         <li class="sizes-list__item">38</li>
                       </ul>
-                      <div class="card__wrapper">
-                        <div class="card-price">16000 &#x20bd;</div>
+                      <div class="b-card__wrapper">
+                        <div class="b-card-price">16000 &#x20bd;</div>
                         <ul class="actions-list">
                           <li class="actions-list__item">
                             <div class="actions-list__svg-wrapper">
@@ -1662,7 +1673,7 @@
                         </ul>
                       </div>
                     </a>
-                    <ul class="actions-list card__actions-list">
+                    <ul class="actions-list b-card__actions-list">
                       <li class="actions-list__item">
                         <div class="actions-list__svg-wrapper">
                           <svg width="40" height="40" viewBox="0 0 33 32" fill="none"
@@ -1677,9 +1688,9 @@
                   </div>
                 </li>
                 <li class="assortment-list__item">
-                  <div class="card">
-                    <a class="card__link" href="#">
-                      <div class="card__imgbox">
+                  <div class="b-card">
+                    <a class="b-card__link" href="#">
+                      <div class="b-card__imgbox">
                         <img src="./images/novelty-img4.jpg" alt="самбовки">
                       </div>
 
@@ -1772,7 +1783,7 @@
                           </svg>
                         </li>
                       </ul>
-                      <h3 class="title-h3 card__title">Самбовки БНЗ-05КС красный/синий</h3>
+                      <h3 class="title-h3 b-card__title">Самбовки БНЗ-05КС красный/синий</h3>
                       <p>Размеры</p>
                       <ul class="sizes-list">
                         <li class="sizes-list__item">33</li>
@@ -1782,8 +1793,8 @@
                         <li class="sizes-list__item">37</li>
                         <li class="sizes-list__item">38</li>
                       </ul>
-                      <div class="card__wrapper">
-                        <div class="card-price">16000 &#x20bd;</div>
+                      <div class="b-card__wrapper">
+                        <div class="b-card-price">16000 &#x20bd;</div>
                         <ul class="actions-list">
                           <li class="actions-list__item">
                             <div class="actions-list__svg-wrapper">
@@ -1798,7 +1809,7 @@
                         </ul>
                       </div>
                     </a>
-                    <ul class="actions-list card__actions-list">
+                    <ul class="actions-list b-card__actions-list">
                       <li class="actions-list__item">
                         <div class="actions-list__svg-wrapper">
                           <svg width="40" height="40" viewBox="0 0 33 32" fill="none"
@@ -2014,163 +2025,9 @@
     </div>
   </div>
 </footer>
-    <footer class="footer">
-  <div class="container footer__container">
-    <div class="footer__coll">
-      <a class="footer__phone" href="tel:+74957076266">+7 (495) 707 62 66</a>
-      <a class="footer__phone" href="tel:+74994810601">+7 (499) 481 06 01</a>
-      <a class="footer__phone" href="tel:+74994802296">+7 (499) 480 22 96</a>
-      <button class="btn-reset footer__button-call">Заказать звонок</button>
-      <a href="mailto:info@alcap.ru" class="footer__email">info@alcap.ru</a>
-      <ul class="social-list">
-        <li class="social-list__item">
-          <a href="#" class="">
-            <img src="./images/vk.svg" alt="Переход в соцсеть whatsapp">
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a href="#" class="">
-            <img src="./images/telegram.svg" alt="Переход в соцсеть telegram">
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a href="#" class="">
-            <img src="./images/ok.png" alt="Переход в соцсеть Одноклассники">
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="footer__adress">
-      <h4 class="footer__title-min footer__title-min--adress">Наш адресс</h4>
-      <p class="footer__adress">127540, г. Москва,
-        ул. Дубнинская,
-        д. 10, корп. 1</p>
-    </div>
-    <div class="footer__time">
-      <h4 class="footer__title-min footer__title-min--clock">Часы работы</h4>
-      <p class="footer__adress">Пн - Пт с 9.00 -18.00</p>
-      <button class="btn-reset footer__btn">Сотрудничество</button>
-    </div>
-    <div class="footer__info">
-      <p class="footer__description">
-        Вы можете оформить заказ по телефону или получить ответы на любые интересующие вас вопросы.
-      </p>
-    </div>
+
   </div>
-  <div class="privacy-policy">
-    <div class="container">
-      <div class="privacy-policy__wrapper">
-        <div class="privacy-policy__col">© Все права защищены</div>
-        <div class="privacy-policy__col">Плитика конфиденциальности</div>
-      </div>
-    </div>
-  </div>
-</footer>
-    <footer class="footer">
-  <div class="container footer__container">
-    <div class="footer__coll">
-      <a class="footer__phone" href="tel:+74957076266">+7 (495) 707 62 66</a>
-      <a class="footer__phone" href="tel:+74994810601">+7 (499) 481 06 01</a>
-      <a class="footer__phone" href="tel:+74994802296">+7 (499) 480 22 96</a>
-      <button class="btn-reset footer__button-call">Заказать звонок</button>
-      <a href="mailto:info@alcap.ru" class="footer__email">info@alcap.ru</a>
-      <ul class="social-list">
-        <li class="social-list__item">
-          <a href="#" class="">
-            <img src="./images/vk.svg" alt="Переход в соцсеть whatsapp">
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a href="#" class="">
-            <img src="./images/telegram.svg" alt="Переход в соцсеть telegram">
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a href="#" class="">
-            <img src="./images/ok.png" alt="Переход в соцсеть Одноклассники">
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="footer__adress">
-      <h4 class="footer__title-min footer__title-min--adress">Наш адресс</h4>
-      <p class="footer__adress">127540, г. Москва,
-        ул. Дубнинская,
-        д. 10, корп. 1</p>
-    </div>
-    <div class="footer__time">
-      <h4 class="footer__title-min footer__title-min--clock">Часы работы</h4>
-      <p class="footer__adress">Пн - Пт с 9.00 -18.00</p>
-      <button class="btn-reset footer__btn">Сотрудничество</button>
-    </div>
-    <div class="footer__info">
-      <p class="footer__description">
-        Вы можете оформить заказ по телефону или получить ответы на любые интересующие вас вопросы.
-      </p>
-    </div>
-  </div>
-  <div class="privacy-policy">
-    <div class="container">
-      <div class="privacy-policy__wrapper">
-        <div class="privacy-policy__col">© Все права защищены</div>
-        <div class="privacy-policy__col">Плитика конфиденциальности</div>
-      </div>
-    </div>
-  </div>
-</footer>
-    <footer class="footer">
-  <div class="container footer__container">
-    <div class="footer__coll">
-      <a class="footer__phone" href="tel:+74957076266">+7 (495) 707 62 66</a>
-      <a class="footer__phone" href="tel:+74994810601">+7 (499) 481 06 01</a>
-      <a class="footer__phone" href="tel:+74994802296">+7 (499) 480 22 96</a>
-      <button class="btn-reset footer__button-call">Заказать звонок</button>
-      <a href="mailto:info@alcap.ru" class="footer__email">info@alcap.ru</a>
-      <ul class="social-list">
-        <li class="social-list__item">
-          <a href="#" class="">
-            <img src="./images/vk.svg" alt="Переход в соцсеть whatsapp">
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a href="#" class="">
-            <img src="./images/telegram.svg" alt="Переход в соцсеть telegram">
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a href="#" class="">
-            <img src="./images/ok.png" alt="Переход в соцсеть Одноклассники">
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="footer__adress">
-      <h4 class="footer__title-min footer__title-min--adress">Наш адресс</h4>
-      <p class="footer__adress">127540, г. Москва,
-        ул. Дубнинская,
-        д. 10, корп. 1</p>
-    </div>
-    <div class="footer__time">
-      <h4 class="footer__title-min footer__title-min--clock">Часы работы</h4>
-      <p class="footer__adress">Пн - Пт с 9.00 -18.00</p>
-      <button class="btn-reset footer__btn">Сотрудничество</button>
-    </div>
-    <div class="footer__info">
-      <p class="footer__description">
-        Вы можете оформить заказ по телефону или получить ответы на любые интересующие вас вопросы.
-      </p>
-    </div>
-  </div>
-  <div class="privacy-policy">
-    <div class="container">
-      <div class="privacy-policy__wrapper">
-        <div class="privacy-policy__col">© Все права защищены</div>
-        <div class="privacy-policy__col">Плитика конфиденциальности</div>
-      </div>
-    </div>
-  </div>
-</footer>
-  </div>
+  <script src="./bootstrap/bootstrap.bundle.min.js"></script>
   <script src="./js/main.js"></script>
 </body>
 

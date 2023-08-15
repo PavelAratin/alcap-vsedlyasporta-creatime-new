@@ -134,3 +134,15 @@ main {
     border-radius: 5px;
   }
 }
+
+.dropdown {
+  &--assortment {
+    margin-bottom: 20px;
+  }
+  .dropdown-toggle {
+    border: 1px solid #eaebec;
+    color: #222222;
+    font-size: 14px;
+    border-radius: 3px;
+  }
+}

@@ -24,19 +24,7 @@ const fonts = () => {
     .pipe(ttf2woff2())
     .pipe(dest('./app/fonts/'))
 }
-//функция для работы с свг-спрайтами
-// const svgSprites = () => {
-//   return src('./src/img/**.svg')
-//     .pipe(svgSprite({
-//       mode: {
-//         stack: {
-//           sprite: '../sprite.svg'
-//         }
-//       }
-//     }))
-//     .pipe(dest('./app/img'))
-// }
-//функция для scss
+
 const styles = () => {
   return src('./src/scss/**.scss')
     .pipe(sourcemaps.init())//начало отслеживание ошибок в разхных вайлах scss
@@ -113,6 +101,11 @@ const swiperToApp = () => {
     .pipe(dest('./app/swiper'))
 }
 
+const bootstrapToApp = () => {
+  return src('./src/bootstrap/*')
+    .pipe(dest('./app/bootstrap'))
+}
+
 //функция для слежения за файлами 
 const watchFiles = () => {
   browserSync.init({
@@ -140,9 +133,10 @@ exports.clean = clean;
 exports.watchFiles = watchFiles;
 exports.normalizeToApp = normalizeToApp;
 exports.swiperToApp = swiperToApp;
+exports.bootstrapToApp = bootstrapToApp;
 
 //в дефолтном таске мы используем функции(вызываются первый раз перед вотчингом)
-exports.default = series(clean, parallel(htmlInclude, scipts, fonts, imgToApp, swiperToApp), normalizeToApp, styles, watchFiles);
+exports.default = series(clean, parallel(htmlInclude, scipts, fonts, imgToApp, swiperToApp, bootstrapToApp), normalizeToApp, styles, watchFiles);
 //код для build-версии
 //функция для работы со скриптами
 const sciptsBuild = () => {
