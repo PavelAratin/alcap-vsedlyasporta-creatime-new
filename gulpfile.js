@@ -101,6 +101,12 @@ const swiperToApp = () => {
     .pipe(dest('./app/swiper'))
 }
 
+const nouisliderToApp = () => {
+  return src('./src/noUiSlider/*')
+    .pipe(dest('./app/noUiSlider'))
+}
+
+
 const bootstrapToApp = () => {
   return src('./src/bootstrap/*')
     .pipe(dest('./app/bootstrap'))
@@ -134,9 +140,10 @@ exports.watchFiles = watchFiles;
 exports.normalizeToApp = normalizeToApp;
 exports.swiperToApp = swiperToApp;
 exports.bootstrapToApp = bootstrapToApp;
+exports.nouisliderToApp = nouisliderToApp;
 
 //в дефолтном таске мы используем функции(вызываются первый раз перед вотчингом)
-exports.default = series(clean, parallel(htmlInclude, scipts, fonts, imgToApp, swiperToApp, bootstrapToApp), normalizeToApp, styles, watchFiles);
+exports.default = series(clean, parallel(htmlInclude, scipts, fonts, imgToApp, swiperToApp, bootstrapToApp, nouisliderToApp), normalizeToApp, styles, watchFiles);
 //код для build-версии
 //функция для работы со скриптами
 const sciptsBuild = () => {

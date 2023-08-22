@@ -131,6 +131,40 @@ var modals = function modals() {
 
 /***/ }),
 
+/***/ "./src/js/rangeSlider.js":
+/*!*******************************!*\
+  !*** ./src/js/rangeSlider.js ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "getRangeSlider": () => (/* binding */ getRangeSlider)
+/* harmony export */ });
+function getRangeSlider() {
+  var rangeSlider = document.querySelector('.js-range-slider');
+
+  if (rangeSlider) {
+    noUiSlider.create(rangeSlider, {
+      start: [2000, 150000],
+      connect: true,
+      step: 1,
+      range: {
+        'min': [2000],
+        'max': [15000]
+      }
+    });
+    var inputs = document.querySelectorAll('.js-catalog-filter-input');
+    rangeSlider.noUiSlider.on('update', function (values, handle) {
+      inputs[handle].value = Math.round(values[handle]);
+    });
+  }
+}
+;
+
+/***/ }),
+
 /***/ "./src/js/swiperCustom.js":
 /*!********************************!*\
   !*** ./src/js/swiperCustom.js ***!
@@ -302,6 +336,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _fixedSidebar__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_fixedSidebar__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _modals__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modals */ "./src/js/modals.js");
 /* harmony import */ var _tabs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./tabs */ "./src/js/tabs.js");
+/* harmony import */ var _rangeSlider__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./rangeSlider */ "./src/js/rangeSlider.js");
+
 
 
 
@@ -311,7 +347,8 @@ window.addEventListener('DOMContentLoaded', function () {
   (0,_swiperCustom__WEBPACK_IMPORTED_MODULE_0__.swiperCustom)();
   (0,_fixedMenu__WEBPACK_IMPORTED_MODULE_1__.fixedMenu)();
   (0,_modals__WEBPACK_IMPORTED_MODULE_3__["default"])();
-  (0,_tabs__WEBPACK_IMPORTED_MODULE_4__["default"])(); // fixedSidebar()
+  (0,_tabs__WEBPACK_IMPORTED_MODULE_4__["default"])();
+  (0,_rangeSlider__WEBPACK_IMPORTED_MODULE_5__.getRangeSlider)(); // fixedSidebar()
 });
 })();
 

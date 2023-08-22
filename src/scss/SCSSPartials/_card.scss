@@ -25,15 +25,15 @@
     justify-content: space-between;
     margin-top: auto;
   }
-  &__actions-list {
-    position: absolute;
-    left: 0;
-    right: auto;
-    top: 0;
-    .actions-list__svg-wrapper::after {
-      display: none;
-    }
-  }
+  // &__actions-list {
+  //   position: absolute;
+  //   left: 0;
+  //   right: auto;
+  //   top: 0;
+  //   // .actions-list__svg-wrapper::after {
+  //   //   display: none;
+  //   // }
+  // }
 }
 
 .sizes-list {
