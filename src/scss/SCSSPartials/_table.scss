@@ -2,6 +2,7 @@
   width: 100%;
   border-spacing: 0;
   border-collapse: collapse;
+  margin-bottom: 50px;
   &__title {
     font-size: 22px;
     th {
@@ -22,9 +23,6 @@
     td {
       border: 1px solid #000;
       padding: 5px;
-      div:not(:last-child) {
-        margin-bottom: 10px;
-      }
     }
   }
   &__bottom {
@@ -75,6 +73,17 @@
   }
   &__info {
     max-width: 400px;
+  }
+  &__amount {
+    .amount:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  &__remove {
+    &-inner {
+      height: 52px;
+      display: flex;
+    }
   }
 }
 
