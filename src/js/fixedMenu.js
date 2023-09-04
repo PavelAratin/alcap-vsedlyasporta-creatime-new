@@ -13,7 +13,10 @@ export function fixedMenu() {
     } else {
       fixedMenuEl.classList.remove('js-fixed-menu-show');
     }
-    if (fixedMenuEl.classList.contains('js-fixed-menu-show')) {
+    if (fixedMenuEl.classList.contains('js-fixed-menu-show') && sidebarEl) {
+      console.log(fixedMenuEl.classList.contains('js-fixed-menu-show'));
+      console.log("есть на странице", sidebarEl);
+
       sidebarEl.classList.add('js-fixed-sidebar');
       sidebarEl.style.top = `${headerFixedMenuEl.offsetHeight + 20}px`;
       if (scrollDistance + sidebarEl.offsetHeight + 66 >= assortmentEl.offsetHeight + headerEl.offsetHeight) {
@@ -25,8 +28,10 @@ export function fixedMenu() {
         sidebarEl.classList.remove('js-absolute');
       }
     } else {
-      sidebarEl.classList.remove('js-fixed-sidebar');
-      sidebarEl.style.top = '';
+      if (sidebarEl !== null) {
+        sidebarEl.classList.remove('js-fixed-sidebar');
+        sidebarEl.style.top = '';
+      }
     }
   })
 }

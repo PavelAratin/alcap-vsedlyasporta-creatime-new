@@ -65,6 +65,10 @@ input[type="number"] {
   margin: 0 auto;
   padding: 0 20px;
 }
+.personal-page .catalog-filtres {
+  width: 100%;
+  max-width: 100%;
+}
 .btn-reset {
   padding: 0;
   border: 0;
@@ -93,13 +97,20 @@ input[type="number"] {
   font-size: 18px;
   font-weight: 700;
   color: #ffffff;
+  a {
+    transition: opacity 0.2s linear;
+    color: #e00c32;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
 }
 
 .logo-link__img {
   max-width: 200px;
 }
 
-.js-cart-visible {
+.js-modal-visible {
   display: block !important;
 }
 .js-stop-scroll {
@@ -136,7 +147,7 @@ input[type="number"] {
   }
   &__inner {
     background-color: #ffffff;
-    flex-basis: 1000px;
+    flex-basis: 1150px;
     padding: 10px;
     position: relative;
     border-radius: 5px;
@@ -164,7 +175,7 @@ input[type="number"] {
 }
 .checkbox-custom {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: sub;
   width: 14px;
   height: 14px;
   border-radius: 2px;

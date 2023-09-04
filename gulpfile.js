@@ -121,7 +121,7 @@ const watchFiles = () => {
   });
   //watch - дефолтный метод галпа
   watch('./src/scss/**/*.scss', styles);//как только будут изменения в стилях, вызовется функция styles
-  watch('./src/index.html', htmlInclude);
+  watch('./src/**.html', htmlInclude);
   watch('./src/HTMLPartials/*.html', htmlInclude);
   watch('./src/images/**.jpg', imgToApp);
   watch('./src/images/**.png', imgToApp);

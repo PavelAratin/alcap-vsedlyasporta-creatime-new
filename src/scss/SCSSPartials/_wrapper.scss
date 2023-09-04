@@ -37,6 +37,9 @@
 .content {
   &__title {
     margin-bottom: 20px;
+    &--h3 {
+      color: #0c121c;
+    }
   }
   &__text {
     padding: 10px 0;
@@ -52,6 +55,13 @@
           color: #e00c32;
         }
       }
+    }
+  }
+  &__link-intext {
+    display: inline-block;
+    color: #e00c32;
+    &:hover {
+      text-decoration: underline;
     }
   }
 }

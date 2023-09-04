@@ -1,4 +1,5 @@
 /******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./src/js/fixedMenu.js":
@@ -7,7 +8,6 @@
   \*****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "fixedMenu": () => (/* binding */ fixedMenu)
@@ -27,7 +27,9 @@ function fixedMenu() {
       fixedMenuEl.classList.remove('js-fixed-menu-show');
     }
 
-    if (fixedMenuEl.classList.contains('js-fixed-menu-show')) {
+    if (fixedMenuEl.classList.contains('js-fixed-menu-show') && sidebarEl) {
+      console.log(fixedMenuEl.classList.contains('js-fixed-menu-show'));
+      console.log("есть на странице", sidebarEl);
       sidebarEl.classList.add('js-fixed-sidebar');
       sidebarEl.style.top = "".concat(headerFixedMenuEl.offsetHeight + 20, "px");
 
@@ -40,33 +42,13 @@ function fixedMenu() {
         sidebarEl.classList.remove('js-absolute');
       }
     } else {
-      sidebarEl.classList.remove('js-fixed-sidebar');
-      sidebarEl.style.top = '';
+      if (sidebarEl !== null) {
+        sidebarEl.classList.remove('js-fixed-sidebar');
+        sidebarEl.style.top = '';
+      }
     }
   });
 }
-
-/***/ }),
-
-/***/ "./src/js/fixedSidebar.js":
-/*!********************************!*\
-  !*** ./src/js/fixedSidebar.js ***!
-  \********************************/
-/***/ (() => {
-
-// export function fixedSidebar() {
-//   const fixedSidebarEl = document.querySelector('.js-fixed-sidebar');
-//   if (fixedSidebarEl !== null) {
-//     console.log('fixedSidebarEl есть на странице')
-//     const fixedScrollBlock = () => {
-//       let scrollDistance = window.scrollY;
-//       console.log(scrollDistance);
-//     }
-//     window.addEventListener('scroll', fixedScrollBlock)
-//   } else {
-//     return
-//   }
-// }
 
 /***/ }),
 
@@ -76,7 +58,6 @@ function fixedMenu() {
   \**************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -95,7 +76,7 @@ var modals = function modals() {
         e.preventDefault();
       }
 
-      modal.classList.add('js-cart-visible');
+      modal.classList.add('js-modal-visible');
       document.body.classList.add('js-stop-scroll');
       fixBlocks.forEach(function (fixBlock) {
         fixBlock.style.paddingRight = paddingOffset;
@@ -103,7 +84,7 @@ var modals = function modals() {
       document.body.style.paddingRight = paddingOffset;
     });
     close.addEventListener('click', function () {
-      modal.classList.remove('js-cart-visible');
+      modal.classList.remove('js-modal-visible');
       document.body.classList.remove('js-stop-scroll');
       fixBlocks.forEach(function (fixBlock) {
         fixBlock.style.paddingRight = '0px';
@@ -112,7 +93,7 @@ var modals = function modals() {
     });
     modal.addEventListener('click', function (e) {
       if (e.target === modal.querySelector('.js-overlay-wrapper')) {
-        modal.classList.remove('js-cart-visible');
+        modal.classList.remove('js-modal-visible');
         document.body.classList.remove('js-stop-scroll');
         fixBlocks.forEach(function (fixBlock) {
           fixBlock.style.paddingRight = '0px';
@@ -120,10 +101,10 @@ var modals = function modals() {
         document.body.style.paddingRight = '0px';
       }
     });
-  }
+  } // bindModal('.js-cart-call', '.js-cart', '.js-close-button');
+  // bindModal('.js-cart-call-fixed-menu', '.js-cart', '.js-close-button');
 
-  bindModal('.js-cart-call', '.js-cart', '.js-close-button');
-  bindModal('.js-cart-call-fixed-menu', '.js-cart', '.js-close-button');
+
   bindModal('.js-call-form-feedback', '.js-form-feedback', '.js-close-button-form-feedback');
 };
 
@@ -137,7 +118,6 @@ var modals = function modals() {
   \*******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "getRangeSlider": () => (/* binding */ getRangeSlider)
@@ -171,7 +151,6 @@ function getRangeSlider() {
   \********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "swiperCustom": () => (/* binding */ swiperCustom)
@@ -222,7 +201,6 @@ function swiperCustom() {
   \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -281,18 +259,6 @@ var tabs = function tabs() {
 /******/ 	}
 /******/ 	
 /************************************************************************/
-/******/ 	/* webpack/runtime/compat get default export */
-/******/ 	(() => {
-/******/ 		// getDefaultExport function for compatibility with non-harmony modules
-/******/ 		__webpack_require__.n = (module) => {
-/******/ 			var getter = module && module.__esModule ?
-/******/ 				() => (module['default']) :
-/******/ 				() => (module);
-/******/ 			__webpack_require__.d(getter, { a: getter });
-/******/ 			return getter;
-/******/ 		};
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
@@ -323,22 +289,19 @@ var tabs = function tabs() {
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be in strict mode.
+// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
-"use strict";
 /*!************************!*\
   !*** ./src/js/main.js ***!
   \************************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _swiperCustom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./swiperCustom */ "./src/js/swiperCustom.js");
 /* harmony import */ var _fixedMenu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./fixedMenu */ "./src/js/fixedMenu.js");
-/* harmony import */ var _fixedSidebar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./fixedSidebar */ "./src/js/fixedSidebar.js");
-/* harmony import */ var _fixedSidebar__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_fixedSidebar__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _modals__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modals */ "./src/js/modals.js");
-/* harmony import */ var _tabs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./tabs */ "./src/js/tabs.js");
-/* harmony import */ var _rangeSlider__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./rangeSlider */ "./src/js/rangeSlider.js");
+/* harmony import */ var _modals__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modals */ "./src/js/modals.js");
+/* harmony import */ var _tabs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./tabs */ "./src/js/tabs.js");
+/* harmony import */ var _rangeSlider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./rangeSlider */ "./src/js/rangeSlider.js");
 
-
+ // import { fixedSidebar } from "./fixedSidebar";
 
 
 
@@ -346,9 +309,9 @@ __webpack_require__.r(__webpack_exports__);
 window.addEventListener('DOMContentLoaded', function () {
   (0,_swiperCustom__WEBPACK_IMPORTED_MODULE_0__.swiperCustom)();
   (0,_fixedMenu__WEBPACK_IMPORTED_MODULE_1__.fixedMenu)();
-  (0,_modals__WEBPACK_IMPORTED_MODULE_3__["default"])();
-  (0,_tabs__WEBPACK_IMPORTED_MODULE_4__["default"])();
-  (0,_rangeSlider__WEBPACK_IMPORTED_MODULE_5__.getRangeSlider)(); // fixedSidebar()
+  (0,_modals__WEBPACK_IMPORTED_MODULE_2__["default"])();
+  (0,_tabs__WEBPACK_IMPORTED_MODULE_3__["default"])();
+  (0,_rangeSlider__WEBPACK_IMPORTED_MODULE_4__.getRangeSlider)(); // fixedSidebar()
 });
 })();
 

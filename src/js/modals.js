@@ -10,7 +10,7 @@ const modals = () => {
       if (e.target) {
         e.preventDefault();
       }
-      modal.classList.add('js-cart-visible')
+      modal.classList.add('js-modal-visible')
       document.body.classList.add('js-stop-scroll')
       fixBlocks.forEach((fixBlock) => {
         fixBlock.style.paddingRight = paddingOffset;
@@ -18,7 +18,7 @@ const modals = () => {
       document.body.style.paddingRight = paddingOffset;
     });
     close.addEventListener('click', () => {
-      modal.classList.remove('js-cart-visible')
+      modal.classList.remove('js-modal-visible')
       document.body.classList.remove('js-stop-scroll')
       fixBlocks.forEach((fixBlock) => {
         fixBlock.style.paddingRight = '0px'
@@ -27,7 +27,7 @@ const modals = () => {
     })
     modal.addEventListener('click', (e) => {
       if (e.target === modal.querySelector('.js-overlay-wrapper')) {
-        modal.classList.remove('js-cart-visible')
+        modal.classList.remove('js-modal-visible')
         document.body.classList.remove('js-stop-scroll')
         fixBlocks.forEach((fixBlock) => {
           fixBlock.style.paddingRight = '0px'
@@ -36,8 +36,8 @@ const modals = () => {
       }
     })
   }
-  bindModal('.js-cart-call', '.js-cart', '.js-close-button');
-  bindModal('.js-cart-call-fixed-menu', '.js-cart', '.js-close-button');
+  // bindModal('.js-cart-call', '.js-cart', '.js-close-button');
+  // bindModal('.js-cart-call-fixed-menu', '.js-cart', '.js-close-button');
   bindModal('.js-call-form-feedback', '.js-form-feedback', '.js-close-button-form-feedback');
 }
 

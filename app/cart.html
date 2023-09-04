@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="./css/main.css">
-  <title>О нас</title>
+  <title>Корзина</title>
 </head>
 
 <body>
@@ -445,80 +445,338 @@
           </ul>
         </div>
       </div>
-      <div class="wrapper">
-        <div class="container wrapper__container">
-          <aside class="sidebar">
-  <nav class="sidebar-nav">
-    <ul class="sidebar-nav__list">
-      <li class="sidebar-nav__item">
-        <a class="sidebar-nav__link" href="#">Интернет-магазин</a>
-      </li>
-      <li class="sidebar-nav__item active">
-        <a class="sidebar-nav__link" href="#">О компании</a>
-      </li>
-      <li class="sidebar-nav__item">
-        <a class="sidebar-nav__link" href="#">Вакансии</a>
-      </li>
-      <li class="sidebar-nav__item">
-        <a class="sidebar-nav__link" href="#">Контакты</a>
-      </li>
-      <li class="sidebar-nav__item">
-        <a class="sidebar-nav__link" href="#">Сотрудничество</a>
-      </li>
-      <li class="sidebar-nav__item">
-        <a class="sidebar-nav__link" href="#">Спортивным магазинам</a>
-      </li>
-      <li class="sidebar-nav__item">
-        <a class="sidebar-nav__link" href="#">Производителям</a>
-      </li>
-      <li class="sidebar-nav__item">
-        <a class="sidebar-nav__link" href="#">Торговым компаниям</a>
-      </li>
-      <li class="sidebar-nav__item">
-        <a class="sidebar-nav__link" href="#">Аренда и хранение</a>
-      </li>
-    </ul>
-  </nav>
-</aside>
-          <div class="content">
-  <h1 class="title-h1">О нас</h1>
-  <p class="content__text">Компания Альфа Каприз имеет более чем 20-летний опыт оптовой торговли спортивными
-    товарами. Нашими покупателями являются более 1000 спортивных магазинов и организаций в России и СНГ, и их число
-    ежегодно увеличивается.</p>
-  <p class="content__text">Главной задачей нашей компании является обеспечение любителей спорта недорогой, но
-    качественной спортивной экипировкой. Все наши товары изготавливаются проверенными фабриками-изготовителями,
-    способными обеспечить высокое качество по обоснованным, разумным ценам.</p>
-  <p class="content__text">В нашем ассортименте более 2000 наименований спортивных товаров пользующихся устойчивым
-    спросом у наших покупателей.</p>
-  <p class="content__text">Вся продукция сертифицирована и имеет оптимальное соотношение цены и качества, в чём
-    достаточно легко убедиться, сравнив наши товары с другими поставщиками.</p>
-  <h2 class="title-h2 content__title">Преимущества работы с нами:</h2>
-  <ul class="content-list">
-    <li class="content-list__item">
-      <p class="content-list__text">Широкий ассортимент предлагаемой продукции (более 2000 наименований) позволяет
-        экономить Ваше время на поиск и выбор нужного Вам товара;</p>
-    </li>
-    <li class="content-list__item">
-      <p class="content-list__text">Низкие оптовые цены и системы скидок. Всю нашу продукцию мы напрямую получаем от
-        производителей из Китая, Пакистана, России.</p>
-    </li>
-    <li class="content-list__item">
-      <p class="content-list__text">Быстрое оформление, формирование и непосредственно получение заказа. Обработка
-        вашего заказа и выставление счета за один день. Доставка до транспортной компании или в адрес магазина в
-        Москве и Московской области за 2-3 дня.</p>
-    </li>
-    <li class="content-list__item">
-      <p class="content-list__text">Наши покупатели бесплатно получают каталоги, плакаты, буклеты , баннеры ,
-        упаковочные пакеты и другую рекламную продукцию.</p>
-    </li>
-  </ul>
-  <p class="content__text content__text--contact">Звоните нашим менеджерам по тел.: <a href="tel:+7(495)7076266">+7
-      495 707 62 66</a>, <a href="tel:+7(499)4802296">+7 499 480 22 96</a>, <a href="tel:+7(499)4802296">+7 499 480
-      22 96</a> и
-    мы с удовольствием ответим на все Ваши вопросы и поможем Вам наладить с нами самое активное сотрудничество</p>
-</div>
+      <section class="cart-goods">
+        <div class="container">
+          <h1 class="title-h1 cart-goods__title">Корзина</h1>
+          <table class="cart-table">
+            <tbody>
+              <tr class="cart-table__title">
+                <th>Серия RACE' (см)</th>
+              </tr>
+              <tr class="cart-table__head">
+                <th>Наименование</th>
+                <th>Цена</th>
+                <th>Свойства</th>
+                <th>Кол-во</th>
+                <th>Сумма</th>
+                <th></th>
+              </tr>
+              <tr class="cart-table__item cart-item">
+                <td class="cart-item__info">
+                  <div class="cart-item__inner">
+                    <div class="cart-item__imgbox">
+                      <img class="cart-item__img-good" src="./images/popular-goods-img-1.jpg" alt="Сапборд aquatic">
+                    </div>
+                    <div class="cart-item__title">
+                      <a href="#" class="cart-item__link">
+                        Надувная SUP-доска Сапборд (SUP board) AQUATIC-14 RACE
+                      </a>
+                    </div>
+                  </div>
+                </td>
+                <td class="cart-item__price">
+                  <div class="price">
+                    <span class="price__old">28 892 руб.</span>
+                    <span class="price__current">27 447 руб.</span>
+                  </div>
+                </td>
+                <td class="cart-item__properties">
+                  <div class="cart-item__inner">
+                    <img class="cart-item__img-property" src="../images/properties-img-white.jpg" alt="Свойство товара">
+                    <span>Цвет: белый</span>
+                  </div>
+                </td>
+                <td class="cart-item__amount">
+                  <div class="amount">
+                    <div class="amount__counter">
+                      <button class="btn-reset amount__button" title="Убавить количество товара">-</button>
+                      <input class="input-reset amount__input" type="text" value="1 шт."
+                        title="Ввести необходимое количество товара" min="1" max="20">
+                      <button class="btn-reset amount__button" title="Добавить количество товара">+</button>
+                    </div>
+                  </div>
+                </td>
+                <td class="cart-item__sum">
+                  <div>19212129 р</div>
+                </td>
+                <td class="cart-item__remove">
+                  <button class="btn-reset close-button close-button--goods-item" title="Удалить товар из корзины">
+                    <svg viewBox="0 -0.5 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <g id="Page-1" stroke="none" stroke-width="1">
+                        <g id="Dribbble-Light-Preview" transform="translate(-419.000000, -240.000000)">
+                          <g id="icons" transform="translate(56.000000, 160.000000)">
+                            <polygon id="close-[#1511]"
+                              points="375.0183 90 384 98.554 382.48065 100 373.5 91.446 364.5183 100 363 98.554 371.98065 90 363 81.446 364.5183 80 373.5 88.554 382.48065 80 384 81.446">
+                            </polygon>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </button>
+                </td>
+              </tr>
+              <tr class="cart-table__bottom">
+                <td class="td-empty" colspan="2"></td>
+                <td class="cart-table__sum-text">итого по группе:</td>
+                <td class="cart-table__count">7 шт</td>
+                <td class="cart-table__sum-full">1921212119 р</td>
+              </tr>
+              <!--##-->
+              <tr class="cart-table__title">
+                <th>Батуты</th>
+              </tr>
+              <tr class="cart-table__head">
+                <th>Наименование</th>
+                <th>Цена</th>
+                <th>Свойства</th>
+                <th>Кол-во</th>
+                <th>Сумма</th>
+                <th></th>
+              </tr>
+              <tr class="cart-table__item cart-item">
+                <td class="cart-item__info">
+                  <div class="cart-item__inner">
+                    <div class="cart-item__imgbox">
+                      <img class="cart-item__img-good" src="./images/catalog-img-3.jpg" alt="Сапборд aquatic">
+                    </div>
+                    <div class="cart-item__title">
+                      <a href="#" class="cart-item__link">
+                        Батут HC-MT012 (140см) с защитной сеткой б/л
+                      </a>
+                    </div>
+                  </div>
+                </td>
+                <td class="cart-item__price">
+                  <div class="price">
+                    <span class="price__old">40 892 руб.</span>
+                    <span class="price__current">300 447 руб.</span>
+                  </div>
+                </td>
+                <td class="cart-item__properties">
+                  <div class="cart-item__inner">
+                    <img class="cart-item__img-property" src="../images/properties-img-white.jpg" alt="Свойство товара">
+                    <span>Цвет: белый</span>
+                  </div>
+                </td>
+                <td class="cart-item__amount">
+                  <div class="amount">
+                    <div class="amount__counter">
+                      <button class="btn-reset amount__button" title="Убавить количество товара">-</button>
+                      <input class="input-reset amount__input" type="text" value="1 шт."
+                        title="Ввести необходимое количество товара" min="1" max="20">
+                      <button class="btn-reset amount__button" title="Добавить количество товара">+</button>
+                    </div>
+                  </div>
+                </td>
+                <td class="cart-item__sum">
+                  <div>19212129 р</div>
+                </td>
+                <td class="cart-item__remove">
+                  <button class="btn-reset close-button close-button--goods-item" title="Удалить товар из корзины">
+                    <svg viewBox="0 -0.5 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <g id="Page-1" stroke="none" stroke-width="1">
+                        <g id="Dribbble-Light-Preview" transform="translate(-419.000000, -240.000000)">
+                          <g id="icons" transform="translate(56.000000, 160.000000)">
+                            <polygon id="close-[#1511]"
+                              points="375.0183 90 384 98.554 382.48065 100 373.5 91.446 364.5183 100 363 98.554 371.98065 90 363 81.446 364.5183 80 373.5 88.554 382.48065 80 384 81.446">
+                            </polygon>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </button>
+                </td>
+              </tr>
+              <tr class="cart-table__bottom">
+                <td class="td-empty" colspan="2"></td>
+                <td class="cart-table__sum-text">итого по группе:</td>
+                <td class="cart-table__count">7 шт</td>
+                <td class="cart-table__sum-full">1921212119 р</td>
+              </tr>
+              <tr class="cart-table__title">
+                <th>Спортивные бутылки и велофляги</th>
+              </tr>
+              <tr class="cart-table__head">
+                <th>Наименование</th>
+                <th>Цена</th>
+                <th>Свойства</th>
+                <th>Кол-во</th>
+                <th>Сумма</th>
+                <th></th>
+              </tr>
+              <tr class="cart-table__item cart-item">
+                <td class="cart-item__info">
+                  <div class="cart-item__inner">
+                    <div class="cart-item__imgbox">
+                      <img class="cart-item__img-good" src="./images/shaker-white.jpg" alt="Сапборд aquatic">
+                    </div>
+                    <div class="cart-item__title">
+                      <a href="#" class="cart-item__link">
+                        Термобутылка BF-TWB-50-500
+                      </a>
+                    </div>
+                  </div>
+                </td>
+                <td class="cart-item__price">
+                  <div class="price">
+                    <span class="price__old">892 руб.</span>
+                    <span class="price__current">447 руб.</span>
+                  </div>
+                  <div class="price">
+                    <span class="price__old">192 руб.</span>
+                    <span class="price__current">247 руб.</span>
+                  </div>
+                  <div class="price">
+                    <span class="price__old">392 руб.</span>
+                    <span class="price__current">447000 руб.</span>
+                  </div>
+                </td>
+                <td class="cart-item__properties">
+                  <div class="cart-item__inner">
+                    <img class="cart-item__img-property" src="../images/properties-img-white.jpg" alt="Свойство товара">
+                    <span>Цвет: белый</span>
+                  </div>
+                  <div class="cart-item__inner">
+                    <img class="cart-item__img-property" src="../images/properties-img-grey.jpg" alt="Свойство товара">
+                    <span>Цвет: серый</span>
+                  </div>
+                  <div class="cart-item__inner">
+                    <img class="cart-item__img-property" src="../images/properties-img-black.jpg" alt="Свойство товара">
+                    <span>Цвет: черный</span>
+                  </div>
+                </td>
+                <td class="cart-item__amount">
+                  <div class="amount">
+                    <div class="amount__counter">
+                      <button class="btn-reset amount__button" title="Убавить количество товара">-</button>
+                      <input class="input-reset amount__input" type="text" value="1 шт."
+                        title="Ввести необходимое количество товара" min="1" max="20">
+                      <button class="btn-reset amount__button" title="Добавить количество товара">+</button>
+                    </div>
+                  </div>
+                  <div class="amount">
+                    <div class="amount__counter">
+                      <button class="btn-reset amount__button" title="Убавить количество товара">-</button>
+                      <input class="input-reset amount__input" type="text" value="1 шт."
+                        title="Ввести необходимое количество товара" min="1" max="20">
+                      <button class="btn-reset amount__button" title="Добавить количество товара">+</button>
+                    </div>
+                  </div>
+                  <div class="amount">
+                    <div class="amount__counter">
+                      <button class="btn-reset amount__button" title="Убавить количество товара">-</button>
+                      <input class="input-reset amount__input" type="text" value="1 шт."
+                        title="Ввести необходимое количество товара" min="1" max="20">
+                      <button class="btn-reset amount__button" title="Добавить количество товара">+</button>
+                    </div>
+                  </div>
+                </td>
+                <td class="cart-item__sum">
+                  <div>19212129 р</div>
+                  <div>19212129 р</div>
+                  <div>19212129 р</div>
+                </td>
+                <td class="cart-item__remove">
+                  <button class="btn-reset close-button close-button--goods-item" title="Удалить товар из корзины">
+                    <svg viewBox="0 -0.5 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <g id="Page-1" stroke="none" stroke-width="1">
+                        <g id="Dribbble-Light-Preview" transform="translate(-419.000000, -240.000000)">
+                          <g id="icons" transform="translate(56.000000, 160.000000)">
+                            <polygon id="close-[#1511]"
+                              points="375.0183 90 384 98.554 382.48065 100 373.5 91.446 364.5183 100 363 98.554 371.98065 90 363 81.446 364.5183 80 373.5 88.554 382.48065 80 384 81.446">
+                            </polygon>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </button>
+                </td>
+              </tr>
+              <tr class="cart-table__item cart-item">
+                <td class="cart-item__info">
+                  <div class="cart-item__inner">
+                    <div class="cart-item__imgbox">
+                      <img class="cart-item__img-good" src="./images/shaker-stblue.jpg" alt="Сапборд aquatic">
+                    </div>
+                    <div class="cart-item__title">
+                      <a href="#" class="cart-item__link">
+                        Бутылка спортивная стальная BF-SSWB-30-400
+                      </a>
+                    </div>
+                  </div>
+                </td>
+                <td class="cart-item__price">
+                  <div class="price">
+                    <span class="price__old">346 руб.</span>
+                    <span class="price__current">329 руб.</span>
+                  </div>
+                </td>
+                <td class="cart-item__properties">
+                  <div class="cart-item__inner">
+                    <img class="cart-item__img-property" src="../images/properties-img-stblue.jpg"
+                      alt="Свойство товара">
+                    <span>Цвет: голубой</span>
+                  </div>
+                </td>
+                <td class="cart-item__amount">
+                  <div class="amount">
+                    <div class="amount__counter">
+                      <button class="btn-reset amount__button" title="Убавить количество товара">-</button>
+                      <input class="input-reset amount__input" type="text" value="1 шт."
+                        title="Ввести необходимое количество товара" min="1" max="20">
+                      <button class="btn-reset amount__button" title="Добавить количество товара">+</button>
+                    </div>
+                  </div>
+                </td>
+                <td class="cart-item__sum">
+                  <div>19212129 р</div>
+                </td>
+                <td class="cart-item__remove">
+                  <button class="btn-reset close-button close-button--goods-item" title="Удалить товар из корзины">
+                    <svg viewBox="0 -0.5 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <g id="Page-1" stroke="none" stroke-width="1">
+                        <g id="Dribbble-Light-Preview" transform="translate(-419.000000, -240.000000)">
+                          <g id="icons" transform="translate(56.000000, 160.000000)">
+                            <polygon id="close-[#1511]"
+                              points="375.0183 90 384 98.554 382.48065 100 373.5 91.446 364.5183 100 363 98.554 371.98065 90 363 81.446 364.5183 80 373.5 88.554 382.48065 80 384 81.446">
+                            </polygon>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </button>
+                </td>
+              </tr>
+              <tr class="cart-table__bottom">
+                <td class="td-empty" colspan="2"></td>
+                <td class="cart-table__sum-text">итого по группе:</td>
+                <td class="cart-table__count">7 шт</td>
+                <td class="cart-table__sum-full">1921212119 р</td>
+              </tr>
+            </tbody>
+          </table>
+          </ul>
+          <button class="btn-reset close-button js-close-button close-button--position-absolute"
+            title="Закрыть корзину">
+            <svg viewBox="0 -0.5 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink">
+              <g id="Page-1" stroke="none" stroke-width="1">
+                <g id="Dribbble-Light-Preview" transform="translate(-419.000000, -240.000000)">
+                  <g id="icons" transform="translate(56.000000, 160.000000)">
+                    <polygon id="close-[#1511]"
+                      points="375.0183 90 384 98.554 382.48065 100 373.5 91.446 364.5183 100 363 98.554 371.98065 90 363 81.446 364.5183 80 373.5 88.554 382.48065 80 384 81.446">
+                    </polygon>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </button>
         </div>
-      </div>
+      </section>
       <!--форма обратной связи начало-->
       <section class="overlay js-fix-block js-form-feedback">
   <div class="overlay__wrapper js-overlay-wrapper">
