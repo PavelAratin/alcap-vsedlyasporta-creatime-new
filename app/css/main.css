@@ -914,6 +914,23 @@ input[type=number] {
   width: 260px;
 }
 
+.form-delivery {
+  margin: 0 -10px;
+  flex-wrap: wrap;
+}
+.form-delivery__title {
+  color: #131313;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.form-delivery__item {
+  width: 33.33%;
+  padding: 0 10px 10px 10px;
+}
+.form-delivery__button {
+  width: 100%;
+}
+
 .delivery-list__item:not(:last-child) {
   margin-bottom: 10px;
 }
@@ -1439,8 +1456,11 @@ input[type=number] {
   margin-bottom: 100px;
 }
 
+.order-goods {
+  margin-bottom: 100px;
+}
 .order-goods__title {
-  color: #333;
+  margin-bottom: 30px;
 }
 
 .cart-table {
@@ -1728,6 +1748,10 @@ input[type=number] {
 
   .fixed-menu {
     display: none;
+  }
+
+  .form-delivery__item {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=main.css.map */

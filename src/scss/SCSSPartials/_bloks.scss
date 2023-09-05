@@ -448,6 +448,22 @@
     width: 260px;
   }
 }
+.form-delivery {
+  margin: 0 -10px;
+  flex-wrap: wrap;
+  &__title {
+    color: #131313;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+  &__item {
+    width: 33.33%;
+    padding: 0 10px 10px 10px;
+  }
+  &__button {
+    width: 100%;
+  }
+}
 
 .delivery-list {
   &__item:not(:last-child) {
