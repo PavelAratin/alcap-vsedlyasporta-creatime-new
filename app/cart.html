@@ -31,9 +31,6 @@
             <a class="nav__link" href="#">Возврат и обмен</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#">Блог</a>
-          </li>
-          <li class="nav__item">
             <a class="nav__link" href="#">Контакты</a>
           </li>
         </ul>
@@ -41,17 +38,31 @@
       <a class="logo-link logo-link--mobile header__logo-link" href="./index.html">
         <img class="logo-link__img" src="./images/logo.png" alt="Логотип оптовой компании ALPHA CAPRICE">
       </a>
-      <div class="actions">
-        <svg viewBox="0 0 32 32" width="40" height="40" xmlns="http://www.w3.org/2000/svg" fill="#FEB703">
-          <title />
-          <g id="about">
-            <path d="M16,16A7,7,0,1,0,9,9,7,7,0,0,0,16,16ZM16,4a5,5,0,1,1-5,5A5,5,0,0,1,16,4Z" />
-            <path
-              d="M17,18H15A11,11,0,0,0,4,29a1,1,0,0,0,1,1H27a1,1,0,0,0,1-1A11,11,0,0,0,17,18ZM6.06,28A9,9,0,0,1,15,20h2a9,9,0,0,1,8.94,8Z" />
-          </g>
-        </svg>
+      <div class="actions actions__header">
         <div class="actions__item">
-          <a class="actions__link" href="./personal.html">Личный кабинет</a>
+          <a class="actions__link" href="./personal.html">
+            <svg class="actions__svg" viewBox="0 0 32 32" width="30" height="30" xmlns="http://www.w3.org/2000/svg"
+              fill="#FEB703">
+              <title />
+              <g id="about">
+                <path d="M16,16A7,7,0,1,0,9,9,7,7,0,0,0,16,16ZM16,4a5,5,0,1,1-5,5A5,5,0,0,1,16,4Z" />
+                <path
+                  d="M17,18H15A11,11,0,0,0,4,29a1,1,0,0,0,1,1H27a1,1,0,0,0,1-1A11,11,0,0,0,17,18ZM6.06,28A9,9,0,0,1,15,20h2a9,9,0,0,1,8.94,8Z" />
+              </g>
+            </svg>
+            <span class="actions__link-text">Личный кабинет</span>
+          </a>
+        </div>
+        <div class="actions__item">
+          <a class="actions__link" href="./catalog_order.html">
+            <svg class="actions__svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M21 5L19 12H7.37671M20 16H8L6 3H3M11.5 7L13.5 9M13.5 9L15.5 7M13.5 9V3M9 20C9 20.5523 8.55228 21 8 21C7.44772 21 7 20.5523 7 20C7 19.4477 7.44772 19 8 19C8.55228 19 9 19.4477 9 20ZM20 20C20 20.5523 19.5523 21 19 21C18.4477 21 18 20.5523 18 20C18 19.4477 18.4477 19 19 19C19.5523 19 20 19.4477 20 20Z"
+                stroke="#FEB703" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <span class="actions__link-text">Сделать заказ</span>
+          </a>
         </div>
       </div>
       <ul class="social-list">
@@ -114,7 +125,6 @@
         </a>
       </div>
     </div>
-
   </div>
   <div class="category-menu-level-1">
     <div class="container">
@@ -438,7 +448,7 @@
               <a href="/" class="breadcrumbs-list__link">Главная страница</a>
             </li>
             <li class="breadcrumbs-list__item">
-              <a href="#" class="breadcrumbs-list__link">О нас</a>
+              <a href="#" class="breadcrumbs-list__link active">Корзина</a>
             </li>
           </ul>
         </div>
@@ -446,6 +456,39 @@
       <section class="cart-goods">
         <div class="container">
           <h1 class="title-h1 cart-goods__title">Корзина</h1>
+          <div class="table-responsive">
+            <table class="warning-table">
+              <thead>
+                <tr>
+                  <th>Наименование</th>
+                  <th>Описание ошибки</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Хоккейные коньки RGX-5.0 X-CODE Green (37)</td>
+                  <td>Извините, но данный товар больше недоступен.</td>
+                </tr>
+                <tr>
+                  <td>Хоккейные коньки RGX-5.0 X-CODE Green (37)</td>
+                  <td>Извините, но данный товар больше недоступен.</td>
+                </tr>
+                <tr>
+                  <td>Хоккейные коньки RGX-5.0 X-CODE Green (37)</td>
+                  <td>Извините, но данный товар больше недоступен.</td>
+                </tr>
+                <tr>
+                  <td>Надувная SUP-доска Сапборд (SUP board) AQUATIC-14 RACE</td>
+                  <td>Извините, но данный товар больше недоступен.</td>
+                </tr>
+                <tr>
+                  <td>Хоккейные коньки RGX-5.0 X-CODE Green (37) sdfsdf sdfsdf dfgsdfg sdfgsdfg sdfgsdfg sdfgsdfg
+                    sdfgsdfg sdgsdg sdfgsdfg 1002234234</td>
+                  <td>Извините, но данный товар больше недоступен.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
           <div class="table-responsive">
             <table class="cart-table">
               <tbody>
@@ -956,6 +999,9 @@
       <section class="order-goods">
         <div class="container">
           <h2 class="title-h2 order-goods__title">Оформление заказа</h2>
+          <div class="order-goods__top">
+            <button class="btn-reset order-goods__button">Очистить корзину</button>
+          </div>
           <form class="form form-delivery" action="#">
             <div class="form-delivery__item">
               <h3 class="title-h3 form-delivery__title">Укажите способ доставки</h3>

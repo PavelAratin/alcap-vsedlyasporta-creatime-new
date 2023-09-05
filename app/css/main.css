@@ -478,6 +478,8 @@ input[type=number] {
 .nav__list {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  margin-right: 5px;
 }
 .nav__item:not(:last-child) {
   margin-right: 20px;
@@ -495,6 +497,12 @@ input[type=number] {
   display: flex;
   align-items: center;
 }
+.actions__header {
+  margin-right: 10px;
+}
+.actions__item:not(:last-child) {
+  margin-right: 10px;
+}
 .actions__item {
   font-size: 16px;
   display: flex;
@@ -502,6 +510,7 @@ input[type=number] {
 }
 .actions__link {
   transition: color 0.2s linear;
+  white-space: nowrap;
 }
 .actions__link:hover {
   color: #e00c32;
@@ -509,11 +518,8 @@ input[type=number] {
 .actions__link:focus {
   color: #e00c32;
 }
-.actions span {
-  padding: 0 5px;
-}
 .actions svg {
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 .social-list {
@@ -733,10 +739,12 @@ input[type=number] {
   background-color: #feb703;
   padding: 4px 8px;
   border-radius: 16px;
+  white-space: nowrap;
 }
 
 .contact__header {
   margin-right: 10px;
+  white-space: nowrap;
 }
 .contact__action {
   font-weight: 700;
@@ -962,6 +970,24 @@ input[type=number] {
   outline: none;
   box-shadow: 0 0px 4px 0px #e00c32 !important;
   border-color: #e00c32;
+}
+
+.warning-table {
+  width: 100%;
+  min-width: 950px;
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin-top: 30px;
+}
+.warning-table tr th {
+  padding: 10px;
+  border-top: 1px solid #e8e9eb;
+  border-bottom: 1px solid #e8e9eb;
+}
+.warning-table tr td {
+  padding: 10px;
+  border-bottom: 1px solid #e8e9eb;
+  width: 50%;
 }
 
 .hero {
@@ -1478,6 +1504,20 @@ input[type=number] {
 .order-goods__title {
   margin-bottom: 30px;
 }
+.order-goods__top {
+  display: flex;
+  justify-content: end;
+  padding: 15px 0;
+}
+.order-goods__button {
+  color: #131313;
+  font-weight: 400;
+  font-size: 22px;
+  transition: color 0.2s linear;
+}
+.order-goods__button:hover {
+  color: #e00c32;
+}
 
 .cart-table {
   width: 100%;
@@ -1707,6 +1747,14 @@ input[type=number] {
   .header .social-list {
     display: none;
   }
+  .header__logo-link {
+    margin-right: 0px;
+  }
+
+  .burger-button {
+    width: 25px;
+    height: 20px;
+  }
 
   .category-menu-level-1 {
     display: none;
@@ -1726,11 +1774,10 @@ input[type=number] {
     display: block;
   }
 
-  .actions svg {
-    width: 30px;
-    height: 30px;
+  .actions {
+    margin-right: 0px;
   }
-  .actions__item {
+  .actions__link-text {
     display: none;
   }
 }

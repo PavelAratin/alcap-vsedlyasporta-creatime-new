@@ -3,4 +3,18 @@
   &__title {
     margin-bottom: 30px;
   }
+  &__top {
+    display: flex;
+    justify-content: end;
+    padding: 15px 0;
+  }
+  &__button {
+    color: #131313;
+    font-weight: 400;
+    font-size: 22px;
+    transition: color 0.2s linear;
+    &:hover {
+      color: #e00c32;
+    }
+  }
 }

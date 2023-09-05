@@ -6,6 +6,13 @@
     .social-list {
       display: none;
     }
+    &__logo-link {
+      margin-right: 0px;
+    }
+  }
+  .burger-button {
+    width: 25px;
+    height: 20px;
   }
   .category-menu-level-1 {
     display: none;
@@ -23,11 +30,8 @@
     }
   }
   .actions {
-    svg {
-      width: 30px;
-      height: 30px;
-    }
-    &__item {
+    margin-right: 0px;
+    &__link-text {
       display: none;
     }
   }
