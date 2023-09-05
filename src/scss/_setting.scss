@@ -224,3 +224,12 @@ input[type="number"] {
   outline-offset: 0px;
   outline: none;
 }
+.table-responsive {
+  margin-bottom: 30px;
+}
+
+@-moz-document url-prefix() {
+  .table-responsive {
+    padding-left: 1px;
+  }
+}

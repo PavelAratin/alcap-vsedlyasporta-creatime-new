@@ -437,6 +437,11 @@
 .cart-result {
   font-weight: 600;
   font-size: 18px;
+  &__text {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
   &__text:not(:last-child) {
     margin-bottom: 10px;
   }
@@ -444,8 +449,10 @@
     color: red;
   }
   &__title {
-    display: inline-block;
-    width: 260px;
+    width: 280px;
+  }
+  &__total {
+    width: 50%;
   }
 }
 .form-delivery {

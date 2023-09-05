@@ -3,7 +3,6 @@
   min-width: 950px;
   border-spacing: 0;
   border-collapse: collapse;
-  margin-bottom: 50px;
   &__title {
     font-size: 22px;
     th {
@@ -35,6 +34,9 @@
       font-weight: 600;
     }
   }
+  &__sum-full {
+    white-space: nowrap;
+  }
 }
 
 .cart-item {
@@ -62,6 +64,7 @@
     div {
       height: 52px;
       line-height: 52px;
+      white-space: nowrap;
     }
   }
   &__link {
@@ -94,6 +97,7 @@
   justify-content: center;
   flex-wrap: wrap;
   height: 52px;
+  white-space: nowrap;
   span {
     padding: 0 5px;
     line-height: 1.2;
