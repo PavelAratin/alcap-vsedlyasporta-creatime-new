@@ -632,11 +632,14 @@
           </form>
         </div>
       </section>
-      <!--форма обратной связи начало-->
-      @include('HTMLPartials/formFeedBack.html')
-      <!--форма обратной связи конец-->
     </main>
     @include('HTMLPartials/footer.html')
+    <!--форма обратной связи начало-->
+    @include('HTMLPartials/formFeedBack.html')
+    <!--форма обратной связи конец-->
+    <!--Попап предупреждение начало-->
+    @include('HTMLPartials/alcapPopup.html')
+    <!--Попап предупреждение конец-->
   </div>
   <script src="./bootstrap/bootstrap.bundle.min.js"></script>
   <script src="./js/main.js"></script>
