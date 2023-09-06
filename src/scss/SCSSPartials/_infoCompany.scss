@@ -3,9 +3,8 @@
 }
 .info-company-list {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-column-gap: 20px;
-  grid-row-gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  gap: 30px;
   &__item {
     grid-column: 4 span;
     display: flex;
