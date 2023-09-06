@@ -45,10 +45,11 @@
     align-items: center;
   }
   &__imgbox {
-    max-width: 150px;
+    width: 200px;
     margin-right: 10px;
   }
   &__properties {
+    white-space: nowrap;
     .cart-item__inner {
       height: 52px;
     }
