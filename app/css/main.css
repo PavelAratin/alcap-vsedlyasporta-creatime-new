@@ -1299,7 +1299,7 @@ input[type=number] {
 .brands__list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  grid-gap: 30px;
+  grid-gap: 20px;
 }
 
 .wrapper {
