@@ -80,6 +80,7 @@
     max-width: 400px;
   }
   &__amount {
+    position: relative;
     .amount:not(:last-child) {
       margin-bottom: 10px;
     }

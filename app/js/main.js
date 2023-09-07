@@ -230,6 +230,38 @@ var tabs = function tabs() {
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (tabs);
 
+/***/ }),
+
+/***/ "./src/js/togglePopup.js":
+/*!*******************************!*\
+  !*** ./src/js/togglePopup.js ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "toggleDisplayPopup": () => (/* binding */ toggleDisplayPopup)
+/* harmony export */ });
+function toggleDisplayPopup() {
+  var btnPlusEl = document.querySelector('.js-button-plus');
+  var popupEl = document.querySelector('.js-alcap-popup');
+  var cartItemAmountEl = document.querySelector('.js-cart-item-amount');
+  btnPlusEl.addEventListener('click', function () {
+    if (this.closest('.js-cart-item-amount')) {
+      var coords = cartItemAmountEl.getBoundingClientRect();
+      console.log(coords);
+      var top = coords.top + window.pageYOffset - cartItemAmountEl.offsetHeight;
+      var left = coords.left + window.pageXOffset - cartItemAmountEl.offsetWidth / 2;
+      console.log(top);
+      console.log(left);
+      popupEl.style.top = "".concat(top, "px");
+      popupEl.style.left = "".concat(left, "px");
+    }
+  }); // console.log('click');
+  // console.log(btnPlusEl);
+  // console.log(popupEl);
+}
+
 /***/ })
 
 /******/ 	});
@@ -300,8 +332,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modals__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modals */ "./src/js/modals.js");
 /* harmony import */ var _tabs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./tabs */ "./src/js/tabs.js");
 /* harmony import */ var _rangeSlider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./rangeSlider */ "./src/js/rangeSlider.js");
+/* harmony import */ var _togglePopup__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./togglePopup */ "./src/js/togglePopup.js");
 
  // import { fixedSidebar } from "./fixedSidebar";
+
 
 
 
@@ -311,7 +345,8 @@ window.addEventListener('DOMContentLoaded', function () {
   (0,_fixedMenu__WEBPACK_IMPORTED_MODULE_1__.fixedMenu)();
   (0,_modals__WEBPACK_IMPORTED_MODULE_2__["default"])();
   (0,_tabs__WEBPACK_IMPORTED_MODULE_3__["default"])();
-  (0,_rangeSlider__WEBPACK_IMPORTED_MODULE_4__.getRangeSlider)(); // fixedSidebar()
+  (0,_rangeSlider__WEBPACK_IMPORTED_MODULE_4__.getRangeSlider)();
+  (0,_togglePopup__WEBPACK_IMPORTED_MODULE_5__.toggleDisplayPopup)(); // fixedSidebar()
 });
 })();
 

@@ -1566,7 +1566,7 @@ input[type=number] {
   background: #fff;
   padding: 10px;
   position: absolute;
-  z-index: 10;
+  z-index: 2;
   top: 0;
   left: 0;
 }
@@ -1673,6 +1673,9 @@ input[type=number] {
 }
 .cart-item__info {
   max-width: 400px;
+}
+.cart-item__amount {
+  position: relative;
 }
 .cart-item__amount .amount:not(:last-child) {
   margin-bottom: 10px;

@@ -540,13 +540,15 @@
                       <span>Цвет: белый</span>
                     </div>
                   </td>
-                  <td class="cart-item__amount">
+                  <td class="cart-item__amount js-cart-item-amount">
                     <div class="amount">
                       <div class="amount__counter">
-                        <button class="btn-reset amount__button" title="Убавить количество товара">-</button>
+                        <button class="btn-reset amount__button js-button-minus"
+                          title="Убавить количество товара">-</button>
                         <input class="input-reset amount__input" type="text" value="1 шт."
                           title="Ввести необходимое количество товара" min="1" max="20">
-                        <button class="btn-reset amount__button" title="Добавить количество товара">+</button>
+                        <button class="btn-reset amount__button js-button-plus"
+                          title="Добавить количество товара">+</button>
                       </div>
                     </div>
                   </td>
@@ -1160,7 +1162,7 @@
 </section>
     <!--форма обратной связи конец-->
     <!--Попап предупреждение начало-->
-    <div class="alcap-popup">
+    <div class="alcap-popup js-alcap-popup">
   <div class="alcap-popup__inner">
     <button class="btn-reset close-button alcap-popup__close-button">
       <svg viewBox="0 -0.5 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg"
