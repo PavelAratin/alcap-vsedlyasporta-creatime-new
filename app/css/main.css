@@ -1569,6 +1569,10 @@ input[type=number] {
   z-index: 2;
   top: 0;
   left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0);
+  transition: visibility 0.2s linear, opacity 0.2s linear, transform 0.2s linear;
 }
 .alcap-popup__inner {
   display: flex;
@@ -1596,6 +1600,66 @@ input[type=number] {
   font-weight: 600;
   font-size: 12px;
   background-color: #e00c32;
+}
+
+.alcap-popup--open {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+.auth-info__container {
+  display: flex;
+}
+.auth-info__manager {
+  position: relative;
+}
+
+.manager-info {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #cfcfcf;
+}
+.manager-info__imgbox {
+  margin-right: 10px;
+}
+.manager-info__text {
+  color: #131313;
+  font-size: 16px;
+}
+.manager-info__name {
+  font-weight: 600;
+  color: #131313;
+  font-size: 18px;
+}
+.manager-info__button {
+  width: 100%;
+}
+
+.manager-contacts-list {
+  transform: translateY(-13px);
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #cfcfcf;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  z-index: 1;
+}
+.manager-contacts-list__item {
+  display: flex;
+  justify-content: space-between;
+}
+.manager-contacts-list__text {
+  font-size: 16px;
+}
+.manager-contacts-list__text--bold {
+  font-weight: 600;
 }
 
 .cart-table {
