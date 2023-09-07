@@ -1608,46 +1608,77 @@ input[type=number] {
   transform: scale(1);
 }
 
-.auth-info__container {
+.auth-info__container, .auth-info__contacts {
   display: flex;
 }
 .auth-info__manager {
-  position: relative;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #e00c32;
+  min-width: 300px;
+  margin-right: 10px;
+}
+.auth-info__contacts {
+  width: calc(100% - 310px);
+  margin: 0 -2px;
+}
+.auth-info__contact {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #cfcfcf;
+  width: 25%;
+  padding-left: 40px;
+  margin: 0 2px;
+}
+.auth-info__contact--manager {
+  width: 290px;
+  margin-right: 15px;
+  padding-left: 5px;
+}
+.auth-info__text {
+  font-size: 14px;
+  color: #131313;
+}
+.auth-info__text--bold {
+  font-weight: 600;
+  font-size: 16px;
+  transition: color 0.2s linear;
+}
+.auth-info__text--bold:hover {
+  color: #e00c32;
+}
+.auth-info__call {
+  display: inline-block;
+  text-decoration: underline;
+  transition: color 0.2s linear;
+}
+.auth-info__call:hover {
+  color: #e00c32;
 }
 
 .manager-info {
   display: flex;
-  flex-wrap: wrap;
-  padding: 5px;
-  border-radius: 5px;
-  border: 1px solid #cfcfcf;
 }
 .manager-info__imgbox {
   margin-right: 10px;
 }
 .manager-info__text {
   color: #131313;
-  font-size: 16px;
+  font-size: 14px;
 }
 .manager-info__name {
   font-weight: 600;
   color: #131313;
-  font-size: 18px;
+  font-size: 16px;
 }
 .manager-info__button {
   width: 100%;
 }
 
 .manager-contacts-list {
-  transform: translateY(-13px);
   padding: 5px;
   border-radius: 5px;
   border: 1px solid #cfcfcf;
-  opacity: 0;
-  visibility: hidden;
-  position: absolute;
-  left: 0;
-  right: 0;
   background-color: #ffffff;
   z-index: 1;
 }

@@ -15,7 +15,6 @@ export function fixedMenu() {
     }
     if (fixedMenuEl.classList.contains('js-fixed-menu-show') && sidebarEl) {
       console.log(fixedMenuEl.classList.contains('js-fixed-menu-show'));
-      console.log("есть на странице", sidebarEl);
 
       sidebarEl.classList.add('js-fixed-sidebar');
       sidebarEl.style.top = `${headerFixedMenuEl.offsetHeight + 20}px`;
