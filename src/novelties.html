@@ -18,7 +18,7 @@
         <div class="container">
           <ul class="breadcrumbs-list">
             <li class="breadcrumbs-list__item">
-              <a href="/" class="breadcrumbs-list__link">Главная страница</a>
+              <a href="/" class="breadcrumbs-list__link" title="На главную страницу">Главная страница</a>
             </li>
             <li class="breadcrumbs-list__item">
               <a href="#" class="breadcrumbs-list__link active">Новинки</a>
@@ -1432,11 +1432,11 @@
           </section>
         </div>
       </div>
-      <!--форма обратной связи начало-->
-      @include('HTMLPartials/formFeedBack.html')
-      <!--форма обратной связи конец-->
     </main>
     @include('HTMLPartials/footer.html')
+    <!--модальные окна (внутри формы) начало-->
+    @include('HTMLPartials/formInModalWindow.html')
+    <!--модальные окна (внутри формы) конец-->
   </div>
   <script src="./noUiSlider/nouislider.min.js"></script>
   <script src="./bootstrap/bootstrap.bundle.min.js"></script>

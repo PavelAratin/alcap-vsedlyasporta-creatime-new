@@ -55,11 +55,11 @@ input::-webkit-inner-spin-button {
 input[type="number"] {
   -moz-appearance: textfield;
 }
-// .site-container {
-//   display: flex;
-//   flex-direction: column;
-//   height: 100%;
-// }
+.site-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
 .container {
   max-width: 1240px;
   margin: 0 auto;
@@ -139,6 +139,7 @@ input[type="number"] {
   padding: 10px;
   cursor: pointer;
   display: none;
+  min-width: 320px;
   &__wrapper {
     display: flex;
     align-items: center;
@@ -213,7 +214,7 @@ input[type="number"] {
 .checkbox-label {
   cursor: pointer;
   color: #666666;
-  font-size: 14px;
+  font-size: 16px;
 }
 .delivery-select:focus {
   outline: none;

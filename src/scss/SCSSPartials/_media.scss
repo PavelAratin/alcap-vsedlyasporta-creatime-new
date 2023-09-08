@@ -61,12 +61,16 @@
   .sidebar {
     flex: 0 0 100%;
     margin-bottom: 30px;
+    margin-right: 0;
   }
   .fixed-menu {
     display: none;
   }
   .form-delivery__item {
     width: 100%;
+  }
+  .form-autorization {
+    max-width: 100%;
   }
 }
 

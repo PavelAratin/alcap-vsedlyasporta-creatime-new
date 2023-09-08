@@ -18,7 +18,7 @@
         <div class="container">
           <ul class="breadcrumbs-list">
             <li class="breadcrumbs-list__item">
-              <a href="/" class="breadcrumbs-list__link">Главная страница</a>
+              <a href="/" class="breadcrumbs-list__link" title="На главную страницу">Главная страница</a>
             </li>
             <li class="breadcrumbs-list__item">
               <a href="#" class="breadcrumbs-list__link active">Авторизация</a>
@@ -44,8 +44,8 @@
                   autocomplete="off" placeholder="************">
               </div>
               <div class="form-autorization__item">
-                <label class="checkbox-label catalog-filtres__chekbox-label"
-                  aria-label="Запомнить личные данные пользователя">
+                <label class="checkbox-label" aria-label="Запомнить личные данные пользователя"
+                  title="Запомнить личные данные пользователя">
                   <input class="checkbox" type="checkbox">
                   <span class="checkbox-custom"></span>
                   Запомнить меня
@@ -91,8 +91,8 @@
                 <textarea class="form-autorization__input input-reset" name="OTHER"></textarea>
               </div>
               <div class="form-autorization__item">
-                <label class="checkbox-label catalog-filtres__chekbox-label"
-                  aria-label="Согласие на обработку персональных данных">
+                <label class="checkbox-label" aria-label="Согласие на обработку персональных данных"
+                  title="Согласие на обработку персональных данных">
                   <input class="checkbox" type="checkbox">
                   <span class="checkbox-custom"></span>
                   Нажимая кнопку, я даю свое согласие на обработку моих персональных данных, в соответствии с
@@ -104,11 +104,11 @@
           </div>
         </div>
       </div>
-      <!--форма обратной связи начало-->
-      @include('HTMLPartials/formFeedBack.html')
-      <!--форма обратной связи конец-->
     </main>
     @include('HTMLPartials/footer.html')
+    <!--модальные окна (внутри формы) начало-->
+    @include('HTMLPartials/formInModalWindow.html')
+    <!--модальные окна (внутри формы) конец-->
   </div>
   <script src="./noUiSlider/nouislider.min.js"></script>
   <script src="./bootstrap/bootstrap.bundle.min.js"></script>

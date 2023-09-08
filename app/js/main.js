@@ -67,28 +67,32 @@ var modals = function modals() {
   var fixBlocks = document.querySelectorAll('.js-fix-block');
 
   function bindModal(triggerSelector, modalSelector, closeSelector) {
-    var trigger = document.querySelector(triggerSelector);
+    var triggerElems = document.querySelectorAll(triggerSelector);
     var modal = document.querySelector(modalSelector);
-    var close = document.querySelector(closeSelector);
-    trigger.addEventListener('click', function (e) {
-      if (e.target) {
-        e.preventDefault();
-      }
+    var closeElems = document.querySelectorAll(closeSelector);
+    triggerElems.forEach(function (trigger) {
+      trigger.addEventListener('click', function (e) {
+        if (e.target) {
+          e.preventDefault();
+        }
 
-      modal.classList.add('js-modal-visible');
-      document.body.classList.add('js-stop-scroll');
-      fixBlocks.forEach(function (fixBlock) {
-        fixBlock.style.paddingRight = paddingOffset;
+        modal.classList.add('js-modal-visible');
+        document.body.classList.add('js-stop-scroll');
+        fixBlocks.forEach(function (fixBlock) {
+          fixBlock.style.paddingRight = paddingOffset;
+        });
+        document.body.style.paddingRight = paddingOffset;
       });
-      document.body.style.paddingRight = paddingOffset;
     });
-    close.addEventListener('click', function () {
-      modal.classList.remove('js-modal-visible');
-      document.body.classList.remove('js-stop-scroll');
-      fixBlocks.forEach(function (fixBlock) {
-        fixBlock.style.paddingRight = '0px';
+    closeElems.forEach(function (close) {
+      close.addEventListener('click', function () {
+        modal.classList.remove('js-modal-visible');
+        document.body.classList.remove('js-stop-scroll');
+        fixBlocks.forEach(function (fixBlock) {
+          fixBlock.style.paddingRight = '0px';
+        });
+        document.body.style.paddingRight = '0px';
       });
-      document.body.style.paddingRight = '0px';
     });
     modal.addEventListener('click', function (e) {
       if (e.target === modal.querySelector('.js-overlay-wrapper')) {
@@ -100,11 +104,10 @@ var modals = function modals() {
         document.body.style.paddingRight = '0px';
       }
     });
-  } // bindModal('.js-cart-call', '.js-cart', '.js-close-button');
-  // bindModal('.js-cart-call-fixed-menu', '.js-cart', '.js-close-button');
+  }
 
-
-  bindModal('.js-call-form-feedback', '.js-form-feedback', '.js-close-button-form-feedback');
+  bindModal('.js-call-form-feedback', '.js-form-feedback', '.js-close-button-form');
+  bindModal('.js-callform-director', '.js-form-director', '.js-close-button-form');
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (modals);

@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
-  <link rel="stylesheet" href="./noUiSlider/nouislider.min.css">
   <link rel="stylesheet" href="./css/main.css">
-  <title>Личный кабинет</title>
+  <title>Избранное - Альфа Каприз ОПТ - спортивные товары</title>
 </head>
 
 <body>
@@ -462,121 +461,510 @@
               <a href="/" class="breadcrumbs-list__link" title="На главную страницу">Главная страница</a>
             </li>
             <li class="breadcrumbs-list__item">
-              <a href="#" class="breadcrumbs-list__link active">Авторизация</a>
+              <a href="#" class="breadcrumbs-list__link active">Избранное</a>
             </li>
           </ul>
         </div>
       </div>
-      <div class="wrapper">
-        <div class="container wrapper__container">
-          <aside class="sidebar">
-  <nav class="sidebar-nav">
-    <ul class="sidebar-nav__list">
-      <li class="sidebar-nav__item">
-        <a class="sidebar-nav__link" href="#">Интернет-магазин</a>
-      </li>
-      <li class="sidebar-nav__item active">
-        <a class="sidebar-nav__link" href="#">О компании</a>
-      </li>
-      <li class="sidebar-nav__item">
-        <a class="sidebar-nav__link" href="#">Вакансии</a>
-      </li>
-      <li class="sidebar-nav__item">
-        <a class="sidebar-nav__link" href="#">Контакты</a>
-      </li>
-      <li class="sidebar-nav__item">
-        <a class="sidebar-nav__link" href="#">Сотрудничество</a>
-      </li>
-      <li class="sidebar-nav__item">
-        <a class="sidebar-nav__link" href="#">Спортивным магазинам</a>
-      </li>
-      <li class="sidebar-nav__item">
-        <a class="sidebar-nav__link" href="#">Производителям</a>
-      </li>
-      <li class="sidebar-nav__item">
-        <a class="sidebar-nav__link" href="#">Торговым компаниям</a>
-      </li>
-      <li class="sidebar-nav__item">
-        <a class="sidebar-nav__link" href="#">Аренда и хранение</a>
-      </li>
-    </ul>
-  </nav>
-</aside>
-          <div class="content">
-            <h1 class="title-h1 content__title">Авторизация оптовых покупателей</h1>
-            <h3 class="title-h3 content__title content__title--h3">Если Вы розничный покупатель, перейдите, пожалуйста,
-              на сайт <a href="https://sport07.ru/" target="_blank">https://sport07.ru/</a></h3>
-            <form class="form-autorization" action="#">
-              <div class="form-autorization__item">
-                <label class="form-autorization__label">Логин</label>
-                <input class="form-autorization__input input-reset" type="text" name="USER_LOGIN" maxlength="50">
-              </div>
-              <div class="form-autorization__item">
-                <label class="form-autorization__label">Пароль</label>
-                <input class="form-autorization__input input-reset" type="password" name="USER_PASSWORD" maxlength="50"
-                  autocomplete="off" placeholder="************">
-              </div>
-              <div class="form-autorization__item">
-                <label class="checkbox-label" aria-label="Запомнить личные данные пользователя"
-                  title="Запомнить личные данные пользователя">
-                  <input class="checkbox" type="checkbox">
-                  <span class="checkbox-custom"></span>
-                  Запомнить меня
-                </label>
-              </div>
-              <div class="form-autorization__item">
-                <a class="form-autorization__link" href="#">Забыли пароль?</a>
-                <button class="btn-reset form-autorization__button">Войти в кабинет</button>
-              </div>
-            </form>
-            <h2 class="title-h2">Заявка на регистрацию нового оптового пользователя (оптовая закупка от 15 000 рублей)
-            </h2>
-            <p class="content__text">Если вы оптовый покупатель и хотите получить доступ в личный кабинет, просьба,
-              заполните ниже регистрационную форму. Работаем только с юридическими лицами, если вы частное лицо просим
-              перейти на сайт нашего интернет магазина <a class="content__link-intext" target="_blank"
-                href="https://sport07.ru/">https://sport07.ru/</a>
-              Зарегистрированные пользователи получают
-              информацию о товарах и их наличии, новинках ассортимента , изменениях цен, акциях и скидках, а также имеют
-              возможность размещать заказы 24 часа в сутки и 7 дней в неделю!</p>
-            <form class="form-autorization" action="#">
-              <div class="form-autorization__item">
-                <label class="form-autorization__label">Название компании</label>
-                <input class="form-autorization__input input-reset" type="text" name="COMPANY">
-              </div>
-              <div class="form-autorization__item">
-                <label class="form-autorization__label">Город/регион</label>
-                <input class="form-autorization__input input-reset" type="text" name="CITY">
-              </div>
-              <div class="form-autorization__item">
-                <label class="form-autorization__label">Ваш em@il</label>
-                <input class="form-autorization__input input-reset" type="email" name="EMAIL">
-              </div>
-              <div class="form-autorization__item">
-                <label class="form-autorization__label">Телефон</label>
-                <input class="form-autorization__input input-reset" type="tel" name="PHONE">
-              </div>
-              <div class="form-autorization__item">
-                <label class="form-autorization__label">Контактное лицо</label>
-                <input class="form-autorization__input input-reset" type="text" name="FIO">
-              </div>
-              <div class="form-autorization__item">
-                <label class="form-autorization__label">Дополнительная информация</label>
-                <textarea class="form-autorization__input input-reset" name="OTHER"></textarea>
-              </div>
-              <div class="form-autorization__item">
-                <label class="checkbox-label" aria-label="Согласие на обработку персональных данных"
-                  title="Согласие на обработку персональных данных">
-                  <input class="checkbox" type="checkbox">
-                  <span class="checkbox-custom"></span>
-                  Нажимая кнопку, я даю свое согласие на обработку моих персональных данных, в соответствии с
-                  Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для
-                  целей, определенных в Согласии на обработку персональных данных
-                </label>
-              </div>
-            </form>
+      <section class="wishlist">
+        <div class="container">
+          <h1 class="title-h1">Избранное</h1>
+          <div class="table-responsive">
+            <table class="cart-table">
+              <tbody>
+                <tr class="cart-table__title">
+                  <th>Серия RACE' (см)</th>
+                </tr>
+                <tr class="cart-table__head">
+                  <th>Наименование</th>
+                  <th>Цена</th>
+                  <th>Свойства</th>
+                  <th>Кол-во</th>
+                  <th>Сумма</th>
+                  <th></th>
+                </tr>
+                <tr class="cart-table__item cart-item">
+                  <td class="cart-item__info">
+                    <div class="cart-item__inner">
+                      <div class="cart-item__imgbox">
+                        <img class="cart-item__img-good" src="./images/popular-goods-img-1.jpg" alt="Сапборд aquatic">
+                      </div>
+                      <div class="cart-item__title">
+                        <a href="#" class="cart-item__link">
+                          Надувная SUP-доска Сапборд (SUP board) AQUATIC-14 RACE
+                        </a>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="cart-item__price">
+                    <div class="price">
+                      <span class="price__old">28 892 руб.</span>
+                      <span class="price__current">27 447 руб.</span>
+                    </div>
+                  </td>
+                  <td class="cart-item__properties">
+                    <div class="cart-item__inner">
+                      <img class="cart-item__img-property" src="./images/properties-img-white.jpg"
+                        alt="Свойство товара">
+                      <span>Цвет: белый</span>
+                    </div>
+                  </td>
+                  <td class="cart-item__amount js-cart-item-amount">
+                    <div class="amount">
+                      <div class="amount__counter">
+                        <button class="btn-reset amount__button js-button-minus"
+                          title="Убавить количество товара">-</button>
+                        <input class="input-reset amount__input" type="text" value="1 шт."
+                          title="Ввести необходимое количество товара" min="1" max="20">
+                        <button class="btn-reset amount__button js-button-plus"
+                          title="Добавить количество товара">+</button>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="cart-item__sum">
+                    <div>19212129 р</div>
+                  </td>
+                  <td class="cart-item__remove">
+                    <div class="cart-item__remove-inner">
+                      <button class="btn-reset close-button" title="Удалить товар из корзины">
+                        <svg viewBox="0 -0.5 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <g id="Page-1" stroke="none" stroke-width="1">
+                            <g id="Dribbble-Light-Preview" transform="translate(-419.000000, -240.000000)">
+                              <g id="icons" transform="translate(56.000000, 160.000000)">
+                                <polygon id="close-[#1511]"
+                                  points="375.0183 90 384 98.554 382.48065 100 373.5 91.446 364.5183 100 363 98.554 371.98065 90 363 81.446 364.5183 80 373.5 88.554 382.48065 80 384 81.446">
+                                </polygon>
+                              </g>
+                            </g>
+                          </g>
+                        </svg>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="cart-table__bottom">
+                  <td class="td-empty" colspan="2"></td>
+                  <td class="cart-table__sum-text">итого по группе:</td>
+                  <td class="cart-table__count">7 шт</td>
+                  <td class="cart-table__sum-full">1921212119 р</td>
+                </tr>
+                <tr class="cart-table__title">
+                  <th>Батуты</th>
+                </tr>
+                <tr class="cart-table__head">
+                  <th>Наименование</th>
+                  <th>Цена</th>
+                  <th>Свойства</th>
+                  <th>Кол-во</th>
+                  <th>Сумма</th>
+                  <th></th>
+                </tr>
+                <tr class="cart-table__item cart-item">
+                  <td class="cart-item__info">
+                    <div class="cart-item__inner">
+                      <div class="cart-item__imgbox">
+                        <img class="cart-item__img-good" src="./images/catalog-img-3.jpg" alt="Сапборд aquatic">
+                      </div>
+                      <div class="cart-item__title">
+                        <a href="#" class="cart-item__link">
+                          Батут HC-MT012 (140см) с защитной сеткой б/л
+                        </a>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="cart-item__price">
+                    <div class="price">
+                      <span class="price__old">40 892 руб.</span>
+                      <span class="price__current">300 447 руб.</span>
+                    </div>
+                  </td>
+                  <td class="cart-item__properties">
+                    <div class="cart-item__inner">
+                      <img class="cart-item__img-property" src="./images/properties-img-white.jpg"
+                        alt="Свойство товара">
+                      <span>Цвет: белый</span>
+                    </div>
+                  </td>
+                  <td class="cart-item__amount">
+                    <div class="amount">
+                      <div class="amount__counter">
+                        <button class="btn-reset amount__button" title="Убавить количество товара">-</button>
+                        <input class="input-reset amount__input" type="text" value="1 шт."
+                          title="Ввести необходимое количество товара" min="1" max="20">
+                        <button class="btn-reset amount__button" title="Добавить количество товара">+</button>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="cart-item__sum">
+                    <div>19212129 р</div>
+                  </td>
+                  <td class="cart-item__remove">
+                    <div class="cart-item__remove-inner">
+                      <button class="btn-reset close-button" title="Удалить товар из корзины">
+                        <svg viewBox="0 -0.5 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <g id="Page-1" stroke="none" stroke-width="1">
+                            <g id="Dribbble-Light-Preview" transform="translate(-419.000000, -240.000000)">
+                              <g id="icons" transform="translate(56.000000, 160.000000)">
+                                <polygon id="close-[#1511]"
+                                  points="375.0183 90 384 98.554 382.48065 100 373.5 91.446 364.5183 100 363 98.554 371.98065 90 363 81.446 364.5183 80 373.5 88.554 382.48065 80 384 81.446">
+                                </polygon>
+                              </g>
+                            </g>
+                          </g>
+                        </svg>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="cart-table__bottom">
+                  <td class="td-empty" colspan="2"></td>
+                  <td class="cart-table__sum-text">итого по группе:</td>
+                  <td class="cart-table__count">7 шт</td>
+                  <td class="cart-table__sum-full">1921212119 р</td>
+                </tr>
+                <tr class="cart-table__title">
+                  <th>Спортивные бутылки и велофляги</th>
+                </tr>
+                <tr class="cart-table__head">
+                  <th>Наименование</th>
+                  <th>Цена</th>
+                  <th>Свойства</th>
+                  <th>Кол-во</th>
+                  <th>Сумма</th>
+                  <th></th>
+                </tr>
+                <tr class="cart-table__item cart-item">
+                  <td class="cart-item__info">
+                    <div class="cart-item__inner">
+                      <div class="cart-item__imgbox">
+                        <img class="cart-item__img-good" src="./images/shaker-white.jpg" alt="Сапборд aquatic">
+                      </div>
+                      <div class="cart-item__title">
+                        <a href="#" class="cart-item__link">
+                          Термобутылка BF-TWB-50-500
+                        </a>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="cart-item__price">
+                    <div class="price">
+                      <span class="price__old">892 руб.</span>
+                      <span class="price__current">447 руб.</span>
+                    </div>
+                    <div class="price">
+                      <span class="price__old">192 руб.</span>
+                      <span class="price__current">247 руб.</span>
+                    </div>
+                    <div class="price">
+                      <span class="price__old">392 руб.</span>
+                      <span class="price__current">447000 руб.</span>
+                    </div>
+                  </td>
+                  <td class="cart-item__properties">
+                    <div class="cart-item__inner">
+                      <img class="cart-item__img-property" src="./images/properties-img-white.jpg"
+                        alt="Свойство товара">
+                      <span>Цвет: белый</span>
+                    </div>
+                    <div class="cart-item__inner">
+                      <img class="cart-item__img-property" src="./images/properties-img-grey.jpg" alt="Свойство товара">
+                      <span>Цвет: серый</span>
+                    </div>
+                    <div class="cart-item__inner">
+                      <img class="cart-item__img-property" src="./images/properties-img-black.jpg"
+                        alt="Свойство товара">
+                      <span>Цвет: черный</span>
+                    </div>
+                  </td>
+                  <td class="cart-item__amount">
+                    <div class="amount">
+                      <div class="amount__counter">
+                        <button class="btn-reset amount__button" title="Убавить количество товара">-</button>
+                        <input class="input-reset amount__input" type="text" value="1 шт."
+                          title="Ввести необходимое количество товара" min="1" max="20">
+                        <button class="btn-reset amount__button" title="Добавить количество товара">+</button>
+                      </div>
+                    </div>
+                    <div class="amount">
+                      <div class="amount__counter">
+                        <button class="btn-reset amount__button" title="Убавить количество товара">-</button>
+                        <input class="input-reset amount__input" type="text" value="1 шт."
+                          title="Ввести необходимое количество товара" min="1" max="20">
+                        <button class="btn-reset amount__button" title="Добавить количество товара">+</button>
+                      </div>
+                    </div>
+                    <div class="amount">
+                      <div class="amount__counter">
+                        <button class="btn-reset amount__button" title="Убавить количество товара">-</button>
+                        <input class="input-reset amount__input" type="text" value="1 шт."
+                          title="Ввести необходимое количество товара" min="1" max="20">
+                        <button class="btn-reset amount__button" title="Добавить количество товара">+</button>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="cart-item__sum">
+                    <div>19212129 р</div>
+                    <div>19212129 р</div>
+                    <div>19212129 р</div>
+                  </td>
+                  <td class="cart-item__remove">
+                    <div class="cart-item__remove-inner">
+                      <button class="btn-reset close-button" title="Удалить товар из корзины">
+                        <svg viewBox="0 -0.5 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <g id="Page-1" stroke="none" stroke-width="1">
+                            <g id="Dribbble-Light-Preview" transform="translate(-419.000000, -240.000000)">
+                              <g id="icons" transform="translate(56.000000, 160.000000)">
+                                <polygon id="close-[#1511]"
+                                  points="375.0183 90 384 98.554 382.48065 100 373.5 91.446 364.5183 100 363 98.554 371.98065 90 363 81.446 364.5183 80 373.5 88.554 382.48065 80 384 81.446">
+                                </polygon>
+                              </g>
+                            </g>
+                          </g>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="cart-item__remove-inner">
+                      <button class="btn-reset close-button" title="Удалить товар из корзины">
+                        <svg viewBox="0 -0.5 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <g id="Page-1" stroke="none" stroke-width="1">
+                            <g id="Dribbble-Light-Preview" transform="translate(-419.000000, -240.000000)">
+                              <g id="icons" transform="translate(56.000000, 160.000000)">
+                                <polygon id="close-[#1511]"
+                                  points="375.0183 90 384 98.554 382.48065 100 373.5 91.446 364.5183 100 363 98.554 371.98065 90 363 81.446 364.5183 80 373.5 88.554 382.48065 80 384 81.446">
+                                </polygon>
+                              </g>
+                            </g>
+                          </g>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="cart-item__remove-inner">
+                      <button class="btn-reset close-button" title="Удалить товар из корзины">
+                        <svg viewBox="0 -0.5 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <g id="Page-1" stroke="none" stroke-width="1">
+                            <g id="Dribbble-Light-Preview" transform="translate(-419.000000, -240.000000)">
+                              <g id="icons" transform="translate(56.000000, 160.000000)">
+                                <polygon id="close-[#1511]"
+                                  points="375.0183 90 384 98.554 382.48065 100 373.5 91.446 364.5183 100 363 98.554 371.98065 90 363 81.446 364.5183 80 373.5 88.554 382.48065 80 384 81.446">
+                                </polygon>
+                              </g>
+                            </g>
+                          </g>
+                        </svg>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="cart-table__item cart-item">
+                  <td class="cart-item__info">
+                    <div class="cart-item__inner">
+                      <div class="cart-item__imgbox">
+                        <img class="cart-item__img-good" src="./images/shaker-stblue.jpg" alt="Сапборд aquatic">
+                      </div>
+                      <div class="cart-item__title">
+                        <a href="#" class="cart-item__link">
+                          Бутылка спортивная стальная BF-SSWB-30-400
+                        </a>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="cart-item__price">
+                    <div class="price">
+                      <span class="price__old">346 руб.</span>
+                      <span class="price__current">329 руб.</span>
+                    </div>
+                  </td>
+                  <td class="cart-item__properties">
+                    <div class="cart-item__inner">
+                      <img class="cart-item__img-property" src="./images/properties-img-stblue.jpg"
+                        alt="Свойство товара">
+                      <span>Цвет: голубой</span>
+                    </div>
+                  </td>
+                  <td class="cart-item__amount">
+                    <div class="amount">
+                      <div class="amount__counter">
+                        <button class="btn-reset amount__button" title="Убавить количество товара">-</button>
+                        <input class="input-reset amount__input" type="text" value="1 шт."
+                          title="Ввести необходимое количество товара" min="1" max="20">
+                        <button class="btn-reset amount__button" title="Добавить количество товара">+</button>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="cart-item__sum">
+                    <div>19212129 р</div>
+                  </td>
+                  <td class="cart-item__remove">
+                    <div class="cart-item__remove-inner">
+                      <button class="btn-reset close-button" title="Удалить товар из корзины">
+                        <svg viewBox="0 -0.5 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <g id="Page-1" stroke="none" stroke-width="1">
+                            <g id="Dribbble-Light-Preview" transform="translate(-419.000000, -240.000000)">
+                              <g id="icons" transform="translate(56.000000, 160.000000)">
+                                <polygon id="close-[#1511]"
+                                  points="375.0183 90 384 98.554 382.48065 100 373.5 91.446 364.5183 100 363 98.554 371.98065 90 363 81.446 364.5183 80 373.5 88.554 382.48065 80 384 81.446">
+                                </polygon>
+                              </g>
+                            </g>
+                          </g>
+                        </svg>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="cart-table__bottom">
+                  <td class="td-empty" colspan="2"></td>
+                  <td class="cart-table__sum-text">итого по группе:</td>
+                  <td class="cart-table__count">7 шт</td>
+                  <td class="cart-table__sum-full">1921212119 р</td>
+                </tr>
+                <tr class="cart-table__title">
+                  <th>Перчатки вратаря</th>
+                </tr>
+                <tr class="cart-table__head">
+                  <th>Наименование</th>
+                  <th>Цена</th>
+                  <th>Свойства</th>
+                  <th>Кол-во</th>
+                  <th>Сумма</th>
+                  <th></th>
+                </tr>
+                <tr class="cart-table__item cart-item">
+                  <td class="cart-item__info">
+                    <div class="cart-item__inner">
+                      <div class="cart-item__imgbox">
+                        <img class="cart-item__img-good" src="./images/goods-perch-vrat-yellow-rgx.jpg"
+                          alt="Перчатки вратаря RGX">
+                      </div>
+                      <div class="cart-item__title">
+                        <a href="#" class="cart-item__link">
+                          Перчатки вратаря RGX-GFB10 Orange
+                        </a>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="cart-item__price">
+                    <div class="price">
+                      <span class="price__current">748 руб.</span>
+                    </div>
+                    <div class="price">
+                      <span class="price__current">748 руб.</span>
+                    </div>
+                    <div class="price">
+                      <span class="price__current">748 руб.</span>
+                    </div>
+                  </td>
+                  <td class="cart-item__properties">
+                    <div class="cart-item__inner">
+                      <span>Размер: L</span>
+                    </div>
+                    <div class="cart-item__inner">
+                      <span>Размер: M</span>
+                    </div>
+                    <div class="cart-item__inner">
+                      <span>Размер: S</span>
+                    </div>
+                  </td>
+                  <td class="cart-item__amount">
+                    <div class="amount">
+                      <div class="amount__counter">
+                        <button class="btn-reset amount__button" title="Убавить количество товара">-</button>
+                        <input class="input-reset amount__input" type="text" value="1 шт."
+                          title="Ввести необходимое количество товара" min="1" max="20">
+                        <button class="btn-reset amount__button" title="Добавить количество товара">+</button>
+                      </div>
+                    </div>
+                    <div class="amount">
+                      <div class="amount__counter">
+                        <button class="btn-reset amount__button" title="Убавить количество товара">-</button>
+                        <input class="input-reset amount__input" type="text" value="1 шт."
+                          title="Ввести необходимое количество товара" min="1" max="20">
+                        <button class="btn-reset amount__button" title="Добавить количество товара">+</button>
+                      </div>
+                    </div>
+                    <div class="amount">
+                      <div class="amount__counter">
+                        <button class="btn-reset amount__button" title="Убавить количество товара">-</button>
+                        <input class="input-reset amount__input" type="text" value="1 шт."
+                          title="Ввести необходимое количество товара" min="1" max="20">
+                        <button class="btn-reset amount__button" title="Добавить количество товара">+</button>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="cart-item__sum">
+                    <div>748 р</div>
+                    <div>748 р</div>
+                    <div>748 р</div>
+                  </td>
+                  <td class="cart-item__remove">
+                    <div class="cart-item__remove-inner">
+                      <button class="btn-reset close-button" title="Удалить товар из корзины">
+                        <svg viewBox="0 -0.5 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <g id="Page-1" stroke="none" stroke-width="1">
+                            <g id="Dribbble-Light-Preview" transform="translate(-419.000000, -240.000000)">
+                              <g id="icons" transform="translate(56.000000, 160.000000)">
+                                <polygon id="close-[#1511]"
+                                  points="375.0183 90 384 98.554 382.48065 100 373.5 91.446 364.5183 100 363 98.554 371.98065 90 363 81.446 364.5183 80 373.5 88.554 382.48065 80 384 81.446">
+                                </polygon>
+                              </g>
+                            </g>
+                          </g>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="cart-item__remove-inner">
+                      <button class="btn-reset close-button" title="Удалить товар из корзины">
+                        <svg viewBox="0 -0.5 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <g id="Page-1" stroke="none" stroke-width="1">
+                            <g id="Dribbble-Light-Preview" transform="translate(-419.000000, -240.000000)">
+                              <g id="icons" transform="translate(56.000000, 160.000000)">
+                                <polygon id="close-[#1511]"
+                                  points="375.0183 90 384 98.554 382.48065 100 373.5 91.446 364.5183 100 363 98.554 371.98065 90 363 81.446 364.5183 80 373.5 88.554 382.48065 80 384 81.446">
+                                </polygon>
+                              </g>
+                            </g>
+                          </g>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="cart-item__remove-inner">
+                      <button class="btn-reset close-button" title="Удалить товар из корзины">
+                        <svg viewBox="0 -0.5 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <g id="Page-1" stroke="none" stroke-width="1">
+                            <g id="Dribbble-Light-Preview" transform="translate(-419.000000, -240.000000)">
+                              <g id="icons" transform="translate(56.000000, 160.000000)">
+                                <polygon id="close-[#1511]"
+                                  points="375.0183 90 384 98.554 382.48065 100 373.5 91.446 364.5183 100 363 98.554 371.98065 90 363 81.446 364.5183 80 373.5 88.554 382.48065 80 384 81.446">
+                                </polygon>
+                              </g>
+                            </g>
+                          </g>
+                        </svg>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="cart-table__bottom">
+                  <td class="td-empty" colspan="2"></td>
+                  <td class="cart-table__sum-text">итого по группе:</td>
+                  <td class="cart-table__count">7 шт</td>
+                  <td class="cart-table__sum-full">1921212119 р</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
-      </div>
+      </section>
+
     </main>
     <footer class="footer">
   <div class="container footer__container">
@@ -703,8 +1091,90 @@
   </div>
 </section>
     <!--модальные окна (внутри формы) конец-->
+    <!--Попап предупреждение начало-->
+    <div class="alcap-popup alert-counter">
+  <div class="alcap-popup__inner">
+    <button class="btn-reset close-button alcap-popup__close-button">
+      <svg viewBox="0 -0.5 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+        <g id="Page-1" stroke="none" stroke-width="1">
+          <g id="Dribbble-Light-Preview" transform="translate(-419.000000, -240.000000)">
+            <g id="icons" transform="translate(56.000000, 160.000000)">
+              <polygon id="close-[#1511]"
+                points="375.0183 90 384 98.554 382.48065 100 373.5 91.446 364.5183 100 363 98.554 371.98065 90 363 81.446 364.5183 80 373.5 88.554 382.48065 80 384 81.446">
+              </polygon>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </button>
+    <p class="alcap-popup__text">Извините, доступное количество на нашем складе: <span>5 шт.</span> </p>
+    <button class="btn-reset alcap-popup__button">Хорошо</button>
   </div>
-  <script src="./noUiSlider/nouislider.min.js"></script>
+</div>
+
+<div class="alcap-popup alert-input">
+  <div class="alcap-popup__inner">
+    <button class="btn-reset close-button alcap-popup__close-button">
+      <svg viewBox="0 -0.5 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+        <g id="Page-1" stroke="none" stroke-width="1">
+          <g id="Dribbble-Light-Preview" transform="translate(-419.000000, -240.000000)">
+            <g id="icons" transform="translate(56.000000, 160.000000)">
+              <polygon id="close-[#1511]"
+                points="375.0183 90 384 98.554 382.48065 100 373.5 91.446 364.5183 100 363 98.554 371.98065 90 363 81.446 364.5183 80 373.5 88.554 382.48065 80 384 81.446">
+              </polygon>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </button>
+    <p class="alcap-popup__text">Извините, данный товар продается только по: <span>18 шт.</span> Используйте "+" или "-"
+    </p>
+    <button class="btn-reset alcap-popup__button">Хорошо</button>
+  </div>
+</div>
+
+<div class="alcap-popup quick-buy">
+  <div class="alcap-popup__inner">
+    <div class="alcap-popup__top">
+      <div class="alcap-popup__collapse">
+        <span>Свернуть</span>
+        <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 9L12 15L18 9" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </div>
+      <button class="btn-reset close-button alcap-popup__close-button">
+        <svg viewBox="0 -0.5 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g id="Page-1" stroke="none" stroke-width="1">
+            <g id="Dribbble-Light-Preview" transform="translate(-419.000000, -240.000000)">
+              <g id="icons" transform="translate(56.000000, 160.000000)">
+                <polygon id="close-[#1511]"
+                  points="375.0183 90 384 98.554 382.48065 100 373.5 91.446 364.5183 100 363 98.554 371.98065 90 363 81.446 364.5183 80 373.5 88.554 382.48065 80 384 81.446">
+                </polygon>
+              </g>
+            </g>
+          </g>
+        </svg>
+      </button>
+    </div>
+    <div class="alcap-popup__sum">
+      <span class="alcap-popup__itog">Итого:</span>
+      <span class="alcap-popup__full-sum"><strong>1 293 198 руб.</strong></span>
+    </div>
+    <div class="alcap-popup__bottom">
+      <div class="quick-buy__title">Итого:</div>
+      <p>Количество товара: <strong>18</strong></p>
+      <p>Количество позиций: <strong>94</strong></p>
+      <p>На сумму: <strong>1 293 198 руб.</strong></p>
+      <p>Экономия: <strong>65 118 руб.</strong></p>
+    </div>
+    <button class="btn-reset alcap-popup__button">Хорошо</button>
+  </div>
+</div>
+    <!--Попап предупреждение конец-->
+  </div>
   <script src="./bootstrap/bootstrap.bundle.min.js"></script>
   <script src="./js/main.js"></script>
 </body>

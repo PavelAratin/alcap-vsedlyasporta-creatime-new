@@ -1,19 +1,18 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="./css/main.css">
-  <title>Корзина</title>
+  <title>Избранное - Альфа Каприз ОПТ - спортивные товары</title>
 </head>
 
 <body>
   <div class="site-container">
     @include('HTMLPartials/header.html')
     <main>
-      @include('HTMLPartials/authInfo.html')
       <div class="breadcrumbs">
         <div class="container">
           <ul class="breadcrumbs-list">
@@ -21,47 +20,14 @@
               <a href="/" class="breadcrumbs-list__link" title="На главную страницу">Главная страница</a>
             </li>
             <li class="breadcrumbs-list__item">
-              <a href="#" class="breadcrumbs-list__link active">Корзина</a>
+              <a href="#" class="breadcrumbs-list__link active">Избранное</a>
             </li>
           </ul>
         </div>
       </div>
-      <section class="cart-goods">
+      <section class="wishlist">
         <div class="container">
-          <h1 class="title-h1 cart-goods__title">Корзина</h1>
-          <div class="table-responsive">
-            <table class="warning-table">
-              <thead>
-                <tr>
-                  <th>Наименование</th>
-                  <th>Описание ошибки</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Хоккейные коньки RGX-5.0 X-CODE Green (37)</td>
-                  <td>Извините, но данный товар больше недоступен.</td>
-                </tr>
-                <tr>
-                  <td>Хоккейные коньки RGX-5.0 X-CODE Green (37)</td>
-                  <td>Извините, но данный товар больше недоступен.</td>
-                </tr>
-                <tr>
-                  <td>Хоккейные коньки RGX-5.0 X-CODE Green (37)</td>
-                  <td>Извините, но данный товар больше недоступен.</td>
-                </tr>
-                <tr>
-                  <td>Надувная SUP-доска Сапборд (SUP board) AQUATIC-14 RACE</td>
-                  <td>Извините, но данный товар больше недоступен.</td>
-                </tr>
-                <tr>
-                  <td>Хоккейные коньки RGX-5.0 X-CODE Green (37) sdfsdf sdfsdf dfgsdfg sdfgsdfg sdfgsdfg sdfgsdfg
-                    sdfgsdfg sdgsdg sdfgsdfg 1002234234</td>
-                  <td>Извините, но данный товар больше недоступен.</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+          <h1 class="title-h1">Избранное</h1>
           <div class="table-responsive">
             <table class="cart-table">
               <tbody>
@@ -555,86 +521,9 @@
               </tbody>
             </table>
           </div>
-          <div class="cart-result">
-            <p class="cart-result__text">
-              <span class="cart-result__title">Итого по заказу в целом:</span>
-              <span class="cart-result__total">267 000 руб.</span>
-            </p>
-            <p class="cart-result__text cart-result__text--economy">
-              <span class="cart-result__title">Вы сэкономили:</span>
-              <span class="cart-result__total">1 000 000 000 000 руб.</span>
-            </p>
-            <p class="cart-result__text">
-              <span class="cart-result__title">Итого к оплате:</span>
-              <span class="cart-result__total">1 000 руб.</span>
-            </p>
-          </div>
         </div>
       </section>
-      <section class="order-goods">
-        <div class="container">
-          <h2 class="title-h2 order-goods__title">Оформление заказа</h2>
-          <div class="order-goods__top">
-            <button class="btn-reset order-goods__button">Очистить корзину</button>
-          </div>
-          <form class="form form-delivery" action="#">
-            <div class="form-delivery__item">
-              <h3 class="title-h3 form-delivery__title">Укажите способ доставки</h3>
-              <ul class="delivery-list">
-                <li class="delivery-list__item">
-                  <label class="checkbox-label catalog-filtres__chekbox-label" aria-label="Выбор транспортной компании">
-                    <input class="checkbox" type="checkbox" name="DELIVERY">
-                    <span class="checkbox-custom"></span>
-                  </label>
-                  <select class="delivery-select form__input" name="SERVICE" id="">
-                    <option dasibled selected>Выберите ТК</option>
-                    <option value="34">Азбука логистики ТК</option>
-                    <option value="34">Азбука логистики ТК</option>
-                    <option value="34">Азбука логистики ТК</option>
-                    <option value="34">Азбука логистики ТК</option>
-                    <option value="34">Азбука логистики ТК</option>
-                    <option value="34">Азбука логистики ТК</option>
-                    <option value="34">Азбука логистики ТК</option>
-                    <option value="34">Азбука логистики ТК</option>
-                    <option value="34">Азбука логистики ТК</option>
-                    <option value="34">Азбука логистики ТК</option>
-                    <option value="34">Азбука логистики ТК</option>
-                    <option value="34">Азбука логистики ТК</option>
-                    <option value="34">Азбука логистики ТК</option>
-                    <option value="34">Азбука логистики ТК</option>
-                    <option value="34">Азбука логистики ТК</option>
-                    <option value="34">Азбука логистики ТК</option>
-                    <option value="34">Азбука логистики ТК</option>
-                  </select>
-                </li>
-                <li class="delivery-list__item">
-                  <label class="checkbox-label catalog-filtres__chekbox-label" aria-label="Выбор транспортной компании">
-                    <input class="checkbox" type="checkbox" name="DELIVERY">
-                    <span class="checkbox-custom"></span>
-                  </label>
-                  <textarea class="delivery-list__textarea form__input" name="ADRESS" id=""
-                    placeholder="Адрес доставки"></textarea>
-                </li>
-                <li class="delivery-list__item">
-                  <label class="checkbox-label catalog-filtres__chekbox-label" aria-label="Самовывоз">
-                    <input class="checkbox" type="checkbox" name="DELIVERY">
-                    <span class="checkbox-custom"></span>
-                    Самовывоз
-                  </label>
-                </li>
-              </ul>
-            </div>
-            <div class="form-delivery__item">
-              <h3 class="title-h3 form-delivery__title">Комментарий</h3>
-              <textarea class="delivery-list__textarea form__input" name="COMMENTS"></textarea>
-            </div>
-            <div class="form-delivery__item">
-              <button class="btn-reset form-delivery__button form__button form__button--red"
-                type="submit">Оформить</button>
-            </div>
-          </form>
-        </div>
-      </section>
+
     </main>
     @include('HTMLPartials/footer.html')
     <!--модальные окна (внутри формы) начало-->
