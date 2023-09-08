@@ -1608,32 +1608,62 @@ input[type=number] {
   transform: scale(1);
 }
 
-.auth-info__container, .auth-info__contacts {
-  display: flex;
+.auth-info {
+  padding: 30px 0;
 }
-.auth-info__manager {
-  padding: 5px;
-  border-radius: 5px;
-  border: 1px solid #e00c32;
-  min-width: 300px;
-  margin-right: 10px;
-}
-.auth-info__contacts {
-  width: calc(100% - 310px);
-  margin: 0 -2px;
+.auth-info__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-gap: 10px;
 }
 .auth-info__contact {
-  padding: 5px;
+  padding: 10px;
+  padding-left: 40px;
   border-radius: 5px;
   border: 1px solid #cfcfcf;
-  width: 25%;
-  padding-left: 40px;
-  margin: 0 2px;
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: 30px 40px;
 }
 .auth-info__contact--manager {
-  width: 290px;
-  margin-right: 15px;
   padding-left: 5px;
+  border-color: #e00c32;
+  position: relative;
+}
+.auth-info__contact--manager:hover .manager-contacts-list {
+  opacity: 1 !important;
+  visibility: visible;
+  transform: translateX(0);
+}
+.auth-info__contact--manager:hover::after {
+  transform: translateX(-50%) rotate(180deg) !important;
+}
+.auth-info__contact--manager::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  display: block;
+  background-image: url("../images/arrow-down-black.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: transform 0.2s linear;
+}
+.auth-info__contact--call {
+  background-image: url("../images/phone-icon.svg");
+}
+.auth-info__contact--mail {
+  background-image: url("../images/mail-icon.svg");
+}
+.auth-info__contact--skype {
+  background-image: url("../images/skype-icon.svg");
+}
+.auth-info__contact--director {
+  background-image: url("../images/director-icon.svg");
 }
 .auth-info__text {
   font-size: 14px;
@@ -1671,6 +1701,9 @@ input[type=number] {
   color: #131313;
   font-size: 16px;
 }
+.manager-info__name--position {
+  position: relative;
+}
 .manager-info__button {
   width: 100%;
 }
@@ -1678,19 +1711,31 @@ input[type=number] {
 .manager-contacts-list {
   padding: 5px;
   border-radius: 5px;
-  border: 1px solid #cfcfcf;
+  border: 1px solid #e00c32;
+  opacity: 0;
+  visibility: hidden;
   background-color: #ffffff;
   z-index: 1;
+  position: absolute;
+  left: -1px;
+  right: -1px;
+  top: 100%;
+  transform: translateY(-13px);
+  transition: all 0.2s linear;
 }
 .manager-contacts-list__item {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
 }
 .manager-contacts-list__text {
   font-size: 16px;
 }
 .manager-contacts-list__text--bold {
   font-weight: 600;
+  transition: color 0.2s linear;
+}
+.manager-contacts-list__text--bold:hover {
+  color: #e00c32;
 }
 
 .cart-table {
