@@ -147,6 +147,28 @@ function getRangeSlider() {
 
 /***/ }),
 
+/***/ "./src/js/select.js":
+/*!**************************!*\
+  !*** ./src/js/select.js ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+var customeSelect = function customeSelect() {
+  var element = document.querySelector('.js-custome-select');
+  var choices = new Choices(element, {
+    searchEnabled: false
+  });
+  console.log('custome select');
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (customeSelect);
+
+/***/ }),
+
 /***/ "./src/js/swiperCustom.js":
 /*!********************************!*\
   !*** ./src/js/swiperCustom.js ***!
@@ -302,6 +324,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modals__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modals */ "./src/js/modals.js");
 /* harmony import */ var _tabs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./tabs */ "./src/js/tabs.js");
 /* harmony import */ var _rangeSlider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./rangeSlider */ "./src/js/rangeSlider.js");
+/* harmony import */ var _select__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./select */ "./src/js/select.js");
+
 
 
 
@@ -313,6 +337,7 @@ window.addEventListener('DOMContentLoaded', function () {
   (0,_modals__WEBPACK_IMPORTED_MODULE_2__["default"])();
   (0,_tabs__WEBPACK_IMPORTED_MODULE_3__["default"])();
   (0,_rangeSlider__WEBPACK_IMPORTED_MODULE_4__.getRangeSlider)();
+  (0,_select__WEBPACK_IMPORTED_MODULE_5__["default"])();
 });
 })();
 

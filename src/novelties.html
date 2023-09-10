@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="./noUiSlider/nouislider.min.css">
+  <link rel="stylesheet" href="./choices/choices.min.css">
   <link rel="stylesheet" href="./css/main.css">
   <title>Новинки</title>
 </head>
@@ -85,15 +86,14 @@
           <section class="assortment assortment--fix-left-menu js-assortment">
             <div class="container">
               <h2 class="title-h2 title-h2--center">Новинки</h2>
-              <div class="dropdown dropdown--assortment">
-                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Сортировка: по рейтингу
-                </button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">по возрастанию цены</a></li>
-                  <li><a class="dropdown-item" href="#">по уменьшению цены</a></li>
-                  <li><a class="dropdown-item" href="#">по имени</a></li>
-                </ul>
+              <div class="product-sort">
+                <span class="product-sort__title">сортировка по:</span>
+                <select class="default js-custome-select" name="SORT" id="">
+                  <option value="Сортировка по возрастанию цены">рейтингу</option>
+                  <option value="Сортировка по возрастанию цены">возрастанию цены</option>
+                  <option value="Сортировка по уменьшению цены">уменьшению цены</option>
+                  <option value="Сортировка по названию">названию</option>
+                </select>
               </div>
               <ul class="assortment-list assortment-list--incatalog">
                 <li class="assortment-list__item">
@@ -1438,6 +1438,7 @@
     @include('HTMLPartials/formInModalWindow.html')
     <!--модальные окна (внутри формы) конец-->
   </div>
+  <script src="./choices/choices.min.js"></script>
   <script src="./noUiSlider/nouislider.min.js"></script>
   <script src="./bootstrap/bootstrap.bundle.min.js"></script>
   <script src="./js/main.js"></script>
