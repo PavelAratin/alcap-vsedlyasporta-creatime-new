@@ -111,11 +111,6 @@ const bootstrapToApp = () => {
     .pipe(dest('./app/bootstrap'))
 }
 
-const choicesToApp = () => {
-  return src('./src/choices/*')
-    .pipe(dest('./app/choices'))
-}
-
 //функция для слежения за файлами 
 const watchFiles = () => {
   browserSync.init({
@@ -145,10 +140,9 @@ exports.normalizeToApp = normalizeToApp;
 exports.swiperToApp = swiperToApp;
 exports.bootstrapToApp = bootstrapToApp;
 exports.nouisliderToApp = nouisliderToApp;
-exports.choicesToApp = choicesToApp;
 
 //в дефолтном таске мы используем функции(вызываются первый раз перед вотчингом)
-exports.default = series(clean, parallel(htmlInclude, scipts, fonts, imgToApp, swiperToApp, bootstrapToApp, nouisliderToApp,choicesToApp), normalizeToApp, styles, watchFiles);
+exports.default = series(clean, parallel(htmlInclude, scipts, fonts, imgToApp, swiperToApp, bootstrapToApp, nouisliderToApp), normalizeToApp, styles, watchFiles);
 //код для build-версии
 //функция для работы со скриптами
 const sciptsBuild = () => {
