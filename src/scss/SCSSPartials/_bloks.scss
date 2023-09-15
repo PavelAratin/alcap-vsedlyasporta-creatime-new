@@ -348,6 +348,19 @@
   &__item:not(:last-child) {
     margin-right: 10px;
   }
+  &__svg:hover {
+    path {
+      stroke: #db2138;
+    }
+  }
+  .inwhishlist {
+    .actions-list__svg {
+      fill: #db2138;
+      path {
+        stroke: #db2138;
+      }
+    }
+  }
 }
 
 .stikcers-list {

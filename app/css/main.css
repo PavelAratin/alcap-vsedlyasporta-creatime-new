@@ -829,6 +829,15 @@ input[type=number] {
 .actions-list__item:not(:last-child) {
   margin-right: 10px;
 }
+.actions-list__svg:hover path {
+  stroke: #db2138;
+}
+.actions-list .inwhishlist .actions-list__svg {
+  fill: #db2138;
+}
+.actions-list .inwhishlist .actions-list__svg path {
+  stroke: #db2138;
+}
 
 .stikcers-list {
   display: flex;
@@ -1125,11 +1134,23 @@ input[type=number] {
   grid-gap: 20px;
 }
 .assortment-list--incatalog {
-  grid-gap: 40px;
+  grid-gap: 10px;
+}
+.assortment-list--incatalog .assortment-list__item:hover {
+  box-shadow: 0px 0px 13px 4px #bebebe;
+  border: 1px solid #bebebe;
+}
+.assortment-list--incatalog .assortment-list__item {
+  border: 1px solid #b8b8b8;
+  padding: 5px;
+  border-radius: 0;
+  transition: box-shadow 0.2s linear;
+}
+.assortment-list--inmain .assortment-list__item {
+  overflow: hidden;
 }
 .assortment-list__item {
   border-radius: 8px;
-  overflow: hidden;
 }
 .assortment-list__item img {
   height: 100%;
@@ -1227,8 +1248,12 @@ input[type=number] {
   }
 }
 .b-card {
-  height: 100%;
   position: relative;
+}
+.b-card--flex-column {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .b-card__link {
   height: 100%;
@@ -1242,10 +1267,22 @@ input[type=number] {
   justify-content: center;
 }
 .b-card__title {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 400;
   color: #333333;
   margin-bottom: 10px;
+  font-weight: 600;
+  transition: color 0.2s linear;
+}
+.b-card__title:hover {
+  color: #db2138;
+}
+.b-card__description {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.b-card__price {
+  font-size: 16px;
   font-weight: 600;
 }
 .b-card__wrapper {
@@ -1255,22 +1292,46 @@ input[type=number] {
   margin-top: auto;
 }
 
-.sizes-list {
+.properties-list {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   margin-bottom: 20px;
+  font-size: 15px;
 }
-
-.sizes-list__item {
+.properties-list__item {
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+.properties-list__button-size {
   padding: 5px;
   border: 1px solid #e3e3e3;
-  margin: 2px 2px 0 0;
-  transition: all 0.2s linear;
   cursor: pointer;
 }
-
-.sizes-list__item:hover {
+.properties-list__button-size:hover {
   border-color: #db2138;
+  color: #db2138;
+}
+.properties-list__imgbox {
+  display: block;
+  padding: 3px;
+  border-radius: 2px;
+  border: 1px solid #000000;
+  cursor: pointer;
+}
+.properties-list__imgbox:hover {
+  border-color: #db2138;
+}
+.properties-list__img {
+  width: 35px;
+  height: 35px;
+}
+.properties-list__item.active {
+  background-color: #db2138;
+}
+.properties-list__item.active .properties-list__button-size {
+  background-color: #db2138;
+  color: #ffffff;
 }
 
 .info-company {
@@ -1899,6 +1960,8 @@ input[type=number] {
 .cart-item__remove-inner {
   height: 52px;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .price {

@@ -1,6 +1,10 @@
 .b-card {
-  height: 100%;
   position: relative;
+  &--flex-column {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
   &__link {
     height: 100%;
     display: flex;
@@ -13,10 +17,22 @@
     justify-content: center;
   }
   &__title {
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 400;
     color: #333333;
     margin-bottom: 10px;
+    font-weight: 600;
+    transition: color 0.2s linear;
+    &:hover {
+      color: #db2138;
+    }
+  }
+  &__description {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  &__price {
+    font-size: 16px;
     font-weight: 600;
   }
   &__wrapper {
@@ -25,29 +41,46 @@
     justify-content: space-between;
     margin-top: auto;
   }
-  // &__actions-list {
-  //   position: absolute;
-  //   left: 0;
-  //   right: auto;
-  //   top: 0;
-  //   // .actions-list__svg-wrapper::after {
-  //   //   display: none;
-  //   // }
-  // }
 }
 
-.sizes-list {
+.properties-list {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   margin-bottom: 20px;
-}
-.sizes-list__item {
-  padding: 5px;
-  border: 1px solid #e3e3e3;
-  margin: 2px 2px 0 0;
-  transition: all 0.2s linear;
-  cursor: pointer;
-}
-.sizes-list__item:hover {
-  border-color: #db2138;
+  font-size: 15px;
+  &__item {
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+  &__button-size {
+    padding: 5px;
+    border: 1px solid #e3e3e3;
+    cursor: pointer;
+    &:hover {
+      border-color: #db2138;
+      color: #db2138;
+    }
+  }
+  &__imgbox {
+    display: block;
+    padding: 3px;
+    border-radius: 2px;
+    border: 1px solid #000000;
+    cursor: pointer;
+    &:hover {
+      border-color: #db2138;
+    }
+  }
+  &__img {
+    width: 35px;
+    height: 35px;
+  }
+  &__item.active {
+    background-color: #db2138;
+    .properties-list__button-size {
+      background-color: #db2138;
+      color: #ffffff;
+    }
+  }
 }
