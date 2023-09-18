@@ -156,7 +156,7 @@ input[type="number"] {
 }
 
 .choices__list--dropdown .choices__item--selectable::after,
-.choices__list[aria-expanded] .choices__item--selectable::after{
+.choices__list[aria-expanded] .choices__item--selectable::after {
   display: none;
 }
 
@@ -165,10 +165,9 @@ input[type="number"] {
   padding-right: 0px;
 }
 .choices__list--dropdown,
-.choices__list[aria-expanded]{
-word-break: normal;
-white-space: nowrap;
-
+.choices__list[aria-expanded] {
+  word-break: normal;
+  white-space: nowrap;
 }
 
 .checkbox {
@@ -217,8 +216,9 @@ white-space: nowrap;
 }
 .checkbox-label {
   cursor: pointer;
-  color: #666666;
+  color: #000000;
   font-size: 16px;
+  font-weight: 600;
 }
 .delivery-select:focus {
   outline: none;

@@ -1,6 +1,6 @@
 .footer {
   padding: 40px 0;
-  background: #153e84;
+  background-color: #0c121c;
   color: #fff;
   &__coll {
     display: flex;
@@ -14,6 +14,10 @@
     width: fit-content;
     margin-top: 10px;
     margin-bottom: 20px;
+    transition: color 0.2s linear;
+    &:hover {
+      color: #ffffff;
+    }
   }
   &__phone {
     font-weight: 700;
@@ -21,6 +25,10 @@
     line-height: 29px;
     text-transform: uppercase;
     margin-bottom: 10px;
+    transition: color 0.2s linear;
+    &:hover {
+      color: #e00c32;
+    }
   }
   &__email {
     letter-spacing: 1.2px;
@@ -46,13 +54,14 @@
     background-image: url("../images/clock.png");
   }
   &__btn {
-    height: 41px;
-    width: 203px;
-    background-color: #fe9e02;
-    color: #3c3c3c;
-    font-size: 15px;
-    padding: 10px 10px 10px;
-    text-transform: uppercase;
+    padding: 16px 43px;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 12px;
+    background: #e00c32;
   }
   &__description {
     max-width: 200px;

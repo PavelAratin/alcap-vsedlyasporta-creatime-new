@@ -8,8 +8,9 @@
   }
   &__title {
     color: #000000;
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 10px;
+    font-weight: 600;
   }
   &__category--category {
     margin-bottom: 26px;
@@ -27,8 +28,7 @@
     }
   }
   &__item:first-child {
-    font-weight: 600;
-    font-size: 16px;
+    font-size: 18px;
     color: #000000;
   }
   &__item:not(:last-child) {

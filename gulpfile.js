@@ -30,6 +30,7 @@ const styles = () => {
     .pipe(sourcemaps.init())//начало отслеживание ошибок в разхных вайлах scss
     .pipe(sass().on('error', notify.onError()))
     .pipe(autoprefixer({
+      browsers: ['last 2 versions'],
       cascade: false
     }))
     .pipe(sourcemaps.write('.')) //отслеживание ошибок в разхных вайлах scss

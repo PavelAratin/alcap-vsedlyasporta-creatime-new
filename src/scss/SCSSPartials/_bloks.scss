@@ -288,6 +288,9 @@
 }
 .amount {
   cursor: pointer;
+  &--incard {
+    margin-bottom: 20px;
+  }
   &__cart {
     margin-right: 10px;
   }

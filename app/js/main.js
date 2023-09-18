@@ -107,6 +107,7 @@ var modals = function modals() {
   }
 
   bindModal('.js-call-form-feedback', '.js-form-feedback', '.js-close-button-form');
+  bindModal('.js-call-form-feedback', '.js-form-feedback', '.js-close-button-form');
   bindModal('.js-callform-director', '.js-form-director', '.js-close-button-form');
 };
 
