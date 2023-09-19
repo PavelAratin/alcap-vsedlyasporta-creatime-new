@@ -80,6 +80,16 @@
   .product-sort .dropdown-toggle {
     font-size: 13px;
   }
+  .b-card--flex-column {
+    height: 100%;
+  }
+  .b-card__wrapper {
+    opacity: 1;
+    visibility: visible;
+    margin-top: auto;
+    box-shadow: none;
+    display: flex;
+  }
 }
 
 @media screen and (max-width: 768px) {
