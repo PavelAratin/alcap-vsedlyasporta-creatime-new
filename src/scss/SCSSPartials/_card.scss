@@ -16,32 +16,33 @@
       text-align: left;
     }
     .b-card-imagebox {
-      width: 28%;
+      width: 35%;
       &__img {
-        height: auto;
+        object-fit: contain;
       }
     }
     .b-card__info {
-      width: 39%;
+      width: 32%;
     }
     .b-card__panel {
       width: 33%;
       background-color: #f8f8f8;
+      padding: 5px;
       .b-card-top {
         justify-content: end;
       }
       .in-cart {
         margin: 0 auto;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
       }
     }
     .b-card__price {
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
     .amount {
       margin: 0 auto;
       width: fit-content;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
     .actions-list {
       justify-content: center;
@@ -51,7 +52,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     span {
       display: inline-block;
       padding: 3px 20px;
@@ -61,6 +62,47 @@
       font-weight: 600;
       font-size: 16px;
       width: fit-content;
+    }
+  }
+  &__swipers {
+    display: flex;
+    margin-top: 10px;
+    position: relative;
+  }
+  &__swiper {
+    &--bigthumb {
+      width: 75%;
+      .swiper-slide {
+        padding-right: 10px;
+      }
+    }
+    &--minthumb {
+      width: 25%;
+      height: 280px;
+      padding: 40px 0;
+      .swiper-slide {
+        border: 2px solid #eaebed;
+      }
+      .swiper-slide-thumb-active {
+        border-color: #0c121c;
+      }
+      .swiper-button-prev,
+      .swiper-button-next {
+        left: auto;
+        right: 25px;
+      }
+      .swiper-button-prev {
+        top: 25px;
+        transform: rotate(90deg);
+      }
+      .swiper-button-next {
+        top: auto;
+        bottom: 2px;
+        transform: rotate(90deg);
+      }
+    }
+    .swiper-slide {
+      width: 100% !important;
     }
   }
 
@@ -126,6 +168,7 @@
     font-size: 20px;
     font-weight: 600;
     text-align: center;
+    line-height: 1;
   }
 
   &__price-old {

@@ -724,6 +724,8 @@ input[type=number] {
   align-items: center;
   position: relative;
   z-index: 5;
+  font-weight: 600;
+  font-size: 14px;
 }
 
 .category-menu-level-1__item:hover .category-menu-level-2 {
@@ -732,8 +734,6 @@ input[type=number] {
 
 .category-menu-level-1__link {
   text-transform: uppercase;
-  font-weight: 600;
-  font-size: 14px;
   color: #fff;
   padding: 20px;
   display: block;
@@ -780,8 +780,6 @@ input[type=number] {
   transition: transform 0.2s linear, -webkit-transform 0.2s linear;
 }
 .category-menu-level-2__link {
-  font-weight: 600;
-  font-size: 14px;
   padding: 10px 10px 10px 5px;
   display: block;
   -webkit-transition: color 0.2s linear;
@@ -802,6 +800,7 @@ input[type=number] {
   background-color: #ffffff;
   z-index: 1;
   display: none;
+  border-radius: 5px;
 }
 .category-menu-level-3__item {
   padding: 5px;
@@ -1266,6 +1265,32 @@ input[type=number] {
   color: #ffffff;
 }
 
+.available {
+  width: 88px;
+  height: 20px;
+  position: relative;
+  background: url("../images/rib_grey.png") repeat-x 0 0;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.available__indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  background-repeat: repeat-x;
+  background-position: 0 0;
+}
+.available__indicator--red {
+  background-image: url("../images/rib_red.png");
+}
+.available__indicator--yellow {
+  background-image: url("../images/rib_yellow.png");
+}
+.available__indicator--green {
+  background-image: url("../images/rib_green.png");
+}
+
 .hero {
   margin-bottom: 100px;
   position: relative;
@@ -1499,17 +1524,19 @@ input[type=number] {
   text-align: left;
 }
 .b-card--flex-row .b-card-imagebox {
-  width: 28%;
+  width: 35%;
 }
 .b-card--flex-row .b-card-imagebox__img {
-  height: auto;
+  -o-object-fit: contain;
+  object-fit: contain;
 }
 .b-card--flex-row .b-card__info {
-  width: 39%;
+  width: 32%;
 }
 .b-card--flex-row .b-card__panel {
   width: 33%;
   background-color: #f8f8f8;
+  padding: 5px;
 }
 .b-card--flex-row .b-card__panel .b-card-top {
   -webkit-box-pack: end;
@@ -1518,17 +1545,17 @@ input[type=number] {
 }
 .b-card--flex-row .b-card__panel .in-cart {
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .b-card--flex-row .b-card__price {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .b-card--flex-row .amount {
   margin: 0 auto;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .b-card--flex-row .actions-list {
   -webkit-box-pack: center;
@@ -1546,7 +1573,7 @@ input[type=number] {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .b-card__save span {
   display: inline-block;
@@ -1559,6 +1586,49 @@ input[type=number] {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+.b-card__swipers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+  position: relative;
+}
+.b-card__swiper--bigthumb {
+  width: 75%;
+}
+.b-card__swiper--bigthumb .swiper-slide {
+  padding-right: 10px;
+}
+.b-card__swiper--minthumb {
+  width: 25%;
+  height: 280px;
+  padding: 40px 0;
+}
+.b-card__swiper--minthumb .swiper-slide {
+  border: 2px solid #eaebed;
+}
+.b-card__swiper--minthumb .swiper-slide-thumb-active {
+  border-color: #0c121c;
+}
+.b-card__swiper--minthumb .swiper-button-prev,
+.b-card__swiper--minthumb .swiper-button-next {
+  left: auto;
+  right: 25px;
+}
+.b-card__swiper--minthumb .swiper-button-prev {
+  top: 25px;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.b-card__swiper--minthumb .swiper-button-next {
+  top: auto;
+  bottom: 2px;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.b-card__swiper .swiper-slide {
+  width: 100% !important;
 }
 .b-card__link {
   height: 100%;
@@ -1630,6 +1700,7 @@ input[type=number] {
   font-size: 20px;
   font-weight: 600;
   text-align: center;
+  line-height: 1;
 }
 .b-card__price-old {
   text-decoration: line-through;

@@ -150,14 +150,14 @@
   align-items: center;
   position: relative;
   z-index: 5;
+  font-weight: 600;
+  font-size: 14px;
 }
 .category-menu-level-1__item:hover .category-menu-level-2 {
   display: block;
 }
 .category-menu-level-1__link {
   text-transform: uppercase;
-  font-weight: 600;
-  font-size: 14px;
   color: #fff;
   padding: 20px;
   display: block;
@@ -195,8 +195,6 @@
     }
   }
   &__link {
-    font-weight: 600;
-    font-size: 14px;
     padding: 10px 10px 10px 5px;
     display: block;
     transition: color 0.2s linear;
@@ -217,6 +215,7 @@
   background-color: #ffffff;
   z-index: 1;
   display: none;
+  border-radius: 5px;
   &__item {
     padding: 5px;
   }
@@ -618,5 +617,31 @@
   .dropdown-item:hover {
     background-color: #e00c32;
     color: #ffffff;
+  }
+}
+
+.available {
+  width: 88px;
+  height: 20px;
+  position: relative;
+  background: url("../images/rib_grey.png") repeat-x 0 0;
+  margin-bottom: 10px;
+  overflow: hidden;
+  &__indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    background-repeat: repeat-x;
+    background-position: 0 0;
+    &--red {
+      background-image: url("../images/rib_red.png");
+    }
+    &--yellow {
+      background-image: url("../images/rib_yellow.png");
+    }
+    &--green {
+      background-image: url("../images/rib_green.png");
+    }
   }
 }
