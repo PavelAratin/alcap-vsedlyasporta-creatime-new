@@ -210,8 +210,8 @@ function swiperCustom() {
           slidesPerView: 1,
           // Navigation arrows
           navigation: {
-            nextEl: '.swiper-button-next1',
-            prevEl: '.swiper-button-prev1'
+            nextEl: ".swiper-button-next".concat(swiperBigThumbELIndex + 1),
+            prevEl: ".swiper-button-prev".concat(swiperBigThumbELIndex + 1)
           },
           thumbs: {
             swiper: swiperMinThumbELIndex === swiperBigThumbELIndex ? swiperMinThumbEL : ''

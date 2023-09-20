@@ -147,4 +147,13 @@
       width: 100%;
     }
   }
+  .b-card--flex-row{
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .b-card-imagebox,
+  .b-card__info,
+  .b-card__panel{
+    width: 100% !important;
+  }
 }

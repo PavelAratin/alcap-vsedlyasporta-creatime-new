@@ -16,13 +16,13 @@
       text-align: left;
     }
     .b-card-imagebox {
-      width: 35%;
+      width: 40%;
       &__img {
         object-fit: contain;
       }
     }
     .b-card__info {
-      width: 32%;
+      width: 27%;
     }
     .b-card__panel {
       width: 33%;
@@ -71,15 +71,14 @@
   }
   &__swiper {
     &--bigthumb {
-      width: 75%;
+      width: calc(100% - 60px);
       .swiper-slide {
         padding-right: 10px;
       }
     }
     &--minthumb {
-      width: 25%;
-      height: 280px;
-      padding: 40px 0;
+      height: 200px;
+      width: 60px;
       .swiper-slide {
         border: 2px solid #eaebed;
       }
@@ -104,6 +103,41 @@
     .swiper-slide {
       width: 100% !important;
     }
+  }
+  &__swipers-wrapper{
+    position: relative;
+    height: 200px;
+    .swiper-button-prev,
+    .swiper-button-next{
+      left: auto;
+      right: 17px;
+      background-color: transparent;
+      width: 30px;
+      height: 30px;
+      border-radius: 100%;
+      transform: rotate(90deg);
+      transition: background 0.2s linear;
+      &:hover{
+        background-color: #e00c32;
+      }
+      &:hover:after{
+        color: #ffffff;
+      }
+    }
+    .swiper-button-prev{
+      top: -10px;
+    }
+    .swiper-button-next{
+      top: auto;
+      bottom: -30px;
+    }
+    .swiper-button-next:after,
+    .swiper-button-prev:after{
+      color: #000000;
+      font-size: 18px;
+      font-weight: 600;
+      transition: color 0.2s linear;
+    } 
   }
 
   &__link {

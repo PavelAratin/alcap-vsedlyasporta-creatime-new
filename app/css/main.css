@@ -1524,14 +1524,14 @@ input[type=number] {
   text-align: left;
 }
 .b-card--flex-row .b-card-imagebox {
-  width: 35%;
+  width: 40%;
 }
 .b-card--flex-row .b-card-imagebox__img {
   -o-object-fit: contain;
   object-fit: contain;
 }
 .b-card--flex-row .b-card__info {
-  width: 32%;
+  width: 27%;
 }
 .b-card--flex-row .b-card__panel {
   width: 33%;
@@ -1595,15 +1595,14 @@ input[type=number] {
   position: relative;
 }
 .b-card__swiper--bigthumb {
-  width: 75%;
+  width: calc(100% - 60px);
 }
 .b-card__swiper--bigthumb .swiper-slide {
   padding-right: 10px;
 }
 .b-card__swiper--minthumb {
-  width: 25%;
-  height: 280px;
-  padding: 40px 0;
+  height: 200px;
+  width: 60px;
 }
 .b-card__swiper--minthumb .swiper-slide {
   border: 2px solid #eaebed;
@@ -1629,6 +1628,46 @@ input[type=number] {
 }
 .b-card__swiper .swiper-slide {
   width: 100% !important;
+}
+.b-card__swipers-wrapper {
+  position: relative;
+  height: 200px;
+}
+.b-card__swipers-wrapper .swiper-button-prev,
+.b-card__swipers-wrapper .swiper-button-next {
+  left: auto;
+  right: 17px;
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-transition: background 0.2s linear;
+  transition: background 0.2s linear;
+}
+.b-card__swipers-wrapper .swiper-button-prev:hover,
+.b-card__swipers-wrapper .swiper-button-next:hover {
+  background-color: #e00c32;
+}
+.b-card__swipers-wrapper .swiper-button-prev:hover:after,
+.b-card__swipers-wrapper .swiper-button-next:hover:after {
+  color: #ffffff;
+}
+.b-card__swipers-wrapper .swiper-button-prev {
+  top: -10px;
+}
+.b-card__swipers-wrapper .swiper-button-next {
+  top: auto;
+  bottom: -30px;
+}
+.b-card__swipers-wrapper .swiper-button-next:after,
+.b-card__swipers-wrapper .swiper-button-prev:after {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 600;
+  -webkit-transition: color 0.2s linear;
+  transition: color 0.2s linear;
 }
 .b-card__link {
   height: 100%;
@@ -2891,6 +2930,18 @@ input[type=number] {
   }
   .form__contact-section .form__button {
     width: 100%;
+  }
+
+  .b-card--flex-row {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .b-card-imagebox,
+.b-card__info,
+.b-card__panel {
+    width: 100% !important;
   }
 }
 /*# sourceMappingURL=main.css.map */
