@@ -35,6 +35,11 @@
       display: none;
     }
   }
+  .lockout {
+    .actions__link-text {
+      display: block;
+    }
+  }
 }
 @media screen and (max-width: 900px) {
   .header__bottom {
@@ -102,6 +107,9 @@
   .title-h3 {
     font-size: 16px;
   }
+  .b-card__title {
+    font-size: 22px;
+  }
   .order-goods,
   .cart-goods,
   .hero,
@@ -147,13 +155,13 @@
       width: 100%;
     }
   }
-  .b-card--flex-row{
+  .b-card--flex-row {
     flex-wrap: wrap;
     gap: 30px;
   }
   .b-card-imagebox,
   .b-card__info,
-  .b-card__panel{
+  .b-card__panel {
     width: 100% !important;
   }
 }

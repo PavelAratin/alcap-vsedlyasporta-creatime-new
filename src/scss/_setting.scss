@@ -211,7 +211,8 @@ input[type="number"] {
 .checkbox:checked + .checkbox-custom::before {
   transform: translate(-50%, -50%) scale(1);
 }
-.checkbox:hover + .checkbox-custom {
+.checkbox:hover + .checkbox-custom,
+.checkbox:focus + .checkbox-custom {
   background-color: #e00c32;
 }
 .checkbox-label {

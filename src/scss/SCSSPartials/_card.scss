@@ -48,6 +48,23 @@
       justify-content: center;
     }
   }
+  &--non-autorization-row {
+    .b-card__swipers-wrapper {
+      margin-top: 10px;
+    }
+    .b-card__panel {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &--non-autorization-column {
+    height: 100%;
+    padding: 10px;
+    .lockout {
+      margin-top: auto;
+    }
+  }
   &__save {
     display: flex;
     flex-direction: column;
@@ -81,6 +98,11 @@
       width: 60px;
       .swiper-slide {
         border: 2px solid #eaebed;
+        transition: border-color 0.2s linear;
+        &:hover {
+          border-color: #0c121c;
+          cursor: pointer;
+        }
       }
       .swiper-slide-thumb-active {
         border-color: #0c121c;
@@ -104,11 +126,11 @@
       width: 100% !important;
     }
   }
-  &__swipers-wrapper{
+  &__swipers-wrapper {
     position: relative;
     height: 200px;
     .swiper-button-prev,
-    .swiper-button-next{
+    .swiper-button-next {
       left: auto;
       right: 17px;
       background-color: transparent;
@@ -117,27 +139,27 @@
       border-radius: 100%;
       transform: rotate(90deg);
       transition: background 0.2s linear;
-      &:hover{
+      &:hover {
         background-color: #e00c32;
       }
-      &:hover:after{
+      &:hover:after {
         color: #ffffff;
       }
     }
-    .swiper-button-prev{
+    .swiper-button-prev {
       top: -10px;
     }
-    .swiper-button-next{
+    .swiper-button-next {
       top: auto;
       bottom: -30px;
     }
     .swiper-button-next:after,
-    .swiper-button-prev:after{
+    .swiper-button-prev:after {
       color: #000000;
       font-size: 18px;
       font-weight: 600;
       transition: color 0.2s linear;
-    } 
+    }
   }
 
   &__link {
@@ -255,7 +277,7 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-size: 15px;
 
   &__item {
@@ -280,7 +302,8 @@
     border-radius: 2px;
     border: 1px solid #000000;
     cursor: pointer;
-
+    width: 35px;
+    height: 35px;
     &:hover {
       border-color: #e00c32;
     }
