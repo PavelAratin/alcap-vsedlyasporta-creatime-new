@@ -38,20 +38,28 @@ export function swiperCustom() {
   }
   if (swiperBigThumbELems.length) {
     swiperMinThumbELems.forEach(function (swiperMinThumbEL, swiperMinThumbELIndex) {
+      //удаление стрелочек навигации в слайдере с маленькими картинками, если количество слайдов(картинок меньше 3х) начало
+      // let slidesInSwiper = swiperMinThumbEL.querySelectorAll('.swiper-slide');
+      // let slidesInSwiperLength = slidesInSwiper.length;
+      // if (slidesInSwiperLength <= 3) {
+      //   swiperMinThumbEL.previousElementSibling.remove()
+      //   swiperMinThumbEL.previousElementSibling.remove()
+      // }
+      //удаление стрелочек навигации в слайдере с маленькими картинками, если количество слайдов(картинок меньше 3х) начало
       new Swiper(swiperMinThumbEL, {
         direction: 'vertical',
         spaceBetween: 10,
         slidesPerView: 3,
+        // Navigation arrows
+        navigation: {
+          nextEl: `.swiper-button-next${swiperMinThumbELIndex + 1}`,
+          prevEl: `.swiper-button-prev${swiperMinThumbELIndex + 1}`,
+        },
       })
       swiperBigThumbELems.forEach(function (swiperBigThumbEL, swiperBigThumbELIndex) {
         new Swiper(swiperBigThumbEL, {
           direction: 'horizontal',
           slidesPerView: 1,
-          // Navigation arrows
-          navigation: {
-            nextEl: `.swiper-button-next${swiperBigThumbELIndex+1}`,
-            prevEl: `.swiper-button-prev${swiperBigThumbELIndex+1}`,
-          },
           thumbs: {
             swiper: swiperMinThumbELIndex === swiperBigThumbELIndex ? swiperMinThumbEL : ''
           }

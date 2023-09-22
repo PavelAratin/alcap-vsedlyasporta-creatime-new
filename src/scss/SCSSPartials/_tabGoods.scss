@@ -22,15 +22,15 @@
     cursor: pointer;
     font-weight: 600;
     font-size: 14px;
-    border: 1px solid #4174cb;
+    border: 1px solid #e00c32;
     transition: background 0.2s linear, color 0.2s linear;
     &:hover {
       color: #ffffff;
-      background-color: #4174cb;
+      background-color: #e00c32;
     }
     &.js-active-tab-button {
       color: #ffffff;
-      background-color: #4174cb;
+      background-color: #e00c32;
     }
   }
 }

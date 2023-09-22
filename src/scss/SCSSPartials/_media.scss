@@ -159,9 +159,12 @@
     flex-wrap: wrap;
     gap: 30px;
   }
-  .b-card-imagebox,
+  .b-card__imgbox,
   .b-card__info,
   .b-card__panel {
     width: 100% !important;
+  }
+  .content__text {
+    font-size: 18px;
   }
 }
