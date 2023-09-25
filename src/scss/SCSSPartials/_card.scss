@@ -70,6 +70,12 @@
       margin-top: auto;
     }
   }
+  &--detail-goods {
+    border: none;
+    &:hover {
+      box-shadow: none !important;
+    }
+  }
   &__save {
     display: flex;
     flex-direction: column;
@@ -177,7 +183,6 @@
   &__imgbox {
     display: flex;
     align-items: center;
-    // justify-content: center;
     padding: 10px;
     position: relative;
     min-height: 350px;
@@ -280,6 +285,12 @@
       visibility: visible;
     }
   }
+  &__group {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
 }
 
 .properties-list {
@@ -343,7 +354,6 @@
     text-align: center;
     color: #ffffff;
     border-radius: 5px;
-    font-size: 13px;
     padding: 5px;
     transform: skewX(-15deg);
   }
