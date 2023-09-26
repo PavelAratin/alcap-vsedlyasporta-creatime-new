@@ -1,20 +1,16 @@
 export function swiperCustom() {
   const heroSwiperEL = document.querySelector('.js-hero-swiper');
+  const viewedListSwiperEL = document.querySelector('.js-viewed-list-swiper');
   const swiperTabELems = document.querySelectorAll('.js-swiper-tab')
   const swiperBigThumbELems = document.querySelectorAll('.js-swiper-big-thumb')
   const swiperMinThumbELems = document.querySelectorAll('.js-swiper-min-thumb')
   if (heroSwiperEL) {
-    const swiperHero = new Swiper(heroSwiperEL, {
-      // Optional parameters
+    new Swiper(heroSwiperEL, {
       direction: 'horizontal',
       loop: true,
-
-      // If we need pagination
       pagination: {
         el: '.swiper-pagination',
       },
-
-      // Navigation arrows
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -24,7 +20,6 @@ export function swiperCustom() {
   if (swiperTabELems) {
     swiperTabELems.forEach((swiperTabEL) => {
       new Swiper(swiperTabEL, {
-        // Optional parameters
         direction: 'horizontal',
         loop: false,
         slidesPerView: 4,
@@ -36,21 +31,12 @@ export function swiperCustom() {
       });
     })
   }
-  if (swiperBigThumbELems.length) {
+  if (swiperBigThumbELems.length && swiperMinThumbELems.length) {
     swiperMinThumbELems.forEach(function (swiperMinThumbEL, swiperMinThumbELIndex) {
-      //удаление стрелочек навигации в слайдере с маленькими картинками, если количество слайдов(картинок меньше 3х) начало
-      // let slidesInSwiper = swiperMinThumbEL.querySelectorAll('.swiper-slide');
-      // let slidesInSwiperLength = slidesInSwiper.length;
-      // if (slidesInSwiperLength <= 3) {
-      //   swiperMinThumbEL.previousElementSibling.remove()
-      //   swiperMinThumbEL.previousElementSibling.remove()
-      // }
-      //удаление стрелочек навигации в слайдере с маленькими картинками, если количество слайдов(картинок меньше 3х) начало
       new Swiper(swiperMinThumbEL, {
         direction: 'vertical',
         spaceBetween: 10,
         slidesPerView: 3,
-        // Navigation arrows
         navigation: {
           nextEl: `.swiper-button-next${swiperMinThumbELIndex + 1}`,
           prevEl: `.swiper-button-prev${swiperMinThumbELIndex + 1}`,
@@ -66,17 +52,17 @@ export function swiperCustom() {
         })
       })
     })
-    // const swiperBigThumbELems1 = new Swiper(swiperBigThumbELems, {
-    //   direction: 'horizontal',
-    //   slidesPerView: 1,
-    //   thumbs: {
-    //     swiper: swiperMinThumbELems
-    //   }
-    // })
-    // const swiperMinThumbELems1 = new Swiper(swiperMinThumbELems, {
-    //   direction: 'vertical',
-    //   spaceBetween: 10,
-    //   slidesPerView: 3,
-    // })
+  }
+  if (viewedListSwiperEL) {
+    new Swiper(viewedListSwiperEL, {
+      direction: 'horizontal',
+      loop: false,
+      slidesPerView: 4,
+      spaceBetween: 20,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
   }
 }

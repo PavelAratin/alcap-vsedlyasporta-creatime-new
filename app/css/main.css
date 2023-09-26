@@ -426,6 +426,35 @@ figure {
   -webkit-transform: scale(2);
   transform: scale(2);
 }
+.swiper__viewed-list {
+  overflow-y: visible;
+  padding: 0 10px;
+}
+.swiper__viewed-list .swiper-button-next::after,
+.swiper__viewed-list .swiper-button-prev::after {
+  color: #000000;
+  font-size: 28px;
+  -webkit-transition: color 0.2s linear;
+  transition: color 0.2s linear;
+}
+.swiper__viewed-list .swiper-button-next,
+.swiper__viewed-list .swiper-button-prev {
+  background-color: transparent;
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  -webkit-transition: background 0.2s linear;
+  transition: background 0.2s linear;
+}
+.swiper__viewed-list .swiper-button-next:hover,
+.swiper__viewed-list .swiper-button-prev:hover {
+  background-color: #e00c32;
+}
+.swiper__viewed-list .swiper-button-next:hover.swiper-button-next::after, .swiper__viewed-list .swiper-button-next:hover.swiper-button-prev::after,
+.swiper__viewed-list .swiper-button-prev:hover.swiper-button-next::after,
+.swiper__viewed-list .swiper-button-prev:hover.swiper-button-prev::after {
+  color: #ffffff;
+}
 
 .header {
   -webkit-box-flex: 0;
@@ -2709,6 +2738,14 @@ figure {
   display: -ms-flexbox;
   display: flex;
   gap: 20px;
+  margin-bottom: 100px;
+}
+.detail-goods__wrapper .b-card-top {
+  margin-bottom: 20px;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: end;
+  font-size: 20px;
 }
 .detail-goods__left {
   width: 40%;
@@ -2725,13 +2762,6 @@ figure {
   padding: 10px;
   margin-bottom: 20px;
 }
-.detail-goods .b-card-top {
-  margin-bottom: 20px;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: end;
-  font-size: 20px;
-}
 .detail-goods .in-cart {
   margin: 0 auto;
   margin-bottom: 20px;
@@ -2740,6 +2770,9 @@ figure {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+.detail-goods .tab-goods {
+  margin-bottom: 0;
 }
 .detail-goods .tab-list {
   margin-bottom: 20px;
@@ -2803,6 +2836,14 @@ figure {
 }
 .images-list__item:hover {
   border-color: #000000;
+}
+
+.viewed-list {
+  margin-bottom: 100px;
+}
+.viewed-list__title {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .footer {
