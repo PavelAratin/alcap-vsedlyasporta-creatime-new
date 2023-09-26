@@ -1,0 +1,54 @@
+.detail-goods2 {
+  .available {
+    margin-bottom: 30px;
+  }
+  .b-card__price {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  .in-cart {
+    margin-bottom: 30px;
+  }
+  .actions-list__item {
+    width: 100%;
+  }
+  &__button {
+    padding: 16px 43px;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 12px;
+    background-color: #e00c32;
+    width: 100%;
+  }
+  .b-card__group {
+    justify-content: flex-start;
+  }
+  .b-card {
+    margin-bottom: 30px;
+  }
+  .tab-goods {
+    margin-bottom: 0;
+  }
+  .tab-list {
+    margin-bottom: 20px;
+    &__button {
+      border: 0;
+      border-radius: 0;
+      border-bottom: 2px solid transparent;
+      &:hover {
+        color: #e00c32;
+        background-color: transparent;
+      }
+    }
+    .js-active-tab-button {
+      border-color: #e00c32;
+      color: #000000;
+      background-color: transparent;
+    }
+  }
+}
