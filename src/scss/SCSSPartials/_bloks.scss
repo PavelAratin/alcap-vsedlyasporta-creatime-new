@@ -262,9 +262,6 @@
   font-size: 14px;
   color: #0c121c;
   font-weight: bold;
-  background-color: #feb703;
-  padding: 4px 8px;
-  border-radius: 16px;
   white-space: nowrap;
 }
 
@@ -384,6 +381,9 @@
 .change-view {
   display: flex;
   align-items: center;
+  &__wishlist {
+    justify-content: end;
+  }
   &__link.active .change-view__svg {
     fill: #db2138;
   }

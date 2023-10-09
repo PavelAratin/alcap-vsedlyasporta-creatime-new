@@ -904,9 +904,6 @@ figure {
   font-size: 14px;
   color: #0c121c;
   font-weight: bold;
-  background-color: #feb703;
-  padding: 4px 8px;
-  border-radius: 16px;
   white-space: nowrap;
 }
 
@@ -1035,6 +1032,11 @@ figure {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+.change-view__wishlist {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: end;
 }
 .change-view__link.active .change-view__svg {
   fill: #db2138;
@@ -2033,32 +2035,6 @@ figure {
 .info-company-list__description {
   font-size: 14px;
   text-align: center;
-}
-
-.contact-section {
-  margin-bottom: 100px;
-  background-color: #f8f8f8;
-}
-.contact-section__container {
-  padding: 40px 135px;
-}
-.contact-section__title {
-  color: #333333;
-  font-size: 48px;
-  font-weight: 600;
-  text-align: center;
-  margin-bottom: 24px;
-}
-.contact-section__description {
-  color: #333333;
-  font-size: 24px;
-  font-weight: 400;
-  text-align: center;
-  margin-bottom: 54px;
-}
-.contact-section__form {
-  margin: 0 auto;
-  width: 80%;
 }
 
 .brands {
