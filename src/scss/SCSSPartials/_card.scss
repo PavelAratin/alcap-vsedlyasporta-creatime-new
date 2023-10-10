@@ -231,7 +231,11 @@
   &__description {
     font-size: 16px;
     margin-bottom: 10px;
-    text-align: center;
+  }
+  &__title-properties {
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-weight: 600;
   }
 
   &__price {
@@ -260,6 +264,18 @@
     box-shadow: 0px 9px 12px -2px rgba(34, 60, 80, 0.5);
     padding: 10px;
     border-radius: 5px;
+  }
+
+  &__more-link {
+    margin-bottom: 20px;
+    text-decoration: underline;
+    font-size: 16px;
+    font-weight: 600;
+    transition: color 0.2s linear;
+    display: inline-block;
+    &:hover {
+      color: #e00c32;
+    }
   }
 
   &:hover {

@@ -106,9 +106,11 @@ var modals = function modals() {
     });
   }
 
-  bindModal('.js-call-form-feedback', '.js-form-feedback', '.js-close-button-form');
-  bindModal('.js-call-form-feedback', '.js-form-feedback', '.js-close-button-form');
+  bindModal('.js-callform-feedback', '.js-form-feedback', '.js-close-button-form');
   bindModal('.js-callform-director', '.js-form-director', '.js-close-button-form');
+  bindModal('.js-callform-registration', '.js-form-registration', '.js-close-button-form');
+  bindModal('.js-callform-autorization', '.js-form-autorization', '.js-close-button-form');
+  bindModal('.js-callform-preview-product', '.js-preview-product', '.js-close-button-form');
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (modals);

@@ -141,12 +141,23 @@ figure {
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
-  z-index: 10;
+  z-index: 11;
   height: 100%;
   padding: 10px;
   cursor: pointer;
   display: none;
   min-width: 320px;
+  overflow: auto;
+  &--registration {
+    .overlay__wrapper {
+      height: auto;
+    }
+    .form__button {
+      display: block;
+      width: fit-content;
+      margin: 0 auto;
+    }
+  }
   &__wrapper {
     display: flex;
     align-items: center;
@@ -159,6 +170,12 @@ figure {
     padding: 10px;
     position: relative;
     border-radius: 5px;
+  }
+  .form-autorization {
+    max-width: 100%;
+  }
+  .detail-goods__title {
+    padding-right: 40px;
   }
 }
 
