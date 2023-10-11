@@ -158,6 +158,15 @@ figure {
       margin: 0 auto;
     }
   }
+  .content__text {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .title-h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    padding-right: 40px;
+  }
   &__wrapper {
     display: flex;
     align-items: center;
@@ -172,7 +181,8 @@ figure {
     border-radius: 5px;
   }
   .form-autorization {
-    max-width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
   }
   .detail-goods__title {
     padding-right: 40px;
