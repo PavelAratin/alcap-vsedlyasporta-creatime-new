@@ -128,7 +128,7 @@
             <h1>Карточки товара списком для авторизованного пользователя</h1>
             <ul class="assortment-list assortment-list--list-view">
               <li class="assortment-list__item">
-                <div class="b-card b-card--flex-row">
+                <div class="b-card js-card b-card--flex-row">
                   <div class="b-card__imgbox">
                     <div class="b-card-top">
                       <div class="b-card-top__discount">-5%</div>
@@ -139,23 +139,23 @@
                     <div class="b-card__swipers">
                       <div class="swiper js-swiper-big-thumb b-card__swiper b-card__swiper--bigthumb">
                         <div class="swiper-wrapper">
-                          <div class="swiper-slide ">
+                          <div class="swiper-slide js-image-zoom-container">
                             <img src="./images/shipovki-green-big-img.jpg"
                               alt="Шиповки легкоатлетические для бега RGX-LT02 Blue">
                           </div>
-                          <div class="swiper-slide">
+                          <div class="swiper-slide js-image-zoom-container">
                             <img src="./images/shipovki-green-big-img-2.jpg"
                               alt="Шиповки легкоатлетические для бега RGX-LT02 Blue">
                           </div>
-                          <div class="swiper-slide">
+                          <div class="swiper-slide js-image-zoom-container">
                             <img src="./images/shipovki-green-big-img-3.jpg"
                               alt="Шиповки легкоатлетические для бега RGX-LT02 Blue">
                           </div>
-                          <div class="swiper-slide">
+                          <div class="swiper-slide js-image-zoom-container">
                             <img src="./images/shipovki-green-big-img-4.jpg"
                               alt="Шиповки легкоатлетические для бега RGX-LT02 Blue">
                           </div>
-                          <div class="swiper-slide">
+                          <div class="swiper-slide js-image-zoom-container">
                             <img src="./images/shipovki-green-big-img-4.jpg"
                               alt="Шиповки легкоатлетические для бега RGX-LT02 Blue">
                           </div>
@@ -2074,6 +2074,7 @@
   @include('HTMLPartials/formInModalWindow.html')
   <!--модальные окна (внутри формы) конец-->
   </div>
+  <script src="./imageZoom/js-image-zoom.js"></script>
   <script src="./noUiSlider/nouislider.min.js"></script>
   <script src="./bootstrap/bootstrap.bundle.min.js"></script>
   <script src="./swiper/swiper-bundle.min.js"></script>
