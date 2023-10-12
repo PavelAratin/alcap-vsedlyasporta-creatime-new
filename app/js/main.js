@@ -270,6 +270,35 @@ var tabs = function tabs() {
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (tabs);
 
+/***/ }),
+
+/***/ "./src/js/toggleMobileMenu.js":
+/*!************************************!*\
+  !*** ./src/js/toggleMobileMenu.js ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "getToggleMobilemenu": () => (/* binding */ getToggleMobilemenu)
+/* harmony export */ });
+var getToggleMobilemenu = function getToggleMobilemenu() {
+  var burgerButtonEl = document.querySelector('.js-burger-button');
+  var mobileMenuEl = document.querySelector('.js-mobile-menu');
+  var mobileNavEl = document.querySelector('.js-mobile-nav');
+  var closeMenuButtonEl = document.querySelector('.js-close-menu-button');
+  burgerButtonEl.addEventListener('click', function () {
+    mobileMenuEl.classList.add('js-mobile-menu-visible');
+    mobileNavEl.classList.add('js-mobile-nav-visible');
+    document.body.classList.add('.js-stop-scroll');
+  });
+  closeMenuButtonEl.addEventListener('click', function () {
+    mobileMenuEl.classList.remove('js-mobile-menu-visible');
+    mobileNavEl.classList.remove('js-mobile-nav-visible');
+    document.body.classList.remove('.js-stop-scroll');
+  });
+};
+
 /***/ })
 
 /******/ 	});
@@ -340,6 +369,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modals__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modals */ "./src/js/modals.js");
 /* harmony import */ var _tabs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./tabs */ "./src/js/tabs.js");
 /* harmony import */ var _rangeSlider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./rangeSlider */ "./src/js/rangeSlider.js");
+/* harmony import */ var _toggleMobileMenu__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./toggleMobileMenu */ "./src/js/toggleMobileMenu.js");
+
 
 
 
@@ -351,6 +382,7 @@ window.addEventListener('DOMContentLoaded', function () {
   (0,_modals__WEBPACK_IMPORTED_MODULE_2__["default"])();
   (0,_tabs__WEBPACK_IMPORTED_MODULE_3__["default"])();
   (0,_rangeSlider__WEBPACK_IMPORTED_MODULE_4__.getRangeSlider)();
+  (0,_toggleMobileMenu__WEBPACK_IMPORTED_MODULE_5__.getToggleMobilemenu)();
 });
 })();
 

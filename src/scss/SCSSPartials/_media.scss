@@ -57,9 +57,6 @@
   .form__button {
     padding: 10px 20px;
   }
-  .form__input {
-    padding: 10px 0px 10px 10px;
-  }
   .wrapper__container {
     flex-direction: column;
   }
@@ -94,6 +91,19 @@
     margin-top: auto;
     box-shadow: none;
     display: flex;
+  }
+  .hero__content {
+    left: 20px;
+    top: 20px;
+  }
+  .hero__title-text {
+    font-size: 22px;
+  }
+  .hero__subtitle-text {
+    font-size: 16px;
+  }
+  .swiper__hero .swiper-pagination {
+    margin-left: 20px;
   }
 }
 

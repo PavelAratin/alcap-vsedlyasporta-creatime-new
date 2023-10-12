@@ -21,16 +21,7 @@
     margin-bottom: 20px;
   }
   &__link {
-    padding: 16px 43px;
-    border: none;
-    color: #fff;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: 600;
-    font-size: 12px;
-    background: #e00c32;
-    width: fit-content;
-    text-transform: none;
+    display: inline;
   }
   .swiper-slide {
     position: relative;

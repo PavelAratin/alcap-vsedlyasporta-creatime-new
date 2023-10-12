@@ -23,11 +23,10 @@
 .actions {
   display: flex;
   align-items: center;
+  gap: 10px;
   &__header {
     margin-right: 10px;
-  }
-  &__item:not(:last-child) {
-    margin-right: 10px;
+    flex-wrap: wrap;
   }
   &__item {
     font-size: 14px;
@@ -83,7 +82,6 @@
   &__header {
     flex-grow: 1;
     max-width: 600px;
-    margin-right: 10px;
     border-radius: 5px;
     overflow: hidden;
   }
@@ -99,27 +97,9 @@
     height: 100%;
     border: 1px solid #eaebed;
     transition: box-shadow 0.2s linear;
-    &:hover {
-      box-shadow: inset 0px 0px 0px 1px rgba(34, 60, 80, 0.5);
-    }
+    &:hover,
     &:focus {
       box-shadow: inset 0px 0px 0px 1px rgba(34, 60, 80, 0.5);
-    }
-  }
-  &__button {
-    padding: 16px 43px;
-    border: none;
-    color: #fff;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: 600;
-    font-size: 12px;
-    &--header {
-      border-radius: 0;
-      align-self: stretch;
-    }
-    &--red {
-      background: #e00c32;
     }
   }
   &__label {
@@ -138,6 +118,21 @@
   &__title {
     text-align: center;
     margin-bottom: 20px;
+  }
+}
+
+.b-btn {
+  padding: 16px 43px;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 12px;
+  background-color: #e00c32;
+  transition: opacity 0.2s linear;
+  &:hover {
+    opacity: 0.5;
   }
 }
 
@@ -281,7 +276,6 @@
 
 .contact {
   &__header {
-    margin-right: 10px;
     white-space: nowrap;
   }
   &__action {

@@ -1,0 +1,41 @@
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 15;
+  background-color: rgba(0, 0, 0, 0.75);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s linear;
+  &.js-mobile-menu-visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  &__nav {
+    background-color: rgb(255, 255, 255);
+    max-width: 400px;
+    min-width: 320px;
+    height: 100%;
+    padding: 40px;
+    transform: translateX(-100%);
+    transition: transform 0.4s linear;
+    &.js-mobile-nav-visible {
+      transform: translateX(0);
+    }
+  }
+  &__list {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+  &__close {
+    margin-bottom: 20px;
+  }
+  &__item {
+    border-bottom: 0.5px solid rgba(12, 18, 28, 0.1);
+  }
+}

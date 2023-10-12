@@ -14,7 +14,7 @@
     <header class="header js-header">
   <div class="container">
     <div class="header__top">
-      <button class="btn-reset burger-button">
+      <button class="btn-reset burger-button js-burger-button">
   <span class="burger-button__line burger-button__line--one"></span>
   <span class="burger-button__line burger-button__line--two"></span>
   <span class="burger-button__line burger-button__line--three"></span>
@@ -101,8 +101,7 @@
       </a>
       <form class="form form__header" action="">
         <input class="input-reset form__input form__input--header" type="text" placeholder="Поиск товара">
-        <button class="btn-reset form__button form__button--header form__button--red"
-          title="Поиск товара">Искать</button>
+        <button class="btn-reset b-btn header__btn" title="Поиск товара">Искать</button>
       </form>
       <div class="contact contact__header">
         <a href="tel:+78007074465" class="contact__action" title="Позвонить нам">8-(800)-707-44-65</a>
@@ -451,7 +450,7 @@
     <div class="fixed-menu__line-bottom">
       <form class="form" action="">
         <input class="input-reset form__input" type="text" placeholder="Поиск товара">
-        <button class="btn-reset form__button form__button--red">Искать</button>
+        <button class="btn-reset b-btn">Искать</button>
       </form>
       <div class="informer">
         <a class="informer__favorite header__favorite informer__item" href="#">
@@ -606,7 +605,7 @@
     <div class="footer__time">
       <h4 class="footer__title-min footer__title-min--clock">Часы работы</h4>
       <p class="footer__adress">Пн - Пт с 9.00 -18.00</p>
-      <button class="btn-reset footer__btn">Сотрудничество</button>
+      <button class="btn-reset b-btn">Сотрудничество</button>
     </div>
     <div class="footer__info">
       <p class="footer__description">
@@ -645,7 +644,7 @@
           Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для
           целей, определенных в Согласии на обработку персональных данных
         </label>
-        <button class="reset-btn form__button form__button--red">Отправить</button>
+        <button class="reset-btn b-btn">Отправить</button>
       </form>
       <button class="btn-reset close-button js-close-button-form close-button--position-absolute"
         title="Закрыть форму заказ обратного звонка">
@@ -683,7 +682,7 @@
           <span>Введите сообщение*</span>
           <input class="input-reset form__input" type="tel" name="MESSAGE">
         </label>
-        <button class="reset-btn form__button form__button--red">Отправить</button>
+        <button class="reset-btn b-btn">Отправить</button>
       </form>
       <button class="btn-reset close-button js-close-button-form close-button--position-absolute"
         title="Закрыть форму связи с генеральным директором">
@@ -751,7 +750,7 @@
             целей, определенных в Согласии на обработку персональных данных
           </label>
         </div>
-        <button class="reset-btn form__button form__button--red">Отправить</button>
+        <button class="reset-btn b-btn">Отправить</button>
       </form>
       <button class="btn-reset close-button js-close-button-form close-button--position-absolute"
         title="Закрыть форму связи с генеральным директором">
@@ -798,7 +797,7 @@
         </div>
         <div class="form-autorization__item">
           <a class="form-autorization__link" href="#">Забыли пароль?</a>
-          <button class="btn-reset form-autorization__button">Войти в кабинет</button>
+          <button class="btn-reset b-btn">Войти в кабинет</button>
         </div>
       </form>
       <button class="btn-reset close-button js-close-button-form close-button--position-absolute"
@@ -857,7 +856,7 @@
                   </a>
                 </li>
               </ul>
-              <button class="btn-reset images__button">Показать еще</button>
+              <button class="btn-reset b-btn">Показать еще</button>
             </div>
           </div>
           <div class="detail-goods__right">
@@ -930,9 +929,20 @@
                 <a class="b-card__more-link">Подробнее</a>
                 <ul class="actions-list actions-list--flex">
                   <li class="actions-list__item">
-                    <button class="btn-reset detail-goods2__button" title="Добавить в корзину">
-                      В корзину
-                    </button>
+                    <ul class="actions-list actions-list--flex">
+                      <li class="actions-list__item">
+                        <div class="actions-list__svg-wrapper">
+                          <button class="btn-reset" title="Добавить в корзину">
+                            <svg class="actions-list__svg" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                              viewBox="0 0 24 24">
+                              <path stroke="black" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                                d="M5.50835165,12.5914912 C5.5072855,12.5857255 5.50631828,12.5799252 5.5054518,12.5740921 L4.28533671,5.25340152 C4.16478972,4.53011956 3.53900455,4 2.80574582,4 L2.5,4 C2.22385763,4 2,3.77614237 2,3.5 C2,3.22385763 2.22385763,3 2.5,3 L2.80574582,3 C3.99756372,3 5.0190253,3.84029234 5.25525588,5 L21.5,5 C21.8321894,5 22.0720214,5.31795246 21.980762,5.63736056 L19.980762,12.6373606 C19.9194332,12.8520113 19.7232402,13 19.5,13 L6.59023021,13 L6.71466329,13.7465985 C6.83521028,14.4698804 7.46099545,15 8.19425418,15 L19.5,15 C19.7761424,15 20,15.2238576 20,15.5 C20,15.7761424 19.7761424,16 19.5,16 L8.19425418,16 C6.97215629,16 5.92918102,15.1164674 5.72826937,13.9109975 L5.5083519,12.5914927 L5.50835165,12.5914912 Z M5.42356354,6 L6.42356354,12 L19.1228493,12 L20.837135,6 L5.42356354,6 Z M8,21 C6.8954305,21 6,20.1045695 6,19 C6,17.8954305 6.8954305,17 8,17 C9.1045695,17 10,17.8954305 10,19 C10,20.1045695 9.1045695,21 8,21 Z M8,20 C8.55228475,20 9,19.5522847 9,19 C9,18.4477153 8.55228475,18 8,18 C7.44771525,18 7,18.4477153 7,19 C7,19.5522847 7.44771525,20 8,20 Z M17,21 C15.8954305,21 15,20.1045695 15,19 C15,17.8954305 15.8954305,17 17,17 C18.1045695,17 19,17.8954305 19,19 C19,20.1045695 18.1045695,21 17,21 Z M17,20 C17.5522847,20 18,19.5522847 18,19 C18,18.4477153 17.5522847,18 17,18 C16.4477153,18 16,18.4477153 16,19 C16,19.5522847 16.4477153,20 17,20 Z">
+                              </path>
+                            </svg>
+                          </button>
+                        </div>
+                      </li>
+                    </ul>
                   </li>
                 </ul>
               </div>
