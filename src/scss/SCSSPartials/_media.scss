@@ -57,7 +57,8 @@
   .form__button {
     padding: 10px 20px;
   }
-  .wrapper__container {
+  .wrapper__container,
+  .detail-goods__wrapper {
     flex-direction: column;
   }
   .sidebar {
@@ -68,7 +69,9 @@
   .fixed-menu {
     display: none;
   }
-  .form-delivery__item {
+  .form-delivery__item,
+  .detail-goods__left,
+  .detail-goods__right {
     width: 100%;
   }
   .form-autorization {
@@ -119,6 +122,9 @@
   }
   .b-card__title {
     font-size: 22px;
+  }
+  .b-card__btn-fast-preview {
+    display: none;
   }
   .order-goods,
   .cart-goods,

@@ -1,13 +1,14 @@
 .search-result {
   position: absolute;
   top: 152px;
-  left: 273px;
+  left: 580px;
+  width: 540px;
   border: 1px solid #c6c6c6;
   background-color: #fff;
   padding: 10px;
   border-radius: 3px;
-  width: 540px;
   z-index: 10;
+  display: none;
   &__title {
     font-weight: 600;
     color: #000000;
@@ -21,8 +22,8 @@
     gap: 10px;
     margin-bottom: 20px;
     &--product {
-      flex-direction: row;
-      justify-content: center;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     }
   }
   &__link {

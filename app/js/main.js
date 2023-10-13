@@ -191,6 +191,23 @@ function swiperCustom() {
         navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev'
+        },
+        breakpoints: {
+          // when window width is >= 320px
+          320: {
+            slidesPerView: 1
+          },
+          620: {
+            slidesPerView: 2
+          },
+          // when window width is >= 480px
+          900: {
+            slidesPerView: 3
+          },
+          // when window width is >= 640px
+          1240: {
+            slidesPerView: 4
+          }
         }
       });
     });
@@ -228,6 +245,23 @@ function swiperCustom() {
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev'
+      },
+      breakpoints: {
+        // when window width is >= 320px
+        320: {
+          slidesPerView: 1
+        },
+        620: {
+          slidesPerView: 2
+        },
+        // when window width is >= 480px
+        900: {
+          slidesPerView: 3
+        },
+        // when window width is >= 640px
+        1240: {
+          slidesPerView: 4
+        }
       }
     });
   }

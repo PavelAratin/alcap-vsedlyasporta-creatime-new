@@ -1,5 +1,4 @@
 .detail-goods {
-  margin-bottom: 100px;
   &__wrapper {
     display: flex;
     gap: 20px;
@@ -20,17 +19,23 @@
     font-size: 32px;
     margin-bottom: 20px;
   }
-  .b-card__panel {
-    background-color: #f8f8f8;
-    padding: 10px;
-    margin-bottom: 20px;
+  .available {
+    margin-bottom: 30px;
+  }
+  .b-card__price {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 30px;
   }
   .in-cart {
-    margin: 0 auto;
     margin-bottom: 20px;
   }
-  .actions-list {
-    justify-content: center;
+  .actions-list__item {
+    width: 100%;
+  }
+  .b-card {
+    margin-bottom: 30px;
   }
   .tab-goods {
     margin-bottom: 0;
@@ -41,6 +46,9 @@
       border: 0;
       border-radius: 0;
       border-bottom: 2px solid transparent;
+      font-size: 18px;
+      font-size: 18px;
+      font-weight: 600;
       &:hover {
         color: #e00c32;
         background-color: transparent;
@@ -53,21 +61,13 @@
     }
   }
 }
+
 .images {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  &__button {
-    padding: 16px 43px;
-    border: none;
-    color: #fff;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: 600;
-    font-size: 12px;
-    background-color: #e00c32;
-    width: fit-content;
-    align-self: center;
+  &__btn {
+    margin: 0 auto;
   }
 }
 .images-list {
@@ -85,7 +85,6 @@
     }
   }
 }
-
 .viewed-list {
   margin-bottom: 100px;
   &__title {
