@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="./imageZoom/magiczoomplus.css">
   <link rel="stylesheet" href="./swiper/swiper.min.css">
   <link rel="stylesheet" href="./css/main.css">
   <title>Детальная страница товара</title>
@@ -41,10 +42,8 @@
                   </div>
                 </div>
                 <div class="images__preview">
-                  <a href="#">
-                    <figure>
-                      <img src="./images/box-2.jpg" alt="Боксерские перчатки RBG-325 Dx Black">
-                    </figure>
+                  <a class="MagicZoom" href="./images/box-2.jpg">
+                    <img src="./images/box-2.jpg" alt="Боксерские перчатки RBG-325 Dx Black">
                   </a>
                 </div>
                 <ul class="images-list">
@@ -652,10 +651,14 @@
     <!--модальные окна (внутри формы) начало-->
     @include('HTMLPartials/formInModalWindow.html')
     <!--модальные окна (внутри формы) конец-->
+    <!--Мобильное меню начало-->
+    @include('HTMLPartials/mobileMenu.html')
+    <!--Мобильное меню конец-->
     <!--Результат поиска начало-->
     @include('HTMLPartials/searchResult.html')
     <!--Результат поиска конец-->
   </div>
+  <script src="./imageZoom/magiczoomplus.js"></script>
   <script src="./bootstrap/bootstrap.bundle.min.js"></script>
   <script src="./swiper/swiper-bundle.min.js"></script>
   <script src="./js/main.js"></script>
