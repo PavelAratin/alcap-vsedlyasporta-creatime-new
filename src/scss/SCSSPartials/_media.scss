@@ -42,6 +42,9 @@
   }
 }
 @media screen and (max-width: 900px) {
+  .title-h1--center {
+    margin-bottom: 25px;
+  }
   .header__bottom {
     flex-wrap: wrap;
   }
@@ -65,6 +68,23 @@
     flex: 0 0 100%;
     margin-bottom: 30px;
     margin-right: 0;
+  }
+  .simplebar {
+    height: auto;
+  }
+  .catalog-filtres {
+    max-width: 100%;
+    &__list {
+      flex-direction: row;
+      &--price {
+        .catalog-filtres__item {
+          width: 100%;
+        }
+      }
+    }
+    &__item:first-child {
+      width: 100%;
+    }
   }
   .fixed-menu {
     display: none;

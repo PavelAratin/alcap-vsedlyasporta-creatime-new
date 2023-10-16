@@ -268,7 +268,7 @@ figure {
   margin-bottom: 30px;
 }
 
-//настройка magiczoomplus начало
+//конец magiczoomplus начало
 .mz-hint {
   display: none;
 }
@@ -276,7 +276,21 @@ figure {
   width: 400px !important;
   height: 400px !important;
 }
-//настройка magiczoomplus конец
+//конец magiczoomplus конец
+
+//стилизия скроллбара в категориях начало
+.simplebar {
+  height: 250px;
+  .simplebar-vertical {
+    background-color: #eaebed;
+    border-radius: 5px;
+  }
+  .simplebar-scrollbar::before {
+    opacity: 1;
+    background: #e00c32;
+  }
+}
+//стилизия скроллбара в категориях конец
 
 @-moz-document url-prefix() {
   .table-responsive {

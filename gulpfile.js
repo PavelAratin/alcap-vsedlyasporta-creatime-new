@@ -117,6 +117,11 @@ const imageZoomToApp = () => {
     .pipe(dest('./app/imageZoom'))
 }
 
+const simplebarToApp = () => {
+  return src('./src/simplebar/*')
+    .pipe(dest('./app/simplebar'))
+}
+
 //функция для слежения за файлами 
 const watchFiles = () => {
   browserSync.init({
@@ -147,9 +152,10 @@ exports.swiperToApp = swiperToApp;
 exports.bootstrapToApp = bootstrapToApp;
 exports.nouisliderToApp = nouisliderToApp;
 exports.imageZoomToApp = imageZoomToApp;
+exports.simplebarToApp = simplebarToApp;
 
 //в дефолтном таске мы используем функции(вызываются первый раз перед вотчингом)
-exports.default = series(clean, parallel(htmlInclude, scipts, fonts, imgToApp, swiperToApp, bootstrapToApp, imageZoomToApp, nouisliderToApp), normalizeToApp, styles, watchFiles);
+exports.default = series(clean, parallel(htmlInclude, scipts, fonts, imgToApp, swiperToApp, bootstrapToApp, imageZoomToApp, nouisliderToApp, simplebarToApp), normalizeToApp, styles, watchFiles);
 //код для build-версии
 //функция для работы со скриптами
 const sciptsBuild = () => {

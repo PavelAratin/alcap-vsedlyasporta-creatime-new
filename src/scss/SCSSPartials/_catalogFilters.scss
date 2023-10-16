@@ -22,7 +22,10 @@
     margin-bottom: 28px;
   }
   &__list {
-    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex-direction: column;
     &--price {
       margin-bottom: 36px;
     }
@@ -30,9 +33,6 @@
   &__item:first-child {
     font-size: 18px;
     color: #000000;
-  }
-  &__item:not(:last-child) {
-    margin-bottom: 10px;
   }
   &__item--title-price {
     margin-bottom: 7px !important;

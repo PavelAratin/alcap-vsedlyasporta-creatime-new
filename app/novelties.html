@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./swiper/swiper.min.css">
   <link rel="stylesheet" href="./noUiSlider/nouislider.min.css">
   <link rel="stylesheet" href="./imageZoom/magiczoomplus.css">
+  <link rel="stylesheet" href="./simplebar/simplebar.css">
   <link rel="stylesheet" href="./css/main.css">
   <title>Новинки</title>
 </head>
@@ -532,16 +533,16 @@
                 </li>
               </ul>
             </nav>
-            <div class="catalog-filtres">
+            <div class="catalog-filtres simplebar" data-simplebar>
   <p class="catalog-filtres__title">Фильтровать по:</p>
   <div class="catalog-filtres__filtres">
-    <div class="catalog-filtres__category catalog-filtres__category--category" data-parent-filter="category">
+    <div class="catalog-filtres__category catalog-filtres__category--category">
       <ul class="catalog-filtres__list">
         <li class="catalog-filtres__item">Категория</li>
         <li class="catalog-filtres__item">
           <label class="checkbox-label catalog-filtres__chekbox-label"
             aria-label="Галочка о принятии пользовательского соглашения">
-            <input class="checkbox" type="checkbox" data-filter="Диваны">
+            <input class="checkbox" type="checkbox">
             <span class="checkbox-custom"></span>
             Категория 1
           </label>
@@ -549,7 +550,7 @@
         <li class="catalog-filtres__item">
           <label class="checkbox-label catalog-filtres__chekbox-label"
             aria-label="Галочка о принятии пользовательского соглашения">
-            <input class="checkbox" type="checkbox" data-filter="Кресла">
+            <input class="checkbox" type="checkbox">
             <span class="checkbox-custom"></span>
             Категория 2
           </label>
@@ -557,7 +558,7 @@
         <li class="catalog-filtres__item">
           <label class="checkbox-label catalog-filtres__chekbox-label"
             aria-label="Галочка о принятии пользовательского соглашения">
-            <input class="checkbox" type="checkbox" data-filter="Пуфы">
+            <input class="checkbox" type="checkbox">
             <span class="checkbox-custom"></span>
             Категория 3
           </label>
@@ -565,7 +566,7 @@
         <li class="catalog-filtres__item">
           <label class="checkbox-label catalog-filtres__chekbox-label"
             aria-label="Галочка о принятии пользовательского соглашения">
-            <input class="checkbox" type="checkbox" data-filter="Кровати">
+            <input class="checkbox" type="checkbox">
             <span class="checkbox-custom"></span>
             Категория 4
           </label>
@@ -573,7 +574,7 @@
         <li class="catalog-filtres__item">
           <label class="checkbox-label catalog-filtres__chekbox-label"
             aria-label="Галочка о принятии пользовательского соглашения">
-            <input class="checkbox" type="checkbox" data-filter="Тумбы">
+            <input class="checkbox" type="checkbox">
             <span class="checkbox-custom"></span>
             Категория 5
           </label>
@@ -581,7 +582,7 @@
         <li class="catalog-filtres__item">
           <label class="checkbox-label catalog-filtres__chekbox-label"
             aria-label="Галочка о принятии пользовательского соглашения">
-            <input class="checkbox" type="checkbox" data-filter="Комоды">
+            <input class="checkbox" type="checkbox">
             <span class="checkbox-custom"></span>
             Категория 6
           </label>
@@ -589,7 +590,7 @@
         <li class="catalog-filtres__item">
           <label class="checkbox-label catalog-filtres__chekbox-label"
             aria-label="Галочка о принятии пользовательского соглашения">
-            <input class="checkbox" type="checkbox" data-filter="Стулья">
+            <input class="checkbox" type="checkbox">
             <span class="checkbox-custom"></span>
             Категория 7
           </label>
@@ -597,7 +598,7 @@
         <li class="catalog-filtres__item">
           <label class="checkbox-label catalog-filtres__chekbox-label"
             aria-label="Галочка о принятии пользовательского соглашения">
-            <input class="checkbox" type="checkbox" data-filter="Столы">
+            <input class="checkbox" type="checkbox">
             <span class="checkbox-custom"></span>
             Категория 8
           </label>
@@ -605,7 +606,7 @@
         <li class="catalog-filtres__item">
           <label class="checkbox-label catalog-filtres__chekbox-label"
             aria-label="Галочка о принятии пользовательского соглашения">
-            <input class="checkbox" type="checkbox" data-filter="Аксессуары">
+            <input class="checkbox" type="checkbox">
             <span class="checkbox-custom"></span>
             Категория 9
           </label>
@@ -3119,6 +3120,7 @@
 </div>
   <!--Результат поиска конец-->
   </div>
+  <script src="./simplebar/simplebar.js"></script>
   <script src="./imageZoom/magiczoomplus.js"></script>
   <script src="./noUiSlider/nouislider.min.js"></script>
   <script src="./bootstrap/bootstrap.bundle.min.js"></script>
