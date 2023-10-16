@@ -21,6 +21,8 @@
   .form {
     flex-grow: 1;
     margin-right: 10px;
+    border-radius: 5px;
+    overflow: hidden;
   }
 }
 .js-fixed-menu-show {

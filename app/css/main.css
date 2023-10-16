@@ -622,6 +622,8 @@ figure {
   -ms-flex-positive: 1;
   flex-grow: 1;
   margin-right: 10px;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .js-fixed-menu-show {
@@ -2459,13 +2461,6 @@ figure {
   cursor: pointer;
 }
 
-.alcap-popup--open {
-  opacity: 1;
-  visibility: visible;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-}
-
 .quick-buy {
   position: fixed;
   top: auto;
@@ -2480,6 +2475,13 @@ figure {
 .quick-buy__title {
   font-weight: 600;
   margin-bottom: 10px;
+}
+
+.js-alcap-popup-open {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: scale(1);
+  transform: scale(1);
 }
 
 .auth-info {

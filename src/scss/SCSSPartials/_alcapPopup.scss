@@ -58,12 +58,6 @@
     }
   }
 }
-.alcap-popup--open {
-  opacity: 1;
-  visibility: visible;
-  transform: scale(1);
-}
-
 .quick-buy {
   position: fixed;
   top: auto;
@@ -78,4 +72,10 @@
     font-weight: 600;
     margin-bottom: 10px;
   }
+}
+
+.js-alcap-popup-open {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
 }
