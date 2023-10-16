@@ -3219,8 +3219,7 @@ figure {
     padding: 10px 20px;
   }
 
-  .wrapper__container,
-.detail-goods__wrapper {
+  .wrapper__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
