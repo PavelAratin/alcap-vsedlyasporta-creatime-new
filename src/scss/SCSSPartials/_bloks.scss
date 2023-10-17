@@ -11,6 +11,10 @@
   &__link {
     font-size: 16px;
     font-weight: 600;
+    transition: color 0.2s linear;
+    &:hover {
+      color: #e00c32;
+    }
   }
 }
 
@@ -166,6 +170,10 @@
   color: #fff;
   padding: 20px;
   display: block;
+  transition: color 0.2s linear;
+  &:hover {
+    color: #e00c32;
+  }
 }
 /* category-menu-level-1 end */
 
