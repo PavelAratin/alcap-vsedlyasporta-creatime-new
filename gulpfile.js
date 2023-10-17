@@ -50,7 +50,7 @@ const htmlInclude = () => {
 }
 //простая перегонка картинок для dev-версии (в процессе разработки)
 const imgToApp = () => {
-  return src(['./src/images/**.jpg', './src/images/**.png', './src/images/**.jpeg', './src/images/**.svg'])
+  return src(['./src/images/**.jpg', './src/images/**.png', './src/images/**.jpeg', './src/images/**.svg', './src/images/**.gif'])
     .pipe(dest('./app/images'))
 }
 //функция для удаления папки app
@@ -137,6 +137,7 @@ const watchFiles = () => {
   watch('./src/images/**.png', imgToApp);
   watch('./src/images/**.jpeg', imgToApp);
   watch('./src/images/**.svg', imgToApp);
+  watch('./src/images/**.gif', imgToApp);
   watch('./src/fonts/**.ttf', fonts);
   watch('./src/js/**/*.js', scipts);
 }
