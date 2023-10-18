@@ -3158,6 +3158,39 @@ figure {
   background-color: #e00c32;
 }
 
+.spinner-loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 11;
+  background: rgba(255, 255, 255, 0.36);
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+.spinner-loader__img {
+  width: 150px;
+  height: 150px;
+}
+.spinner-loader.js-spinner-loader-visible {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 1;
+  visibility: visible;
+}
+
 @media screen and (max-width: 1010px) {
   .header__nav {
     display: none;

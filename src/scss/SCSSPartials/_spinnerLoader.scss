@@ -1,0 +1,24 @@
+.spinner-loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 11;
+  background: rgb(255 255 255 / 36%);
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  &__img {
+    width: 150px;
+    height: 150px;
+  }
+  &.js-spinner-loader-visible {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+  }
+}
